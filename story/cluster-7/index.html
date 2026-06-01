@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Keegan, 75, former England manager and Newcastle United striker, announces stage four cancer diagnosis — Newshash</title>
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #6d28d9;
+      --centre:      #374151;
+      --centre-right:#b45309;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #9ca3af;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #9ca3af;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .story-headline {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+
+  .outlets-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .outlet-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--lean-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .outlet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .outlet-analysis {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .analysis-row { display: flex; gap: 0.5rem; }
+  .analysis-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+    width: 3rem;
+  }
+  .analysis-text { color: var(--text); }
+
+  .articles-list {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .article-link {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .article-link a { color: var(--muted); }
+  .article-link a:hover { color: var(--lean-color); text-decoration: underline; }
+  .article-link::before { content: "→"; flex-shrink: 0; }
+
+  .not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-01</div>
+    
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+  
+  <a class="back-link" href="/">← All stories</a>
+
+  <h1 class="story-headline">Kevin Keegan, 75, former England manager and Newcastle United striker, announces stage four cancer diagnosis</h1>
+
+  <div class="summary-card">
+    <div class="label">Unbiased summary</div>
+    <p>Kevin Keegan, the 75-year-old former England international footballer, Newcastle United player and manager, and former England national team manager, has publicly disclosed that he has been diagnosed with stage four cancer. Keegan stated he has a doctor working on his case and expressed optimism about his treatment. He also referenced his relationship with Newcastle United, indicating a desire to say a proper farewell to the club. Newcastle United released a statement offering their support and best wishes. The diagnosis was made known around Christmas, a period Keegan described as particularly difficult, during which he was confined to bed and his family were distressed.</p>
+  </div>
+
+  <div class="outlets-heading">Coverage by outlet</div>
+
+  
+  <div class="outlet-section lean-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Guardian</span>
+      <span class="lean-badge lean-left">left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The Guardian frames the story primarily around Keegan&#39;s institutional identity and the supportive response from Newcastle United.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Guardian leads with Keegan&#39;s managerial credentials rather than his playing career, which slightly reshapes his public identity. It notably highlights Newcastle&#39;s institutional response, giving the club a visible platform, which may subtly humanise the club at a time of ongoing fan and ownership controversy. The personal and emotional detail of Keegan&#39;s experience — the Christmas bedridden period and family distress — is omitted, keeping the coverage relatively clinical and brief.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/football/2026/jun/01/kevin-keegan-former-england-newcastle-manager-stage-four-cancer-diagnosis" target="_blank" rel="noopener">Kevin Keegan, former England and Newcastle manager, reveals stage four cancer diagnosis</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">BBC News</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The BBC takes a straightforward, factual news-announcement approach, emphasising Keegan&#39;s dual identity as both captain and manager of England.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The BBC&#39;s coverage is notably neutral and restrained, sticking closely to the core facts of the announcement. By leading with &#39;former England captain and manager&#39;, the BBC highlights Keegan&#39;s full footballing legacy more completely than other outlets. The repetition of near-identical headlines across two entries suggests a formulaic newswire approach rather than editorial shaping. Personal emotional detail and Newcastle&#39;s response are absent, keeping the report minimal.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.bbc.com/sport/football/articles/cx21zjnjd2go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Former England captain and manager Kevin Keegan reveals stage four cancer diagnosis</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.bbc.com/sport/football/articles/cx21zjnjd2go?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Keegan reveals stage four cancer diagnosis</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">Daily Mail</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The Daily Mail takes a personalised, emotionally driven angle, foregrounding Keegan&#39;s own voice, his optimism, and his sentimental farewell to Newcastle.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Daily Mail uses direct quotes and vivid personal detail — the Christmas bedridden episode, family tears, and the doctor&#39;s optimistic prognosis — giving the story significantly more emotional texture than other outlets. While this humanises Keegan effectively, it also leans toward sentimentalisation, which is a common tabloid framing device. The headline&#39;s reference to &#39;saying goodbye to Newcastle properly&#39; and the statue remark, while apparently quoting Keegan directly, frames the story with a dramatic, farewell narrative that other outlets do not adopt.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.dailymail.com/sport/football/article-15863543/Kevin-Keegan-cancer-stage-four-Newcastle-statue.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">Kevin Keegan: I&#39;ve got stage four cancer. It&#39;s been a really tough time - I need to say goodbye to Newcastle United properly... just promise not to build a statue of me at St James&#39; Park until I&#39;m gone</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+  </script>
+</body>
+</html>
