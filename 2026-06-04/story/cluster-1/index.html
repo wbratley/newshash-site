@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Tube strike enters second day; New Delhi building fire kills 21; World Cup 2026 coverage intensifies ahead of tournament — Newshash</title>
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .story-headline {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+
+  .outlets-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .outlet-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--lean-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .outlet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .outlet-analysis {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .analysis-row { display: flex; gap: 0.5rem; }
+  .analysis-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+    width: 3rem;
+  }
+  .analysis-text { color: var(--text); }
+
+  .articles-list {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .article-link {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .article-link a { color: var(--muted); }
+  .article-link a:hover { color: var(--lean-color); text-decoration: underline; }
+  .article-link::before { content: "→"; flex-shrink: 0; }
+
+  .not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-04</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      
+      <a href="/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="active">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+  
+  <div class="archive-banner">
+    <span>Viewing archive: 2026-06-04</span>
+    <a href="/">Back to today</a>
+  </div>
+  
+  <a class="back-link" href="/2026-06-04/">← All stories</a>
+
+  <h1 class="story-headline">London Tube strike enters second day; New Delhi building fire kills 21; World Cup 2026 coverage intensifies ahead of tournament</h1>
+
+  <div class="summary-card">
+    <div class="label">Unbiased summary</div>
+    <p>On or around 3–4 June 2026, several newsworthy events occurred. London Underground drivers, represented by the RMT union, carried out a second day of strike action, with Transport for London reporting that approximately 60% of drivers worked during the first day of the stoppage. The strikes relate to disputes including a proposed four-day working week. Multiple Tube lines faced suspension or severe disruption, with knock-on pressure on services such as the Elizabeth line. Separately, a fire in the Malviya Nagar neighbourhood of New Delhi, India, killed at least 21 people and injured several others. Additionally, the 2026 FIFA World Cup, hosted across the United States, Canada, and Mexico, was generating significant media coverage, with team guides, referee profiles, and fan-oriented content being published widely.</p>
+  </div>
+
+  <div class="outlets-heading">Coverage by outlet</div>
+
+  
+  <div class="outlet-section lean-left">
+    <div class="outlet-header">
+      <span class="outlet-name">Morning Star</span>
+      <span class="lean-badge lean-left">left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Focuses on an international humanitarian tragedy, foregrounding a fatal fire in India with minimal editorial framing.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Morning Star&#39;s only submitted article covers the New Delhi fire, a story largely absent from other outlets&#39; coverage here, suggesting a prioritisation of global working-class and humanitarian issues over domestic transport or sports news. The report is brief and factual with no obvious slant. However, the outlet omits the London Tube strike entirely, which is notable given its traditionally strong pro-union stance — though this may simply reflect editorial space rather than deliberate suppression.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://morningstaronline.co.uk/article/world-brief-june-3-2026" target="_blank" rel="noopener">World in brief: June 3, 2026</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Guardian</span>
+      <span class="lean-badge lean-left">left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Balances transport disruption news with extensive World Cup team guide content, giving meaningful coverage to the Tube strike without strong inflammatory language.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Guardian&#39;s strike coverage notes the RMT confirmation of a second day of action and includes the 60% driver turnout figure from TfL, which is relatively balanced. The phrase &#39;London braces&#39; in their headline is mildly dramatic but not unusually so. The outlet devotes the majority of its visible coverage to World Cup team guides, which may reflect editorial priorities rather than political bias. The New Delhi fire is not covered in the submitted articles.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/football/2026/jun/04/belgium-world-cup-2026-team-guide" target="_blank" rel="noopener">Belgium World Cup 2026 team guide</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/football/2026/jun/03/tunisia-world-cup-2026-team-guide" target="_blank" rel="noopener">Tunisia World Cup 2026 team guide</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/football/2026/jun/03/sweden-world-cup-2026-team-guide" target="_blank" rel="noopener">Sweden World Cup 2026 team guide</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/uk-news/2026/jun/03/london-braces-second-day-rmt-tube-strike-disruption" target="_blank" rel="noopener">London braces for second day of Tube strike disruption</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Independent</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Provides detailed, commuter-focused strike coverage that contextualises the dispute, including the four-day week issue, with live updates.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Independent is the only outlet in the sample to explicitly mention the four-day working week as a cause of the strike, providing important context for readers. The framing of &#39;travel misery&#39; is emotive but widely used across outlets and not uniquely partisan. The live blog format suggests thorough, ongoing coverage. The New Delhi fire and World Cup receive no coverage in the submitted articles, though this likely reflects editorial focus rather than bias.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.independent.co.uk/travel/news-and-advice/train-strikes-london-dates-2026-tfl-b2989244.html" target="_blank" rel="noopener">When will second day of London Tube strikes take place this week and which lines are affected?</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.independent.co.uk/news/uk/home-news/london-tube-strikes-latest-updates-tfl-june-b2988888.html" target="_blank" rel="noopener">London Tube strikes live: Commuters face travel misery as second major walkout in a week begins</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Mirror</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Leads with commuter impact and service disruption details, using emotive language consistent with a populist centre-left voice.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Mirror uses &#39;travel misery&#39; — identical phrasing to The Independent — suggesting this is a broadly adopted framing rather than uniquely biased language. The outlet provides practical information about affected lines, which is useful and factual. Like most outlets here, it omits the New Delhi fire. The coverage does not explicitly mention the union&#39;s reasons for striking, which slightly limits the context offered to readers, though the tone is not anti-union.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.mirror.co.uk/news/uk-news/tube-strikes-london-thursday-live-37239128" target="_blank" rel="noopener">London Tube strikes live: Thursday brings more TfL delays – see list of lines</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre">
+    <div class="outlet-header">
+      <span class="outlet-name">Sky News</span>
+      <span class="lean-badge lean-centre">centre</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Provides brief, factual, service-oriented strike coverage aimed at helping commuters navigate disruption.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">Sky News takes a neutral, practical tone with its &#39;here&#39;s what you need to know&#39; framing, which avoids editorialising in either a pro-union or anti-union direction. However, the single short article offers limited depth — no mention of the reasons for the strike, the 60% driver turnout figure, or the union&#39;s position. This brevity, while not politically biased, represents an omission of context that a fuller account would include.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://news.sky.com/story/tube-strikes-full-list-of-days-and-lines-affected-in-june-walkout-on-london-underground-13549904" target="_blank" rel="noopener">Tube strikes return today - here&#39;s what you need to know</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-right">
+    <div class="outlet-header">
+      <span class="outlet-name">The Telegraph</span>
+      <span class="lean-badge lean-centre-right">centre-right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Focuses entirely on World Cup 2026 consumer and entertainment content, ignoring the strike and the New Delhi fire entirely.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Telegraph&#39;s submitted coverage contains no mention of the London Tube strike, which is a significant omission for a major UK news outlet given the direct impact on London commuters. This could reflect a centre-right editorial preference to avoid amplifying union-led industrial action. The New Delhi fire also goes uncovered. Coverage is limited to World Cup guides, which are broadly neutral in tone.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.telegraph.co.uk/football/2026/05/22/world-cup-2026-dates-format-tv-venue-tickets/" target="_blank" rel="noopener">World Cup 2026: Everything you need to know</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.telegraph.co.uk/football/2026/05/28/world-cup-2026-formation-builder-pick-team-squad/" target="_blank" rel="noopener">World Cup 2026 formation builder: Pick your England team</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">The Sun</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Prioritises entertainment and lifestyle content — horoscopes and a human-interest World Cup referee profile — avoiding the strike and overseas tragedy.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Sun&#39;s submitted articles make no reference to the London Tube strike, despite it being a major story affecting millions of readers in its core demographic. This omission is consistent with a right-leaning editorial tendency to downplay or avoid coverage that might generate sympathy for striking workers. The New Delhi fire is also absent. The content submitted is soft and entertainment-focused, straying furthest from hard news among the outlets analysed.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.thesun.co.uk/fabulous/39292026/horoscope-today-mystic-meg-june-4-2026/" target="_blank" rel="noopener">Horoscope today, June 4, 2026: Daily star sign guide from Mystic Meg with Maggie Innes</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.thesun.co.uk/sport/15210850/istvan-kovacs-world-cup-2026-referee/" target="_blank" rel="noopener">Who is World Cup 2026 referee Istvan Kovacs?</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+  </script>
+</body>
+</html>
