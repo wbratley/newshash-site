@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andy Burnham confirms he would enter Labour leadership race if he wins Makerfield by-election — Newshash</title>
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .story-headline {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+
+  .outlets-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .outlet-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--lean-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .outlet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .outlet-analysis {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .analysis-row { display: flex; gap: 0.5rem; }
+  .analysis-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+    width: 3rem;
+  }
+  .analysis-text { color: var(--text); }
+
+  .articles-list {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .article-link {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .article-link a { color: var(--muted); }
+  .article-link a:hover { color: var(--lean-color); text-decoration: underline; }
+  .article-link::before { content: "→"; flex-shrink: 0; }
+
+  .not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-05</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      
+      <a href="/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="active">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+  
+  <div class="archive-banner">
+    <span>Viewing archive: 2026-06-05</span>
+    <a href="/">Back to today</a>
+  </div>
+  
+  <a class="back-link" href="/2026-06-05/">← All stories</a>
+
+  <h1 class="story-headline">Andy Burnham confirms he would enter Labour leadership race if he wins Makerfield by-election</h1>
+
+  <div class="summary-card">
+    <div class="label">Unbiased summary</div>
+    <p>Greater Manchester Mayor Andy Burnham has publicly confirmed for the first time that he would enter a Labour leadership contest if he wins the upcoming Makerfield by-election on June 18, which would return him to Westminster. Burnham previously heavily hinted at a leadership bid but had not explicitly confirmed it. He also made separate comments suggesting the 2016 Brexit referendum outcome could have &#39;played out differently&#39; had he beaten Jeremy Corbyn in the 2015 Labour leadership election. No 10 indicated Prime Minister Keir Starmer plans to visit Makerfield to campaign for the Labour candidate, a move Burnham&#39;s team reportedly cautioned against. Starmer has signalled he does not intend to stand aside. Burnham additionally commented on knife-carrying laws in the context of a recent death.</p>
+  </div>
+
+  <div class="outlets-heading">Coverage by outlet</div>
+
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">BBC News</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Straightforward factual reporting of Burnham&#39;s leadership confirmation, with necessary electoral context.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The BBC&#39;s coverage is concise and largely neutral, correctly noting the Makerfield by-election prerequisite. It omits the Brexit counterfactual comments and the tension over Starmer&#39;s potential visit, which are relevant parts of the broader story. The framing is appropriately restrained but incomplete.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.bbc.com/news/articles/cp9p9z31rr1o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Burnham says he would seek to enter any Labour leadership contest</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Independent</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Reports the leadership confirmation straightforwardly while also noting Burnham&#39;s separate policy comment on knife-carrying laws.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Independent&#39;s coverage is relatively balanced, accurately reporting the leadership confirmation and including the additional knife-law comment, which other outlets omit. The phrase &#39;run to replace Starmer as Prime Minister&#39; is slightly presumptuous, as Burnham would first need to win the by-election, lead the party, and then win a general election. This minor framing slightly overstates the immediacy of his ambition.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.independent.co.uk/news/uk/politics/burnham-starmer-labour-reform-kenyon-pm-b2990095.html" target="_blank" rel="noopener">Burnham confirms he will run to replace Starmer as Prime Minister if he wins Makerfield by-election</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre">
+    <div class="outlet-header">
+      <span class="outlet-name">Sky News</span>
+      <span class="lean-badge lean-centre">centre</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Treats Burnham&#39;s confirmation as breaking news, presenting it as a notable first-time declaration.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">Sky&#39;s headline emphasises the &#39;first time&#39; aspect of Burnham&#39;s confirmation, which is factually accurate and newsworthy. The lack of summaries for both stories limits full analysis. The inclusion of an unrelated Mark Kleinman blog story about a landlord and TG Jones rescue appears to be a data artefact rather than editorial framing relevant to this story.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://news.sky.com/story/andy-burnham-says-for-the-first-time-that-he-would-join-labour-leadership-contest-13550949" target="_blank" rel="noopener">&lt;a href=&#34;https://news.sky.com/story/politics-latest-keir-starmer-peter-mandelson-files-defence-investment-kemi-badenoch-12593360?postid=11813061#liveblog-body&#34;&gt;Andy Burnham says for the first time that he would join Labour leadership contest&lt;/a&gt;</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://news.sky.com/story/mark-kleinman-blog-see-the-latest-stories-from-sky-news-city-editor-13505671" target="_blank" rel="noopener">&lt;a href=&#34;https://news.sky.com/story/mark-kleinman-blog-see-the-latest-stories-from-sky-news-city-editor-13475361&#34;&gt;Landlord slams &#39;unacceptable&#39; TG Jones rescue | Mark Kleinman blog&lt;/a&gt;</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">The Sun</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Frames Burnham&#39;s Brexit counterfactual comment as an arrogant or implausible claim, prioritising it over the leadership confirmation news.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Sun leads with Burnham&#39;s Brexit counterfactual rather than the more significant news of his leadership confirmation, which downplays the latter&#39;s importance. The word &#39;insists&#39; carries a sceptical connotation, subtly casting doubt on Burnham&#39;s claim. The framing invites readers to view Burnham as self-aggrandising rather than reporting his remarks neutrally.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.thesun.co.uk/news/39313059/burnham-brexit-labour-leader/" target="_blank" rel="noopener">Andy Burnham insists he could have stopped Brexit if he’d have beaten Corbyn to Labour leadership</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">Daily Mail</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Portrays Burnham&#39;s candidacy as a direct and dramatic challenge to Starmer, while also amplifying the Brexit counterfactual and internal party tension.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Mail runs three separate stories, giving this event extensive coverage with a clear framing of internal Labour conflict. The use of &#39;WILL run&#39; in capitals and &#39;Stay away Keir!&#39; is emotive and dramatises the political tension beyond what the facts strictly support. The Brexit headline uses &#39;suggests&#39; where Burnham used conditional language, and the framing of Starmer&#39;s visit as something to be warned off implies more hostility than may be warranted.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.dailymail.com/news/article-15873957/Now-Andy-Burnham-suggests-Brexit-not-happened-Labour-leader-2016.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">Now Andy Burnham suggests Brexit would not have happened if he was Labour leader in 2016</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.dailymail.com/news/article-15874789/Andy-Burnham-finally-confirms-run-Labour-leader-PM-wins-Makerfield-election.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">Andy Burnham finally confirms he WILL run for Labour leader and PM if he wins Makerfield by-election - but Keir Starmer warns he won&#39;t walk away without a fight</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.dailymail.com/news/article-15875431/Stay-away-Keir-Andy-Burnhams-election-team-warns-PM-not-come-campaign-Makerfield.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">Stay away Keir! Andy Burnham&#39;s by-election team warns PM not to come and campaign in Makerfield</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+  </script>
+</body>
+</html>

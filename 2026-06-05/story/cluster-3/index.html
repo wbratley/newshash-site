@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zelensky publishes open letter to Putin proposing direct face-to-face peace talks in neutral third country — Newshash</title>
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .story-headline {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+
+  .outlets-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .outlet-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--lean-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .outlet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .outlet-analysis {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .analysis-row { display: flex; gap: 0.5rem; }
+  .analysis-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+    width: 3rem;
+  }
+  .analysis-text { color: var(--text); }
+
+  .articles-list {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .article-link {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .article-link a { color: var(--muted); }
+  .article-link a:hover { color: var(--lean-color); text-decoration: underline; }
+  .article-link::before { content: "→"; flex-shrink: 0; }
+
+  .not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-05</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      
+      <a href="/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="active">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+  
+  <div class="archive-banner">
+    <span>Viewing archive: 2026-06-05</span>
+    <a href="/">Back to today</a>
+  </div>
+  
+  <a class="back-link" href="/2026-06-05/">← All stories</a>
+
+  <h1 class="story-headline">Zelensky publishes open letter to Putin proposing direct face-to-face peace talks in neutral third country</h1>
+
+  <div class="summary-card">
+    <div class="label">Unbiased summary</div>
+    <p>Ukrainian President Volodymyr Zelensky has published an open letter addressed directly to Russian President Vladimir Putin, proposing a face-to-face meeting in a neutral third country to discuss ending the war in Ukraine. Zelensky stated that only direct engagement between the two leaders could bring the conflict to a close. The letter comes amid ongoing diplomatic activity, with US President Donald Trump indicating both sides would need to make compromises. Putin has separately indicated his own preferences regarding mediation. The letter is notable for its direct, personal tone addressed to Putin, urging him not to fear pursuing a path to peace.</p>
+  </div>
+
+  <div class="outlets-heading">Coverage by outlet</div>
+
+  
+  <div class="outlet-section lean-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Guardian</span>
+      <span class="lean-badge lean-left">left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Frames the letter within a broader diplomatic context, highlighting Trump&#39;s role and the compromise narrative to subtly question Western pressure dynamics.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Guardian includes Trump&#39;s &#39;both sides must compromise&#39; comment prominently, which implicitly raises questions about Western support conditions for Ukraine. This contextualisation, while factually relevant, shifts focus slightly away from Zelensky&#39;s initiative itself. The inclusion of the full letter text suggests a commitment to transparency, which is a strength, but the framing around Trump&#39;s remarks edges toward a critical subtext about US reliability as an ally.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/world/2026/jun/04/zelenskyy-calls-for-face-to-face-negotiations-letter-putin-ukraine-russia-trump" target="_blank" rel="noopener">Zelenskyy calls for face-to-face Ukraine war negotiations in letter to Putin</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">BBC News</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Presents the story straightforwardly but adds context about US attention being focused on Iran, subtly implying Ukraine may be losing diplomatic priority.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The BBC&#39;s mention that the US is &#39;focused on Iran&#39; is factually relevant context but introduces a narrative of Ukraine&#39;s potential diplomatic marginalisation that goes slightly beyond the core story. The framing is largely neutral and factual, making it one of the closer accounts to the objective facts. The deviation is minor but the Iran detail adds an implied angle not present in the letter itself.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.bbc.com/news/articles/cwy2ypyp4x4o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Zelensky proposes face-to-face talks in open letter to Putin</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre">
+    <div class="outlet-header">
+      <span class="outlet-name">i Paper</span>
+      <span class="lean-badge lean-centre">centre</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Focuses on the emotional and rhetorical tone of Zelensky&#39;s letter, particularly his message that change comes when Russia grows tired.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The i Paper leads with a quote emphasising internal Russian fatigue and the prospect of change, which subtly frames the letter as a strategic message to the Russian people as much as to Putin. This is a legitimate interpretation but represents an editorial choice that emphasises one aspect of the letter&#39;s tone over its core diplomatic proposal. The coverage is relatively balanced but the chosen pull-quote steers readers toward a particular reading of Zelensky&#39;s intent.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://inews.co.uk/news/world/take-the-path-war-zelenskys-putin-4459393" target="_blank" rel="noopener">‘Do not be afraid to take the path out of this war’: Zelensky’s open letter to Putin</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">The Sun</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Frames the story as a dramatic personal challenge between Zelensky and Putin, using strong characterisation of Putin as a &#39;dictator&#39; and &#39;Kremlin strongman&#39;.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Sun uses explicitly loaded language — &#39;dictator Vlad&#39; and &#39;Kremlin strongman&#39; — which, while reflecting a widely held view, is editorially charged rather than neutral. The headline structure presenting Putin&#39;s mediation preferences as a counter-move adds a combative, game-like framing to what is a diplomatic initiative. The core facts are reported but the sensationalised language and framing stray noticeably from objective reporting standards.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.thesun.co.uk/news/39313283/zelensky-face-to-face-putin-vlad-peace-deal/" target="_blank" rel="noopener">Zelensky says he would meet Putin face-to-face but dictator Vlad reveals who he wants to mediate peace deal</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">GB News</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Portrays Zelensky as aggressively demanding and frames Russia as economically weakened, casting the letter as a power play rather than a peace overture.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">GB News uses the word &#39;summons&#39; to describe Zelensky&#39;s proposal, which fundamentally misrepresents the tone of an open letter — a summons implies authority over the recipient, which Zelensky does not have over Putin. The addition of &#39;Russia&#39;s economy crumbles&#39; in the headline introduces an unrelated economic narrative not present in the letter, framing the peace proposal as capitalising on Russian weakness rather than as a genuine diplomatic gesture. This outlet deviates most significantly from the objective facts in both word choice and framing.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.gbnews.com/news/world/volodymyr-zelensky-vladimir-putin-open-letter-meeting-russia-economy" target="_blank" rel="noopener">Volodymyr Zelensky summons Vladimir Putin for face-to-face meeting as Russia&#39;s economy crumbles</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+  </script>
+</body>
+</html>

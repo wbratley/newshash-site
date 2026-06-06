@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three Royal Navy personnel named after fatal helicopter crash during training exercise in Devon — Newshash</title>
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .story-headline {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+
+  .outlets-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .outlet-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--lean-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .outlet-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.75rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .outlet-analysis {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .analysis-row { display: flex; gap: 0.5rem; }
+  .analysis-label {
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-top: 0.15rem;
+    width: 3rem;
+  }
+  .analysis-text { color: var(--text); }
+
+  .articles-list {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .article-link {
+    font-size: 0.8rem;
+    color: var(--muted);
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .article-link a { color: var(--muted); }
+  .article-link a:hover { color: var(--lean-color); text-decoration: underline; }
+  .article-link::before { content: "→"; flex-shrink: 0; }
+
+  .not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: var(--muted);
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-05</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      
+      <a href="/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="active">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+  
+  <div class="archive-banner">
+    <span>Viewing archive: 2026-06-05</span>
+    <a href="/">Back to today</a>
+  </div>
+  
+  <a class="back-link" href="/2026-06-05/">← All stories</a>
+
+  <h1 class="story-headline">Three Royal Navy personnel named after fatal helicopter crash during training exercise in Devon</h1>
+
+  <div class="summary-card">
+    <div class="label">Unbiased summary</div>
+    <p>Three Royal Navy service members died when a Merlin Mk4 helicopter crashed in a field at Sourton Down, near Okehampton, Devon, at approximately 4am on Wednesday during a training exercise. The victims were Lieutenant Commander Chris Gayson, 42, Lieutenant Lily-Mae Fisher, 31, of 846 Naval Air Squadron, and Petty Officer Owen Green, 24. Fisher was Britain&#39;s only serving female naval commando. Tributes were paid to all three personnel following the crash. The helicopter came down in a field, and no civilians were reported among the casualties.</p>
+  </div>
+
+  <div class="outlets-heading">Coverage by outlet</div>
+
+  
+  <div class="outlet-section lean-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Guardian</span>
+      <span class="lean-badge lean-left">left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The Guardian foregrounds Lily-Mae Fisher&#39;s historic status as Britain&#39;s only female naval commando, framing the story partly through a gender and representation lens.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">By leading with Fisher&#39;s unique status as the only female naval commando, the Guardian emphasises gender as the primary news hook rather than treating all three deaths with equal weight. The other two victims, Gayson and Green, are mentioned but receive less prominent framing. This is not factually wrong but represents an editorial choice to highlight a diversity angle over a straightforward reporting of the tragedy.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.theguardian.com/uk-news/2026/jun/04/britain-only-female-naval-commando-victims-devon-helicopter-crash" target="_blank" rel="noopener">Britain’s only female naval commando among victims of Devon helicopter crash</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">The Independent</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The Independent provides relatively balanced dual coverage, reporting both the naming of victims and the basic factual details of the crash without strong editorialising.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Independent uses two separate articles to cover the story, one focused on the naming and one on the crash details, which provides reasonably thorough factual coverage. Like the Guardian, it also highlights Fisher&#39;s status as Britain&#39;s only female commando in its headline, suggesting a similar editorial prioritisation of that angle. Overall, it stays close to the objective facts with minimal distortion.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.independent.co.uk/news/uk/home-news/helicopter-crash-royal-navy-lily-mae-fisher-chris-grayson-owen-green-b2989877.html" target="_blank" rel="noopener">Devon helicopter crash: Three Royal Navy service members who died in training exercise named</a>
+      </div>
+      
+      <div class="article-link">
+        <a href="https://www.independent.co.uk/news/uk/home-news/devon-helicopter-crash-royal-navy-sourton-down-b2988771.html" target="_blank" rel="noopener">Three members of Royal Navy killed in Devon helicopter crash</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre-left">
+    <div class="outlet-header">
+      <span class="outlet-name">BBC News</span>
+      <span class="lean-badge lean-centre-left">centre-left</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The BBC focuses on the human element by including the ages of the deceased alongside their names, emphasising tribute-paying as the central narrative.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The BBC&#39;s inclusion of ages for all three victims adds humanising detail without distorting the facts, and its mention of tributes being paid is appropriate and factual. Leading with Gayson by rank order is a neutral editorial choice. The BBC stays close to objective reporting and does not significantly emphasise or omit any particular aspect of the story compared to the factual record.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.bbc.com/news/articles/cg4p69gzd4po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Royal Navy crew killed in helicopter crash named</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-centre">
+    <div class="outlet-header">
+      <span class="outlet-name">Sky News</span>
+      <span class="lean-badge lean-centre">centre</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">Sky News takes a straightforward, neutral reporting approach, focusing on the naming of the deceased without emphasising any particular narrative frame.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">Sky News provides a minimal, factual headline and report, naming the personnel without leading on any single individual or angle. This is the most neutral framing among the outlets. The brevity of the coverage may mean some context is omitted, but there is no discernible editorial slant or emphasis that distorts the core facts.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://news.sky.com/story/three-royal-navy-members-who-died-in-helicopter-crash-in-devon-named-13550822" target="_blank" rel="noopener">Royal Navy personnel who died in helicopter crash in Devon named</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">Daily Mail</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">The Daily Mail sensationalises the story by emphasising Fisher&#39;s television appearance, personal details, and a heroism narrative about the crew avoiding nearby homes.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">The Daily Mail&#39;s headline introduces an unverified or at least uncontextualised claim that the crew &#39;saved lives&#39; by steering away from homes, which adds a dramatic heroism framing not prominently featured in other outlets. It also references Fisher&#39;s appearance on the TV show &#39;Take Me Out,&#39; a personal detail that personalises and sensationalises the story. The phrase &#39;two male crew members&#39; subtly reinforces a gender-contrast framing. These choices stray furthest from neutral factual reporting among all outlets.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.dailymail.com/news/article-15874679/Female-police-two-crew-members-killed-Royal-Navy-helicopter-crash-named.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">Pictured: Britain&#39;s only female Royal Navy commando and Take Me Out star who died alongside two male crew members in helicopter crash - after &#39;saving lives&#39; by avoiding nearby homes</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="outlet-section lean-right">
+    <div class="outlet-header">
+      <span class="outlet-name">GB News</span>
+      <span class="lean-badge lean-right">right</span>
+    </div>
+    <div class="outlet-analysis">
+      <div class="analysis-row">
+        <span class="analysis-label">Angle</span>
+        <span class="analysis-text">GB News provides a straightforward factual report on the naming of the victims, with no strong editorialising or distinctive narrative angle.</span>
+      </div>
+      <div class="analysis-row">
+        <span class="analysis-label">Bias</span>
+        <span class="analysis-text">GB News lists all three personnel by name and rank in a relatively balanced manner, giving Gayson first mention, which slightly differs from other outlets that led with Fisher. There is no notable sensationalism or ideological framing evident from the excerpt provided. The coverage appears factually grounded and does not significantly deviate from the objective account.</span>
+      </div>
+    </div>
+    
+    <div class="articles-list">
+      
+      <div class="article-link">
+        <a href="https://www.gbnews.com/news/royal-navy-name-three-killed-in-devon-helicopter-crash" target="_blank" rel="noopener">Royal Navy name three killed in Devon helicopter crash</a>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+  </script>
+</body>
+</html>
