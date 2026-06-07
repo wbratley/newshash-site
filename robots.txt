@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://newshash.com/sitemap.xml
+Sitemap: https://newshash.com/sitemap-news.xml
