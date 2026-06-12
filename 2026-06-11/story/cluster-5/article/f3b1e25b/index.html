@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky makes major changes to BBC and ITV World Cup coverage for certain viewers — The Mirror — Newshash</title>
+  
+<meta name="description" content="The 2026 FIFA World Cup kicks off on Thursday and some football fans can stream enhanced coverage with a free Sky upgrade">
+<link rel="canonical" href="https://newshash.com/2026-06-11/story/cluster-5/article/f3b1e25b/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Sky makes major changes to BBC and ITV World Cup coverage for certain viewers">
+<meta property="og:description" content="The 2026 FIFA World Cup kicks off on Thursday and some football fans can stream enhanced coverage with a free Sky upgrade">
+<meta property="og:url" content="https://newshash.com/2026-06-11/story/cluster-5/article/f3b1e25b/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sky makes major changes to BBC and ITV World Cup coverage for certain viewers">
+<meta name="twitter:description" content="The 2026 FIFA World Cup kicks off on Thursday and some football fans can stream enhanced coverage with a free Sky upgrade">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-11</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="active">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-06-11</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-06-11/story/cluster-5/">← 2026 FIFA World Cup begins as UK broadcasters BBC, ITV and Sky announce viewing options for fans</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Mirror</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Sky makes major changes to BBC and ITV World Cup coverage for certain viewers</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Sky makes major changes to BBC and ITV World Cup coverage for certain viewers
+The 2026 FIFA World Cup kicks off on Thursday and some football fans can stream enhanced coverage with a free Sky upgrade
+The 2026 FIFA World Cup is finally here, and there have been some major changes to this year’s coverage. Ahead of the tournament in Canada, Mexico and the USA, Sky has announced a way for football fans to watch each game shown on BBC and ITV with enhanced coverage at no extra cost.
+As many households now stream live TV over an internet connection, there can be a delay to the broadcast compared to traditional terrestrial channels. This can be frustrating when watching football, as goals are spoiled by mobile notifications or cheering from the house next door.
+To combat this, Sky has launched new ‘Real Time’ channels, which reduce the lag between the live action and what’s on screen. It’s touted as Sky’s ‘lowest latency streaming experience’ and allows viewers to see what’s happening almost instantly and avoid spoilers.
+READ MORE:
+- Five best TV upgrades to watch the World Cup as kickoff starts this week
+- Homeowners save up to £250 on bills &#39;without doing anything&#39; using free service
+Sky hasn’t confirmed exactly how short the lag is via Real Time, only saying viewers can watch what’s happening on the pitch ‘within seconds’. To access the new channels, Sky customers can select the Real Time option on screen during supported live sports, via the opt-in button and dedicated channels across England, Wales, Scotland and Northern Ireland:
+- BBC One HD RT – EPG number 926-944 (depending on region)
+- ITV1 HD RT – EPG channel 945
+- ITV4 HD RT – EPG channel 946
+Sky is knocking 20% off its entire range of Glass TVs to mark the start of the 2026 FIFA World Cup. Until June 17, shoppers can upgrade to the Sky smart TV that&#39;s &#39;designed for football&#39; from £4.50 per month when taken alongside a Sky TV and Netflix package.
+However, Real Time channels will require a decent broadband connection to run smoothly, with Sky recommending speeds of 40Mbps. The new service is available on select live sports, including the World Cup, on BBC and ITV, but only certain customers can benefit.
+The channels have been rolled out at no extra cost to Sky Stream and Sky Glass customers, so anyone hoping to tune in will need to secure a new package. It comes amid a special World Cup sale that’s seen the entire Sky Glass range discounted by 20% until June 17, with monthly prices starting at £4.50 (was £6) for the slim and sleek Sky Glass Air.
+The more powerful Sky Glass Gen 2 starts at £11 (was £14). Sky touts its Glass range as ‘the TV designed for football’, with both models featuring a 4K HDR Quantum Dot screen and dedicated sports mode, the latter of which delivers ‘a crisp, cooler look, vivid colours and an electrifying burst of sound’.
+The Gen 2 also offers stellar Dolby Atmos sound thanks to its seven-speaker system and built-in soundbar. Both models have Sky channels and streaming apps built in, so there’s no need for any extra hardware, and they operate over WiFi after a simple plug-and-play setup.
+However, new Sky customers will need to pair their Sky Glass TV with a Sky package, with options including the £15 Essential TV bundle and £24 Ultimate TV bundle. Both provide free-to-air and premium channels such as Sky Atlantic and free Netflix access, while Ultimate TV also comes with free HBO Max and Disney+ subscriptions.
+It’s worth noting that these packages run on 24-month contracts, while Sky Glass is on a 48-month loan with £20 upfront. Sky also states that its prices ‘may change’ during the contract period.
+Elsewhere, football fans can upgrade their TV setup without buying outright with Raylo, which offers a range of 4K LG TVs on monthly subscriptions. These include the 55” LG QNED70 AI (2026) MiniLED 4K Smart TV from £19.85 per month over 36 months and no upfront cost.
+Alternatively, EE is offering hefty discounts on a range of TVs, including the Hisense A7QTUK QLED AI Smart TV. Prices now start at £289 (was £310) for the 43” model, which buyers have hailed as ‘outstanding quality for the price’.
+As for Sky Glass, our Technology Editor Dave Snelling got his hands on the Gen 2 at last year’s launch and said it offers ‘decent improvements’ over the original model.
+“Sky Glass Gen 2 offers some decent improvements over Sky’s original television,” he said. “The first Sky Glass was already getting better thanks to endless software updates that added new features and a boost to the visuals, but Gen 2 feels like a significant step up.
+“The refreshed Quantum Dot 4K screen is so much better, with content looking bright, rich and colourful. This QLED panel still can’t match full OLED technology from the likes of Samsung and LG, but those screens are very expensive and made for the more premium end of the market.
+“Sky Glass Gen 2 is perfectly watchable, and most consumers will genuinely enjoy bingeing on boxsets, watching sporting action and tuning into a blockbuster – it just won’t suit those wanting the ultimate OLED experience. Along with the screen, the built-in sound system has also had a boost.
+“There’s still a soundbar under the display, and it gets an up-firing boombox and dual subwoofer as well. Plus, there is enhanced Dolby Atmos thrown in for good measure.
+“Once again, Sky can’t beat full surround sound systems or speakers such as the Sonos Arc, but it does offer decent audio without paying anything for extra accessories or having endless cables all over the room.”</p>
+  
+</div>
+
+<a class="read-full" href="https://www.mirror.co.uk/sport/football/news/sky-world-cup-bbc-itv-37276094" target="_blank" rel="noopener">
+  Read full article at The Mirror →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-06-11/story/cluster-5/">2026 FIFA World Cup begins as UK broadcasters BBC, ITV and Sky announce viewing options for fans</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var PAGE = 7;
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev || links.length <= PAGE) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = Math.min(Math.max(0, activeIdx - Math.floor(PAGE / 2)), links.length - PAGE);
+
+      function render() {
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + PAGE; });
+        prev.disabled = start === 0;
+        next.disabled = start + PAGE >= links.length;
+      }
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - PAGE, start + 1); render(); });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
