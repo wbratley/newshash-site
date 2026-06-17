@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Story 5 is a digital horror movie – I loved it — i Paper — Newshash</title>
+  
+<meta name="description" content="The fifth instalment of the 31-year-old franchise is a manifesto for a well-lived childhood that will make you want to throw away your kids&#39; iPads">
+<link rel="canonical" href="https://newshash.com/story/cluster-8/article/f2aeb8f4/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Toy Story 5 is a digital horror movie – I loved it">
+<meta property="og:description" content="The fifth instalment of the 31-year-old franchise is a manifesto for a well-lived childhood that will make you want to throw away your kids&#39; iPads">
+<meta property="og:url" content="https://newshash.com/story/cluster-8/article/f2aeb8f4/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Toy Story 5 is a digital horror movie – I loved it">
+<meta name="twitter:description" content="The fifth instalment of the 31-year-old franchise is a manifesto for a well-lived childhood that will make you want to throw away your kids&#39; iPads">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-17</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-8/">← Toy Story 5 review – Pixar franchise needs new batteries</a>
+
+<div class="article-outlet lean-centre">
+  <span class="outlet-name">i Paper</span>
+  <span class="lean-badge lean-centre">centre</span>
+</div>
+
+<h1 class="article-headline">Toy Story 5 is a digital horror movie – I loved it</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Toy Story 5 – which pits cowgirl Jessie, plus Buzz Lightyear, Woody and the rest of the gang against the villainous tablet Lilypad – couldn’t have been released at a more appropriate time in the UK, with a new ban on social media for under-16s announced just this week and a rising tide of concern about childhoods lost to tech.
+
+
+
+This extraordinary 31-year-old franchise has always grown with its audience, and film five, the first film directed by the series’ co-writer Andrew Stanton, is dripping with anxiety about zombified kids glued to their screens, mute and siloed at sleepovers, already fearful of online Fomo at the tender age of eight. “The age of toys is over!” shrieks a discarded plastic figurine, lying in the dirt. “Oh, the tapping!” shivers another, as he recalls tablets in terror. It’s a digital horror movie that will have you ripping devices out of your kids’ hands (although if they’re watching too, they’ll probably hand them over willingly).
+
+
+
+But if you’re worried about some didactic, anti-screens lecture, fear not. Toy Story 5 is also a magnificent, heartfelt family film, with all the zany comedy, camaraderie and tear-jerking nostalgia it has always had. Bonnie (Scarlett Spears), the child to whom Andy donated his toys at the end of Toy Story 3, is an imaginative but shy kid struggling to make friends – a challenge not helped by the local children’s obsession with their devices. Hoping it might help, her reluctant parents buy her a tablet, the green know-it-all Lilypad (Greta Lee), who, like a too-cool-for-school older sibling, insists that she knows what’s best for Bonnie: online gaming and friending (yikes).
+
+
+
+Jessie with the new tablet, Lilypad. ‘Toy Story 5 is a magnificent, heartfelt family film’ (Photo: Disney/Pixar)
+
+
+
+Lilypad gets Bonnie invited to a sleepover pronto, but Jessie, who up until now was Bonnie’s favourite toy, remains unconvinced and sneaks herself and horse Bullseye into the overnight bag. This kicks off a classic Toy Story odyssey that involves Woody (Tom Hanks) rejoining the gang from his self-imposed exile (at the end of the fourth film he went off to be a kind of roaming toy/child matchmaker), a fleet of confused Buzz Lightyears trekking around middle America trying to find their purpose (just go with it) and Jessie revisiting her first-ever home.
+
+
+
+Here, she finds the horse-loving little girl Blaze (a potential new friend for Bonnie) and her real-life pig Jimmy Dean (really), and is forced to reckon with her memories of Emily, the kid we saw via flashbacks in Toy Story 2, who loved, cherished and then abandoned her in a box on the side of the road. What’s so clever and absorbing about this film is how all the tech stuff feels both deeply timely and yet secondary to the themes of growing up and rejection that have long interested the series.
+
+
+
+These are particularly pertinent to Jessie, a toy who has always been painfully aware of the prospect of irrelevance, having experienced it long ago when Emily left her. When Lilypad arrives, it isn’t just that screentime sucks all the oxygen and joy out of playtime (although, oh boy, does it) – it’s also that Jessie is utterly terrified she is about to be replaced.
+
+
+
+Woody and Buzz are back to help. The latest film reminds us exactly why the Toy Story franchise is so popular (Photo: Disney/Pixar)
+
+
+
+Like Woody upon the arrival of Buzz in the first film, Jessie experiences an identity crisis. If Bonnie doesn’t need Jessie anymore, then who even is she? Her emotional state also speaks to the painful feeling parents have as their kids grow up – perhaps the reason that these films remain so beloved by viewers of all ages. Toy Story might be funny escapism for younger cinema-goers, but for parents they also yield a bittersweet recognition of loss: who are we when our children’s youth is over?
+
+
+
+It’s an absolute delight to see Jessie centre stage, with Joan Cusack’s rich voicework giving us a spirited heroine whose vulnerable backstory never dwarfs her gusto. And there are plenty of new characters too: Conan O’Brien voices a crusty old digital potty trainer called Smarty Pants with a nice line in scatological humour and painfully slow downloading skills (enter amusing sub plot about old tech itself being shoved in drawers); I particularly enjoyed a brief foray into a Wendy house where various desperate, discarded dolls sit waiting like Miss Havisham for a tea party that never comes, including one simply named “Pizza with Sunglasses” (voiced, incredibly, by Bad Bunny).
+
+
+
+Bonnie is an imaginative but shy kid. The film explores childhoods in the digital age (Photo: Disney/Pixar)
+
+
+
+Home computers barely existed when the first Toy Story film came out in 1995 (a thought that will surely make some viewers feel as old as Woody, who has here gained a mid-life paunch and bald spot). Now, of course, they and their device descendants are everywhere – we couldn’t exist without them, after all – and the animators fill every corner of every frame with them, from lonely parents working from home, headphones on, oblivious to the world around them, to young kids reaching for tablets in the morning as soon as they open their eyes.
+
+
+
+Despite all that, the film itself doesn’t feel overly new, but smartly, smoothly evocative of the first instalment. The tune playing in a central Jessie scene is “Love is a Song (That Never Ends)”, from 1942’s Bambi, an unmistakable paean to the past, both Pixar’s and our own. Certain instalments from our lives may be over, but the value of a well-lived childhood never is.
+
+
+
+Put your tablets away, and get your tissues out.
+
+
+
+In cinemas 19 June</p>
+  
+</div>
+
+<a class="read-full" href="https://inews.co.uk/culture/film/toy-story-5-digital-horror-movie-loved-it-4470968" target="_blank" rel="noopener">
+  Read full article at i Paper →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-8/">Toy Story 5 review – Pixar franchise needs new batteries</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var PAGE = 7;
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev || links.length <= PAGE) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = Math.min(Math.max(0, activeIdx - Math.floor(PAGE / 2)), links.length - PAGE);
+
+      function render() {
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + PAGE; });
+        prev.disabled = start === 0;
+        next.disabled = start + PAGE >= links.length;
+      }
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - PAGE, start + 1); render(); });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

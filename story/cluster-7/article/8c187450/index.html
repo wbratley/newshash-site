@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What UK social media ban means for gaming and YouTube — BBC News — Newshash</title>
+  
+<meta name="description" content="A ban is coming - but it&#39;s still not clear what it will mean for sites including Roblox, YouTube and WhatsApp.">
+<link rel="canonical" href="https://newshash.com/story/cluster-7/article/8c187450/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="What UK social media ban means for gaming and YouTube">
+<meta property="og:description" content="A ban is coming - but it&#39;s still not clear what it will mean for sites including Roblox, YouTube and WhatsApp.">
+<meta property="og:url" content="https://newshash.com/story/cluster-7/article/8c187450/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What UK social media ban means for gaming and YouTube">
+<meta name="twitter:description" content="A ban is coming - but it&#39;s still not clear what it will mean for sites including Roblox, YouTube and WhatsApp.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-17</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-7/">← UK 16 and 17-year-olds: we would like to hear your views on the government’s social media ban for under-16s</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">What UK social media ban means for gaming and YouTube</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Five big questions about the UK&#39;s under-16s social media ban
+After the government&#39;s announcement on Monday, we know a social media ban is coming for under-16s in the UK.
+However, details on which apps are and are not included, besides those named by the government, and how the measures will extend to gaming sites like Roblox, remain sparse.
+And many are already asking whether enforcing the ban will mean cracking down on virtual private networks (VPNs), which can disguise someone&#39;s location online.
+Ministers have said they will provide an update on further restrictions like potential curfews, curbing of &#34;addictive&#34; features like infinite scroll and AI chatbots, in July.
+But here are some of the big unanswered questions about the UK social media ban.
+1. What does it mean for Roblox and other gaming sites?
+The government has only specified a handful of sites included in the UK&#39;s social media ban.
+These are Snapchat, TikTok, YouTube, Instagram, Facebook and X.
+However, it says its restrictions will closely follow Australia&#39;s - where the above apps plus Kick, Reddit, Threads and Twitch are banned for under-16s.
+So where does that leave Roblox and gaming sites like it?
+Roblox is hugely popular with children in the UK, but it has been accused of failing to keep them safe - including allegations it allowed children to be preyed upon by adults.
+Roblox says it has made changes to protect child users, including by expanding tools to estimate a user&#39;s age to determine the games and experiences they can access.
+&#34;It is not yet clear how they will treat gaming sites,&#34; says Lorna Woods, professor of internet law at Essex University.
+&#34;Though if they follow the Australian approach, these will lie outside the Australian ban.&#34;
+Regardless of whether it does end up being banned for under-16s, Roblox will still need to abide by requirements for all platforms to disable features that let strangers communicate with children, announced alongside the ban.
+The government made a point of saying this restriction would apply to gaming services.
+Children will still be able to participate in multiplayer online games, though, it adds.
+2. What about YouTube - and YouTube Kids?
+YouTube is going to be included in the ban, but YouTube Kids will not be.
+However it is not yet clear how YouTube would tackle children accessing the platform through search without an account once a ban is enforced or how educational content could be carved out from any restrictions.
+YouTube said it was a &#34;vital resource for young people&#34; and that a ban risked pushing children towards &#34;anonymous, less safe services&#34;.
+But questions are emerging about what including YouTube in a ban would mean for children&#39;s access to educational videos on the site.
+Citing research carried out in partnership with consultancy firm Livity, Google says 95% of UK teens surveyed had said watching videos helps with school work.
+According to the government, there will be &#34;a narrowly defined list of exemptions&#34; to its definitions for platforms included in the social media ban to keep educational services available to children.
+3. Why are platforms like WhatsApp and Pinterest not included?
+One of the few platforms we do not expect to be included in a ban on social media for UK children is WhatsApp.
+The messaging app, owned by Facebook-parent Meta, is used by half of all 8-17 year olds, according to Ofcom.
+The government says in a press release about its plans for restrictions it is considering &#34;how to determine exactly which platforms will fall under the restrictions&#34;.
+But it does not expect to include messaging apps like WhatsApp and Signal.
+According to the government, its ban will cover platforms &#34;whose purpose is to enable social interaction and which allow users to post material&#34;.
+While this definition would likely not include messaging apps, it could, in theory, apply to Discord and Pinterest.
+Yet both, as well as platforms like Bluesky, Tumblr and Telegram, are absent from Australia&#39;s list of banned platforms.
+4. Will enforcing this mean cracking down on VPNs?
+One of the biggest emerging questions about the UK&#39;s social media ban is how it will be enforced.
+The government says it will use &#34;highly effective age assurance&#34; - tougher checks that aim to accurately identify or estimate a person&#39;s age - to make a ban stick.
+These checks can include forms of verification like asking someone to scan their face (facial age estimation tech), upload a form of ID (photo ID matching) or use a digital identity service like Yoti.
+In a letter to the government, the regulator Ofcom says while it should be technically feasible, applying age assurance at 16 has its challenges.
+There are fewer methods available to accurately measure or estimate if someone is 16 or under than if they are 18 or younger, due to differences in ID or data available.
+For instance, Ofcom says credit card or email address checks can work at 18, but not at 16.
+&#34;We have more work to do to understand the effectiveness and accessibility of different methods, the availability of identity and age attributes at 16, and the privacy considerations of different existing and emerging methods,&#34; it has told the government.
+These regulations were followed by a spike in downloads of VPNs and calls from some, including the Children&#39;s Commissioner, for age checks to restrict them for young people.
+VPN providers and privacy experts say doing so would mean having to collect user data to carry out checks, and negate privacy as the incentive for using them.
+Some now speculate tech-savvy children may use them to get around social media blocks.
+The government has not revealed any plans to regulate them, but ministers have said details about action alongside the social media ban, including regarding VPN use, will come in July.
+Children&#39;s minister Josh MacAlister told the BBC there were &#34;options there about whether we could age-gate VPN use, which would be really welcome&#34;.
+The prime minister said it was inevitable some teens would try to circumvent a social media ban, but this did not mean it should not legislate to protect current and future generations of UK children.
+5. Will this really happen by next spring?
+You need only look to the years it took to pass the UK&#39;s existing set of duties and laws for online platforms, the Online Safety Act (OSA), to see that regulating the fast-moving tech sector can take time.
+But where the OSA is still being implemented, the government recently used the Children&#39;s Wellbeing and Schools Act to give ministers powers to introduce further restrictions as regulations.
+This means the government won&#39;t have to bring a full Act of parliament to implement a ban, so it can act relatively quickly.
+Tech Secretary Liz Kendall told MPs on Monday: &#34;I want a vote on it by the end of the year, and I want it to come into force as early as possible in the first couple of months of 2027&#34;.
+However if tech companies decide to challenge the government&#39;s process in the courts, using judicial review, that could slow down the timeline for a ban.
+&#34;Whilst primary legislation is effectively immune from challenge, secondary legislation is subject to review by the courts as it lacks the rigorous multi-stage scrutiny required for statutes,&#34; says Giulia Carloni, senior associate at law firm Winston Taylor.
+Additional reporting by Chris Vallance
+Sign up for our Tech Decoded newsletter to follow the world&#39;s top tech stories and trends. Outside the UK? Sign up here.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.com/news/articles/c9824zvpz9po?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-7/">UK 16 and 17-year-olds: we would like to hear your views on the government’s social media ban for under-16s</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var PAGE = 7;
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev || links.length <= PAGE) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = Math.min(Math.max(0, activeIdx - Math.floor(PAGE / 2)), links.length - PAGE);
+
+      function render() {
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + PAGE; });
+        prev.disabled = start === 0;
+        next.disabled = start + PAGE >= links.length;
+      }
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - PAGE, start + 1); render(); });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
