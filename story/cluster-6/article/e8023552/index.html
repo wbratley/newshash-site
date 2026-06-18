@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>‘It makes no sense’: 16- and 17-year-olds on UK social media ban — The Guardian — Newshash</title>
+  
+<meta name="description" content="Government has announced a ban on social media for under-16s, including Instagram, TikTok and YouTubeThe UK government has announced a social media ban for under-16s.They will be blocked from accessin">
+<link rel="canonical" href="https://newshash.com/story/cluster-6/article/e8023552/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="‘It makes no sense’: 16- and 17-year-olds on UK social media ban">
+<meta property="og:description" content="Government has announced a ban on social media for under-16s, including Instagram, TikTok and YouTubeThe UK government has announced a social media ban for under-16s.They will be blocked from accessin">
+<meta property="og:url" content="https://newshash.com/story/cluster-6/article/e8023552/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="‘It makes no sense’: 16- and 17-year-olds on UK social media ban">
+<meta name="twitter:description" content="Government has announced a ban on social media for under-16s, including Instagram, TikTok and YouTubeThe UK government has announced a social media ban for under-16s.They will be blocked from accessin">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-18</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-6/">← ‘It makes no sense’: 16- and 17-year-olds on UK social media ban</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">‘It makes no sense’: 16- and 17-year-olds on UK social media ban</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>The UK government has announced a social media ban for under-16s.
+They will be blocked from accessing social media, including Instagram, YouTube, TikTok, Snapchat, Facebook and X, from next spring.
+Livestreaming and stranger communication, including in gaming, will be switched off by default for 16- and 17-year-olds.
+We asked 16- and 17-year-olds for their thoughts on the forthcoming ban and restrictions.
+Here are some of their responses.
+‘The plan is flawed – it makes no sense’
+I will finish school when I’m 17 and go to university when I’m 17, but wouldn’t be able to livestream? It makes no sense. If I can vote, leave home, get married, pay tax, and join the army, why can’t I use my phone how I would like?
+I relied on livestream revision sessions for my recent exams, and I know the younger children in my school were talking about this and worried that this resource may not be available to them with the ban.
+People living in rural areas could also lose their connection to the world around them through platforms like TikTok. Using social media to build confidence and discover new hobbies will cease.
+I just hope politicians sitting in Westminster realise the plan is flawed – they need to have another look at it. Mia, 16, Scotland
+‘To suggest a digital curfew is laughable’
+While I recognise some of the issues raised about the use of social media, I am concerned that this has been rushed out more as a political win than as an evidence-based solution.
+No one should be scrolling Instagram until three o’clock in the morning – but to suggest a digital curfew is laughable. The government has no answers to any “how?” questions, only the response that this is “Australia plus”... Australia plus what, and how? Robert, 16, south-east England
+‘Kids should be banned, not teens’
+I don’t agree with entirely blocking social media from under-16s. It shouldn’t be our fault that the internet is an unsafe place; we should be blaming the [tech] companies for not doing better.
+I feel it should be kids who are banned, not teens. Under-13s would be a better idea. The curfews for 16- and 17-year-olds is also utterly ridiculous. At this age, we can have sex. Why should we have a bedtime like we’re babies? We are basically recognised as young adults, so this curfew isn’t the right idea. Nate*, 16, South Wales
+‘I think it will positively affect the young generations to come’
+I don’t believe the ban is a bad thing. I think it has good intent to protect children from predators on the internet and from becoming addicted to social media.
+If we can stop other generations from being addicted to the internet and these platforms, I think that’s absolutely a great thing. Social media has such an impact on mental health as well. I think we’ve all seen a decline in young people’s mental health as social media has had an increase in popularity. Overall, the ban has good intent, and I think it will positively affect the young generation to come. Hayley*, 16, Shropshire
+‘Teenagers will find a way around the ban’
+I welcome a social media ban, although I am sceptical of its effectiveness. When I was younger, with just a bit of ingenuity, I was able to get around standard parental controls on my devices. Teenagers, given a couple of months, will definitely find a way around the ban.
+It is heartening to hear of the ban, but I am highly sceptical of the agency of the government to do anything with effect. All I have known is political flakiness and unrest, and I feel the damage has already been done, but I hope this ban may help my younger siblings have a better start. Fraser, 17, Edinburgh
+‘It could push young people to less regulated spaces’
+Supply and demand don’t stop just because the prime minister says so, and history shows that if anything, adding the allure of petty criminality to an action just makes it more appealing to most people.
+The ban could push people to less-regulated places – places they would not have gone to before.
+Why did the government promise to “tread [more] lightly” on our lives when what it actually plans to do is increase the strength of the law on an already maligned group – teenagers? Max, 17, Wiltshire
+‘Decisions about social media use should be made within families, not by government’
+Many teenagers use social media for creative outlets, education, and support networks, not just entertainment. The ban raises questions about where the line is drawn between protecting young people and restricting their freedoms. I believe that decisions about social media use should be made within families rather than by the government. Leo, 16, Cumbria
+‘Marginalised groups could miss out on online communities’
+I think I’d have been a lot happier and less self-conscious without social media, and I think it’s something kids can do without, but I think marginalised groups who perhaps struggle with being in public will be impacted, since their friends can be largely online.
+I found online music communities can be really helpful and enriching when I was younger. We connected over our shared love of bands and became online friends. I think it would be really sad for young people to miss out on those communities and friendships because of the ban.
+While I don’t agree with a blanket ban, I do agree there should be tighter controls on endless scrolling and maybe on the content that young people can see – there definitely should be more restrictions on that. Owen, 17, West Yorkshire
+‘The ban punishes children, not the tech companies’
+I don’t support a blanket ban. I see it as patronising. That said, I think some restrictions are needed – but more on the companies providing the services than the children using them. I feel that the ban punishes children rather than tech companies.
+The tone of the [proposed] policy implies that under-16s cannot be trusted with their own free-time habits, something I rather disagree with.
+Treating social media as a universally negative force is reductive. For many of us, it’s not so much an addiction as something we genuinely enjoy participating in. Online communities can be wholesome and supportive. Alice*, 17, Yorkshire
+*Names have been changed</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/media/2026/jun/17/it-makes-no-sense-16--and-17-year-olds-on-social-media-ban" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-6/">‘It makes no sense’: 16- and 17-year-olds on UK social media ban</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var PAGE = 7;
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev || links.length <= PAGE) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = Math.min(Math.max(0, activeIdx - Math.floor(PAGE / 2)), links.length - PAGE);
+
+      function render() {
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + PAGE; });
+        prev.disabled = start === 0;
+        next.disabled = start + PAGE >= links.length;
+      }
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - PAGE, start + 1); render(); });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
