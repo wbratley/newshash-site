@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newshash — Today's UK News Analysis</title>
+  
+<meta name="description" content="UK news stories clustered by topic, with AI-generated unbiased summaries and political bias analysis across 12 outlets.">
+<link rel="canonical" href="https://newshash.com/2026-06-19/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Newshash — Today's UK News Analysis">
+<meta property="og:description" content="UK news stories clustered by topic, with AI-generated unbiased summaries and political bias analysis across 12 outlets.">
+<meta property="og:url" content="https://newshash.com/2026-06-19/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Newshash — Today's UK News Analysis">
+<meta name="twitter:description" content="UK news stories clustered by topic, with AI-generated unbiased summaries and political bias analysis across 12 outlets.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .page-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .story-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .story-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem 1.5rem;
+    align-items: center;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+  .story-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-color: var(--border);
+  }
+
+  .story-headline {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text);
+  }
+  .story-headline a:hover { text-decoration: underline; }
+
+  .story-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.4rem;
+    flex-wrap: wrap;
+  }
+  .story-meta .stat {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .story-meta .divider { color: var(--border); }
+
+  .lean-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .story-index {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--muted);
+    min-width: 1.5rem;
+    text-align: right;
+    align-self: start;
+    padding-top: 0.2rem;
+  }
+
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-19</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="active">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+  
+  <div class="archive-banner">
+    <span>Viewing archive: 2026-06-19</span>
+    <a href="/">Back to today</a>
+  </div>
+  
+  <p class="page-title">10 stories · 2026-06-19</p>
+  <div class="story-grid">
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-0/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Andy Burnham wins Makerfield by-election with 9,231 majority over Reform UK, paving way for Labour leadership challenge</div>
+          <div class="story-meta">
+            <span class="stat">9 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">23 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="Morning Star (left)"></span>
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Independent (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Mirror (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre" title="i Paper (centre)"></span>
+              
+              <span class="lean-dot lean-right" title="The Sun (right)"></span>
+              
+              <span class="lean-dot lean-right" title="GB News (right)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#1</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-1/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Canada record first-ever World Cup win with 6-0 rout of nine-man Qatar, but Ismael Koné suffers serious leg fracture</div>
+          <div class="story-meta">
+            <span class="stat">5 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">18 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Mirror (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="The Sun (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#2</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-2/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Three-year-old boy critically injured in crocodile enclosure at Cambridgeshire zoo; man arrested on suspicion of attempted murder</div>
+          <div class="story-meta">
+            <span class="stat">5 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">5 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Independent (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre" title="i Paper (centre)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#3</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-3/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">US and Iran sign 14-point Memorandum of Understanding ending hostilities, with 60-day window for nuclear negotiations</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">11 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre" title="i Paper (centre)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#4</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-4/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">England beat Croatia 4-2 in World Cup opener as six arrested in Dallas and UK high streets see footfall boost</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">7 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-centre-right" title="City AM (centre-right)"></span>
+              
+              <span class="lean-dot lean-right" title="GB News (right)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="The Sun (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#5</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-5/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Teacher Jamie Varley given whole-life sentence for murder and sexual abuse of 13-month-old adopted son Preston Davey</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">6 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Independent (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#6</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-6/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Scottish Conservatives win Aberdeen South by-election from SNP in first Westminster by-election gain in Scotland since 1967</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">4 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="GB News (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#7</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-7/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Ukraine launches largest drone attack on Moscow, hitting Kapotnya oil refinery twice and injuring 17 people</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">4 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="BBC News (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="GB News (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#8</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-8/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Grammy-nominated music producer Tay Keith found dead at Nashville apartment aged 29, no foul play suspected</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">4 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Mirror (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="The Sun (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#9</div>
+      </div>
+    </a>
+    
+    
+    
+    
+    <a href="/2026-06-19/story/cluster-9/" style="display:contents;">
+      <div class="story-card">
+        <div>
+          <div class="story-headline">Liberal Democrat MP Cameron Thomas suspended from party and arrested by Gloucestershire Police pending ongoing investigation</div>
+          <div class="story-meta">
+            <span class="stat">4 outlets</span>
+            <span class="divider">·</span>
+            <span class="stat">4 articles</span>
+            <span class="divider">·</span>
+            <span class="lean-dots">
+              
+              <span class="lean-dot lean-left" title="The Guardian (left)"></span>
+              
+              <span class="lean-dot lean-centre-left" title="The Independent (centre-left)"></span>
+              
+              <span class="lean-dot lean-right" title="Daily Mail (right)"></span>
+              
+              <span class="lean-dot lean-right" title="GB News (right)"></span>
+              
+            </span>
+          </div>
+        </div>
+        <div class="story-index">#10</div>
+      </div>
+    </a>
+    
+  </div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 600 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
