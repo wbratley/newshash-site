@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK weather live: Hottest June day ever recorded as temperatures surge past 36C — The Mirror — Newshash</title>
+  
+<meta name="description" content="England has shattered the 50-year-old record for the hottest June day as temperatures surge towards 40C, with extreme heat sparking at least 1,000 school closures">
+<link rel="canonical" href="https://newshash.com/story/cluster-0/article/10594327/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="UK weather live: Hottest June day ever recorded as temperatures surge past 36C">
+<meta property="og:description" content="England has shattered the 50-year-old record for the hottest June day as temperatures surge towards 40C, with extreme heat sparking at least 1,000 school closures">
+<meta property="og:url" content="https://newshash.com/story/cluster-0/article/10594327/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UK weather live: Hottest June day ever recorded as temperatures surge past 36C">
+<meta name="twitter:description" content="England has shattered the 50-year-old record for the hottest June day as temperatures surge towards 40C, with extreme heat sparking at least 1,000 school closures">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-25</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-0/">← UK breaks June temperature record at 36.1C amid European heatwave; Scotland exit World Cup group stage bottom after 3-0 Brazil defeat</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Mirror</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">UK weather live: Hottest June day ever recorded as temperatures surge past 36C</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>UK weather live: Hottest June day ever recorded as temperatures surge past 36C
+England has shattered the 50-year-old record for the hottest June day as temperatures surge towards 40C, with extreme heat sparking at least 1,000 school closures
+England has recorded its hottest June day on record today as temperatures soared to 36.1C in Hampshire, smashing the 50-year-old record of 35.6C recorded in Hampshire at the start of the long, hot summer of 1976.
+Rail services are also disrupted and at least 1,000 schools have been forced to shut in the heat as the Met Office reported &#34;exceptionally high temperatures continuing to rise&#34;.
+Red weather warnings for extreme heat have today been extended to cover parts of the south coast while a new amber weather warning for extreme heat has been issued for Friday and Saturday. Meanwhile, the Met Office has also issued a yellow warning for thunderstorms on Thursday evening.
+Meanwhile, the UKHSA has issued its second ever heat-health red alert, indicating even healthy people are at risk, for six regions lasting until 11pm tomorrow.
+Key Events
+According to the Met Office the warmth also introduces the chance of thundery outbreaks and gusty winds for parts of southern and western England on Thursday evening.
+A Yellow Thunderstorm Warning has been issued, highlighting the chance of sudden gusty winds around 50mph being possible.
+Temperatures will continue to soar across the UK today, with a heat alert now extended to Saturday in some area.
+The Met Office warn that for those in eastern England, Friday could well be the peak of the heat they experience.
+A spokesperson said: &#34;Warnings remain under review and there’s a chance of escalation or extension to current warnings, with the Amber for Friday highlighting the likelihood of high impacts.&#34;
+As the UK reached record breaking temperatures yesterday, some areas in the country were warmer than the Carribean country Jamaica.
+In Hampshire, 36.1C was recorded in Gosport. According to forecasters Jamaica only reach 33C on Wednesday.
+The UK was also hotter than Barbados and Madagascar, both sitting at 30C.
+Wednesday was the hottest June day on record, with temperatures provisionally hitting 36.1C in Gosport in Hampshire.
+This temperature surpasses the previous record set 50 years ago.
+However, Brits should be braced for higher temperatures as forecasters predict that today will be even warmer with further records likely to be broken.
+Network Rail have advised passengers to only travel if “absolutely necessary” on Thursday and Friday.
+It said that trains will operate at reduced speeds and on amended timetables, meaning journeys are likely to take longer and there is a higher risk of disruption.
+Tickets will be able to be used on other days.
+The heatwave forecast is set to continue on Thursday and Friday, and the Met Office said it is possible the figure could be “beaten again”.
+Wednesday’s high breaks the previous top temperature for June of 35.6C in 1976 and 1957, the forecaster said.
+The Met Office said that the exceptional heat will spread northwards on Thursday, “with an even hotter day ahead for some with amber and red extreme heat warnings in force”.
+You&#39;re not imagining it — this heatwave really does feel worse than previous ones, according to scientists.
+The key reason is humidity. Contrary to popular belief, Britain&#39;s day-to-day climate is not exceptionally humid by international standards - particularly when compared to the subtropics or the Persian Gulf.
+But this current heatwave is nearly twice as humid than many other recent hot spells, according to experts. When humidity is this high, it can pose severe threats to our health, such as the risk of heatstroke or cardiovascular complications.
+This means that means that some parts of the country under a red heat health warning tomorrow might actually &#39;feel&#39; warmer than they did during the infamous 40C heatwave in 2022, even if temperatures don&#39;t reach the same level.
+Read more: Dark side to scorching heatwave amid &#39;feels like 50C&#39; warning
+More than 10 people have been taken to hospital for &#34;minor and heat-related conditions&#34; after they were left stranded for hours on the M25 following a serious crash between a van and lorry.
+Britain is sweltering under a late June heatwave, with some regions braced for blistering 40-degree temperatures. The Met Office has issued red weather warnings for sections of England and Wales for today, Wednesday, and Thursday, while the UK Health Security Agency has released its own red health alerts.
+BBC journalist and former weather presenter Lara Lewington highlighted the biggest danger during scorching weather - and it&#39;s not heatstroke. She outlined the concern in a TikTok video.
+She said: &#34;Why do people die when the weather gets hot? The main reason isn&#39;t heat stroke or dehydration. There&#39;s another reason that accounts for more deaths in heatwaves, and that&#39;s heart failure. When you get hot, your body directs more blood towards your skin so that you can radiate some of the heat away.&#34;
+Read more: Expert outlines most common reason people die in hot weather
+A critical incident has been declared at Queen Alexandra Hospital in Portsmouth has after a cooling system supporting &#34;critical infrastructure&#34; failed.
+Mark Orchard, deputy chief executive and chief financial officer of Portsmouth Hospitals University NHS Trust, said: &#34;The unprecedented pressures created by the current heatwave, combined with the failure of a number of our chiller units, have led to significant disruption across several of our services.&#34;
+Services impacted include &#34;digital systems and critical clinical services, including theatres, cardiac catheter laboratories, and diagnostic scanning facilities,&#34; Mr Orchard said.
+Patients have been asked to limit the number of people joining them at appointments as the hospital is &#34;very hot&#34;.
+An MP has urged police to help drivers that have been stuck on the M25 for hours following an earlier crash.
+Folkestone and Hythe MP Tony Vaughan addressed National Highways and Surrey Police, writing in a post on X: &#34;Please sort this out urgently.
+&#34;People need water and some may need evacuation. You have protocols for this situation - please implement them - this is an emergency!&#34;
+He added that one constituent had been stuck near Oxted with her children for eight hours - with her car at a temperature of 40C.
+&#34;She is running out of water. The person from the car in front has been airlifted to hospital with dehydration. Police seem to be saying it&#39;s not their job to give out water,&#34; Vaughan said.
+The heatwave is only set to get hotter, a leading forecaster has said - with temperatures feeling more like 50C in some parts of the country tomorrow.
+The UK experienced its warmest June day on record today as the mercury rocketed to 36.1C in Gosport, Hampshire, breaking a weather record that had been in place for 50 years.
+A red health warning for extreme heat meaning &#34;a risk to life for even the healthy population&#34; is set to continue into Thursday, covering much of the south of England and Wales - while rail bosses are warning of further disruption following a day of delays and cancellations caused by the hot weather.
+The Met Office has warned that strong June sunshine will see temperatures &#34;rise quickly&#34; tomorrow morning - but that a brisk breeze in the south &#34;will make it feel a touch fresher in places.&#34;
+Paramedics have been trying to reach multiple people stuck in traffic on the M25 near Godstone today following a crash.
+The patients are being treated for heat-related illnesses after being stuck for &#34;several hours&#34;, South East Coast Ambulance Service says. Coach passengers are among those being treated.
+Earlier today, a driver was airlifted to hospital after a van and lorry were involved in a serious crash.
+The Met Office has warned that overnight heat will keep homes very warm as ‘high humidities’ make conditions feel worse.
+The UK is currently sweltering under a heatwave as record temperatures are hit and red alert warnings have been issued. This heatwave also feels worse than some previous heatwaves due to &#39;somewhat different&#39; conditions, forecasters say.
+The Met Office says that this week is not just about the daytime temperatures, the nights are a key concern too, with warm, humid air making it harder for people and buildings to cool down.
+Full story: Met Office overnight warning as conditions set feel worse this heatwave
+The King had to be fanned down by one of his top aides as he felt the heat at a climate change event in stifling temperatures.
+As the country endured its hottest June day on record today, he joined delegates from politics, science, business and international climate diplomacy for an environmental reception at St James’s Palace this afternoon.
+And as Charles mingled with the guests, Master of the Household, retired Vice Admiral Tony Johnstone-Burt, whose department handles official and private entertaining across all royal residences, held a small electric fan close to the King.
+Read more: Charles fanned by top aide at climate change event
+A 15-year-old boy who had been swimming at a nature reserve in Hampshire has gone missing.
+Emergency services have been scouring the scene at Testwood Lakes, near Totton, Hampshire, since around 1:45pm. Hampshire Police have advised people to avoid the area.
+A major search and rescue effort involving the National Police Air Service, South Central Ambulance Service, and Hampshire and Isle of Wight Fire Service is ongoing.
+The incident happened as the record for the hottest June was broken after 36.1C was recorded in Gosport, Hampshire, today.
+National Rail has warned passengers to avoid non-essential travel on Thursday and Friday due to extreme heat forecast across Kent and the South East.
+The train operator says there is a high risk of disruption to services and that it &#34;cannot guarantee alternative transport&#34;.
+Thos with tickets for Thursday June 25 or Friday June 26 could apply for a refund or use their tickets up to and including Tuesday June 30 at no additional cost.
+Passengers are advised to check National Rail Enquiries for the latest information.
+A sweltering 40.9C has been recorded in the Longchamp area of Paris - marking the highest ever temperature for the city in June on record.
+The June heat record has continued going up this evening, with the maximum recorded provisional temperature - 36.1C - reached in Gosport, Hampshire.
+Another record-breaking temperature for June was reached in Wiggonholt, West Sussex, at 35.8C – surpassing the 35.7C recorded earlier in Charlwood, Surrey, the Met Office said.
+But the provisional June record now stands at 36C, which was recorded in Wisley, Surrey.
+Eurostar has advised vulnerable passengers to postpone their trips &#34;where possible&#34;.
+A spokesperson for the high speed rail operator says extreme heat has affected rail infrastructure, causing a small number of cancellations.
+High speed trains between Brussels and the French border will &#34;run at reduced speeds&#34;, at the request of Belgium&#39;s infrastructure network operator, the spokesperson adds.
+London-Paris trains are unaffected and Eurostar customers can change their journey for free if they wish to travel outside the heatwave.
+A rare weather phenomenon — which will cause cars and windows to become covered in filth — is forecast amid the scorching heatwave.
+Meteorologists understand &#34;blood rain&#34; will fall during the weekend, heaviest across the South of England, as high levels of dust particles will be swept into the high pressure amid the Saharan plume. When does fall, in the form of precipitation, the ground, homes and cars will be covered in the hazy speckles.
+Jim Dale, who is British Weather Services&#39; senior meteorologist, told the Mirror: &#34;When the break in the heat comes, so when the cold front comes across into the cool air, the showers and the thunderstorms will follow. That comes with sand, because it&#39;s high in the atmosphere, and it&#39;ll progressively turn hazier and hazier.
+&#34;Some of that dust sand will fall to earth in the showers that&#39;ll come. That&#39;s out of the Sahara, and out to Spain; the brown lands of Spain. So expect your cars to be covered in dust sand. It won&#39;t be everywhere, but it will be in certain places — mainly the south.&#34;
+Read more: Rare weather phenomenon will cover cars in filth, forecaster warns
+The UK has officially surpassed the June temperature record of 35.6C, with Charlwood, Surrey, recording a sweltering 35.7C today.
+The previous June temperature record was set 50 years ago in Hamshire in 1976.
+Scotland has recorded its hottest day of the year as temperatures reached a high of 29.4C at Dyce in Aberdeen on Tuesday, according to Met Office data.
+Fyvie Castle in Aberdeenshire recorded a high of 29C on the same day while temperatures of 28.7C were recorded at Aboyne in Aberdeenshire, Leuchars in Fife and Edinburgh.
+While temperatures in Scotland are not expected to soar as high as south of the border, they could still reach up to 30C in some areas this week.
+North of the border, forecasters predict that temperatures may rise into the low 30s, potentially breaking the record June temperature of 32.3C recorded at Ochtertyre in Perthshire on June 18 1893, before cooling down over the weekend.
+She said that temperatures on Friday will still be fairly warm but many areas will be much cloudier with some patchy rain. Similar conditions are expected at the weekend, with temperatures gradually cooling down.
+The latest update from the Met Office says that the current exceptionally high temperatures are continuing to rise, as the UK bakes in extreme heat.
+The Met Office has issued a yellow weather warning for thunderstorms in six regions of the UK, with heavy downpours and lightning expected to cause disruption on Thursday evening
+See the full list of areas covered by the warning here
+The bakery chain Greggs has closed 11 of its stores on Wednesday and Thursday over safety concerns amid the scorching heat.
+The safety of staff and customers was said to be a factor in the decision to close the stores, which have giant ovens in them.
+Employees at one shop in London said they had been moved to other branches after theirs was closed. “It&#39;s very hot. We have industrial ovens but no proper air conditioning in stores,” one worker told the BBC.
+Stores have been closed in: Aldridge, Wolverhampton, Luton, Gosport, Trowbridge, Barnet, Marlborough, Wantage, Dudley, Northampton and Leicester Square, London.
+Veterinary experts are urging pet owners in key areas across the UK to follow a ‘no-walkies window’ rule today and across any other hot days this summer.
+The experts from Pooch and Mutt analysed Met Office data, which reveals the hours dog owners should avoid walks today, Wednesday, June 24.
+The Met Office has issued a yellow thunderstorm warning for parts of England.
+Heavy downpours and frequent lightning strikes will hit the South West of England from 6pm to 11pm on Thursday.
+There is a risk of flash flooding and potential for buildings to be damaged by lightning strikes as the storm rolls in.
+Areas covered by the warning include:
+- Cornwall
+- Devon
+- Dorset
+- Plymouth
+- Somerset
+- Torbay</p>
+  
+</div>
+
+<a class="read-full" href="https://www.mirror.co.uk/news/uk-news/weather-schools-heatwave-live-thunderstorms-37328605" target="_blank" rel="noopener">
+  Read full article at The Mirror →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-0/">UK breaks June temperature record at 36.1C amid European heatwave; Scotland exit World Cup group stage bottom after 3-0 Brazil defeat</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
