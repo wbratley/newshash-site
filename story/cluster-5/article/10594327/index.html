@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UK weather live: June heat record broken for third day in a row as temperatures hit 37.3C — The Mirror — Newshash</title>
+  
+<meta name="description" content="Heatwave conditions continue with a red warning for extreme heat again in place by the Met Office, with temperatures reaching record-breaking highs of 37.3C">
+<link rel="canonical" href="https://newshash.com/story/cluster-5/article/10594327/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="UK weather live: June heat record broken for third day in a row as temperatures hit 37.3C">
+<meta property="og:description" content="Heatwave conditions continue with a red warning for extreme heat again in place by the Met Office, with temperatures reaching record-breaking highs of 37.3C">
+<meta property="og:url" content="https://newshash.com/story/cluster-5/article/10594327/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="UK weather live: June heat record broken for third day in a row as temperatures hit 37.3C">
+<meta name="twitter:description" content="Heatwave conditions continue with a red warning for extreme heat again in place by the Met Office, with temperatures reaching record-breaking highs of 37.3C">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-27</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-5/">← UK June temperature record broken for third consecutive day, reaching 37.3C in Suffolk amid heatwave and thunderstorms</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Mirror</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">UK weather live: June heat record broken for third day in a row as temperatures hit 37.3C</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>UK weather live: June heat record broken for third day in a row as temperatures hit 37.3C
+Heatwave conditions continue with a red warning for extreme heat again in place by the Met Office, with temperatures reaching record-breaking highs of 37.3C
+Temperature records for June have been broken for the third day in a row as the UK swelters in a heatwave.
+A provisional temperature of 37.3C has been recorded in Santon Downham, Suffolk, the Met Office said. A red warning for extreme heat has been in place for the third consecutive day.
+Friday afternoon saw the country split by extreme weather conditions, with ferocious thunderstorms and lightning storms wreaking havoc in parts of the north, while the south-east remained in the grip of a scorching heatwave.
+More than 63,000 lightning strikes have been recorded over the past 24 hours, the Met Office said, one of which caused a fire after striking a nursing home in Glastonbury. Passengers in Edinburgh were forced to flee an early-morning train after a terrifying lightning strike, while a tram in Sheffield was also taken out of service after being hit.
+Key Events
+Two houses have been set alight after being struck by lightning in the early hours of the morning.
+The homes, both in East Sussex, are &#39;well alight&#39; with four fire crews being rushed to the scene of each blaze on Saturday, June 27.
+Met Office chief forecaster Andy Page said: “The UK is seeing a gradual shift in conditions over the weekend, with those to the southeast of England retaining the warmth the longest, where an amber extreme heat warning remains in force through much of Saturday, though peaks are more likely to be in the low 30s Celsius.”
+A wildfire that tore through woodland and moorland on Tintwistle Moor near Glossop has been contained, Derbyshire Fire and Rescue Service said.
+The fire, which broke out on Wednesday night, has affected around 200 hectares of moorland and woodland.
+A fire service presence will remain overnight to monitor the scene, before a reinspection takes place at 5am tomorrow.
+Samantha Hughes, national water safety partner at the Royal National Lifeboat Institution, said: &#34;It’s important to remember that the water is still cold. Entering it unexpectedly can lead to cold water shock, causing a sudden increase in breathing and heart rate, which may trigger panic.
+&#34;If you find yourself struggling in the water, remember to Float to Live: tilt your head back so your ears are submerged, relax and control your breathing. You may need to gently use your hands to help you stay afloat, and it’s ok if your legs sink - everyone floats differently.
+&#34;Where possible, always choose a lifeguarded beach, and swim between the red and yellow flags. In a coastal emergency remember to call 999 for the coastguard.&#34;
+The Met Office gives the following advice for staying safe during a thunderstorm:
+- Telephone lines can conduct electricity, so avoid using a landline unless it is an emergency.
+- If you are outside, avoid water and move to a low-lying, open area away from trees, poles, and metal objects.
+- Avoid activities such as golf, fishing with rods or boating on lakes.
+- Be aware that metal objects can conduct or attract lightning, including golf clubs, golf buggies, fishing rods, umbrellas, motorbikes, bicycles, wheelchairs, mobility scooters, pushchairs, wire fencing and rails. If you are in a tent, stay away from the metal poles.
+- If you are in an exposed location with no shelter, squat close to the ground with your hands on your knees and your head tucked between them. Minimise contact with the ground and do not lie flat.
+- If you feel your hair stand on end, immediately adopt this crouched position.
+The third consecutive day of record-breaking June temperatures comes as parts of the UK begin to come under a more westerly influence, bringing an increased risk of thunderstorms capable of producing heavy rain, large hail, lightning and strong gusts, the Met Office said.
+Temperatures will start to fall in western areas first, with cooler conditions gradually spreading eastwards over the course of the weekend.
+Looking ahead, Met Office chief forecaster Andy Page said: &#34;The UK is seeing a gradual shift in conditions over the weekend, with those to the southeast of England retaining the warmth the longest, where an Amber Extreme Heat Warning remains in force through much of Saturday, though peaks are more likely to be in the low 30s Celsius.&#34;
+Western parts of Scotland and much of Northern Ireland will see spells of rain on Saturday, with showers likely spreading further south in places on Sunday.
+South-east England could remain largely dry through the weekend, although there remains a risk of thunderstorms before temperatures return closer to average later on Sunday and into Monday.
+Andy Page, chief forecaster at the Met Office, has said: &#34;Today marks the peak of the heatwave in terms of temperatures and the third consecutive day of record-breaking June heat.
+&#34;This exceptional heat has been unprecedented for June and is another marker on how climate change is shifting the dial on temperature extremes in the UK.&#34;
+Temperatures hit 40C at several locations in Germany today, according to the country&#39;s weather service.
+The highest temperature was recorded in the western city of Saarbrücken, where the mercury reached 40.9C, breaking the country&#39;s previous June record of 39.6C.
+A provisional temperature of 37.3C has been reached in Santon Downham, in Suffolk, setting another record UK high for June, the Met Office said.
+Thunderstorms are developing over parts of northern England.
+Yellow warnings for thunderstorms are in place in northern England and Northern Ireland until this evening, and in Scotland until the early hours of tomorrow.
+The June temperature record has again been broken, with a provisional high of 37.1C recorded in Cavendish, Suffolk.
+Earlier today, 36.9C was recorded in Wattisham, Suffolk, which beat yesterday&#39;s record of 36.7C in Merryfield, Somerset.
+Train passengers are being urged to avoid non-essential travel across much of England on Friday because of extreme heat.
+Network Rail said services operating in the Met Office’s red and amber zones should only be used “if absolutely necessary”.
+The red area – which is in place until 9pm – covers London and other parts of the South East.
+The wider amber zone stretches from the south coast up to the North West and South Yorkshire, and is in force all day.
+South Western Railway (SWR), which serves a number of popular coastal destinations in Dorset and Hampshire, including Bournemouth, issued a plea for people to avoid non-essential travel to beaches.
+Like many operators across Britain, it has reduced its timetable on Friday and services that do run are expected to be busier than usual.
+Sheffield’s tram network has been suspended due to the extreme heat, the operator has said.
+A spokesperson for Supertram said: “While we have experienced high temperatures throughout the week, this afternoon’s forecast is the highest we have seen, and we have therefore taken the decision to temporarily suspend tram services across the network.
+“Customer and staff safety is always our priority. We are continuing to monitor temperatures throughout the afternoon, and services will resume once conditions have improved and it is safe to operate.
+“We apologise for the disruption and thank customers for their patience and understanding.”
+Supertram said their tickets would be accepted on First and Stagecoach bus services and Northern rail services but customers should avoid travelling if possible.
+A family had to flee their home after it was struck by lightning.
+Stephanie and Christopher Ives were inside their house in Hebburn, South Tyneside, with their three-year-old son and their dog when lightning hit a TV aerial on the roof.
+The lightening strike, which happened just after 8am on Friday, blew all of the electrics inside the property on The Cornfields and caused a gas leak. The trio ran outside with their pet when they started to smell smoke and discovered a neighbour had rang the fire service.
+&#34;The whole house has been hit by lightning. It&#39;s went through the aerial, blew literally every socket in the house and it&#39;s pretty much blew the gas,&#34; Stephanie told ChronicleLive.
+&#34;For the first few seconds I just thought it was lightening (outside) but when my ears were ringing it was like a grenade going off. It was terrifying, I was trying to keep calm for my son.&#34;
+A yellow warning for thunderstorms by the Met Office has come into force for the northeast of the England.
+The weather alert runs from 2pm until 9pm tonight with the warning stating: &#34;Prepare to protect your property and people from injury. Before gusty winds arrive, check to ensure moveable objects or temporary structures are well secured. Items include; bins, garden furniture, trampolines, tents, gazebos, sheds, and fences.&#34;
+Here are the regions and local authorities affected:
+North East England
+- Darlington
+- Durham
+- Gateshead
+- Hartlepool
+- Middlesbrough
+- Newcastle upon Tyne
+- North Tyneside
+- Northumberland
+- Redcar and Cleveland
+- South Tyneside
+- Stockton-on-Tees
+- Sunderland
+North West England
+- Cumbria
+Yorkshire &amp; Humber
+- East Riding of Yorkshire
+- North Yorkshire
+- South Yorkshire
+- West Yorkshire
+- York
+A new high for June is the third day on the trot that records have fallen.
+The Met Office says that there is a new hottest June day record set in Wattisham, Suffolk, where 36.9C has been registered.
+It comes after the national weather agency said it reached 36.4C at Yeovilton, Somerset, on Thursday afternoon, provisionally making it the UK’s hottest June day on record.
+This was then surpassed when provisional temperatures reached 36.7C in Merryfield, Somerset.
+And the new high also surpasses both the previous record set on Wednesday, when temperatures reached 36.1C in Gosport, Hampshire, and the long-standing record for June heat which dates back to the memorable summer of 1976.
+The Met Office says that there is a new hottest June day record set in Wattisham, Suffolk, where 36.9C has been registered.
+The national weather agency stated: &#34;The heatwave continues to break records, with a new provisional hottest June day on record of 36.9°C at Wattisham, Suffolk. And temperatures are still rising.&#34;
+Brits wondering how long the extreme conditions will last face cooler conditions with wind and rain not far away.
+The east and southeast of England will retain the warmth the longest, though there should be a climb-down in figures by Saturday, with peaks around 32°C likely, says the Met Office.
+Next week is likely to see a change to more of a westerly influence on the UK’s weather, with a return to more average temperatures for the time of year and a mixture of winds and rain, particularly for those in the northwest.
+The Met Office forecast for Sunday to Tuesday reads: &#34;Showery rain edging east on Sunday with cooler, fresher conditions following. Mostly dry with sunny spells from Monday, but occasional rain or showers in the northwest.
+&#34;Temperatures nearer to average.&#34;
+A passenger has told of a train shuddering following a lightning strike before they were taken off.
+She told Edinburgh Live: &#34;Scary morning, you actually felt the train slightly shudder and it made some amount of noise. Lights flickered and before we knew it, we were escorted off. Luckily enough we were just stopping at the station.&#34;
+Edinburgh ScotRail passengers were evacuated from the 6.54am service from Helensburgh Central to Waverley at Livingston North around 8.20am due to the strike allegedly causing an electrical fault on board.
+Phil Campbell, ScotRail Customer Operations Director, said: “We’re sorry to customers who experienced disruption to their journey this morning.
+&#34;Anyone who was delayed by 30 minutes or more is entitled to claim compensation through the Delay Repay Guarantee on the ScotRail website or app.”
+A nurse has told of a &#34;wall of heat&#34; on a hospital ward.
+The woman told the BBC that the conditions at the hospital in the Midlands was &#34;terrible&#34; and &#34;intolerable&#34;.
+It comes as midwife has also complained of no air conditioning in a post natal ward as people face tempertures over 30C and a doctor said patients were in “hot, cramped and chaotic” conditions, and some are becoming abusive.
+Several hospitals have declared critical incidents, with University Hospital Southampton being forced to cancel a number of planned operations and some outpatient appointments.
+Edinburgh ScotRail passengers were evacuated from their train service on Friday morning following a terrifying lightning strike.
+The 6.54am service from Helensburgh Central to Waverley was halted at Livingston North around 8.20am due to the strike allegedly causing an electrical fault on board.
+Passengers were removed from the train and it&#39;s understood it was taken to the depot for inspection.
+A large huge crowd of passengers could be seen on the platform while heavy rain came down.
+A house has gone up in flames after its roof caught fire during thunderstorms.
+Firefighters raced to the property on Pheasant Grove in Dalkeith, Midlothian, after crews received the alarm at 3.24am on Friday, June 26. At its height, four fire engines and a height appliance were scrambled to the scene.
+There were no reports of any injuries. Crews left the address after extinguishing the blaze at 10.37am. The fire came as the area was hit with thunderstorms throughout the early hours of Friday.
+Images shared with Edinburgh Live show the building up in flames while the sky was illuminated red. Other pictures show the smouldering aftermath of the inferno, with the roof of the property completely destroyed.
+A Met Office map shows thunderstorms in the north of the UK this afternoon as well as intense heat in the south.
+The national weather agency states: &#34;Another hot and humid afternoon is expected across the south and southeast of the country, while thunderstorms affect the north. It will feel slightly fresher in the west, though.&#34;
+A tram was evacuated after lightning strikes and ferocious thunderstorms erupted across Sheffield today
+Residents were awoken to claps of thunder with one person saying it was &#34;the loudest thunderstorm of my life&#34; and another agreed: &#34;Genuinely don&#39;t think I&#39;ve ever heard thunder as loud.&#34;
+Lightning is understood to have struck near a tram on Granville Road at around 7am with passengers having to evacuate it.
+One passenger on the tram told YorkshireLive: &#34;There was a huge crash sound, and a big flash, everyone screamed and the tram died. Then all the lights started flashing on and off and the doors were opening and closing.&#34;
+It is not known if the lightning struck the tram itself or electrical components nearby. Passengers were evacuated from the tram at Granville Road shortly after.
+The National Energy System Operator (Neso) said electricity supplies may be squeezed on Friday.
+Neso, which is tasked with making sure the supply of electricity matches demand for it, issued a so-called electricity margin notice for between 7pm and 10pm.
+It is asking for 700 megawatts of power generation as a buffer to cover an expected shortfall in electricity margins. It is the second time this week Neso has issued a call for more power, having done the same on Wednesday.
+However, the grid operator cancelled the warning shortly after 2pm on Wednesday, indicating it was confident in power supply levels for the evening.
+Health chiefs are warning of the impact the heatwave is having on services as they face significantly more life-threatening emergency calls with record-breaking temperatures continuing to scorch the country.
+Several hospitals have declared critical incidents, with University Hospital Southampton being forced to cancel a number of planned operations and some outpatient appointments.
+Dr Hilary Williams, clinical vice-president of the Royal College of Physicians, told the BBC the intense heat exposes how poor the infrastructure of the health service is.
+“When you go round hospitals, very, very few hospitals are new,” she said. “We’ve kind of bolted things in car parks, we’ve added an extra wing on here, we’ve changed a corridor into a ward, and those places just aren’t coping with the demands of extreme heat.
+“The patients are far too hot. We’re hearing reports of elderly care wards way over 30C.”
+Dr Williams also said some critical machinery, such as MRI scanners and linear accelerators that treat cancer, have gone down due to the heat.
+A North Tyneside school has closed this morning after being struck by lightning.
+Churchill Community College in Wallsend has closed for the day as thunderstorms hit large swathes of the country and a lightning strike caused damage to the school&#39;s electrical systems.
+The school posted on Facebook: &#34;Unfortunately due to a lightning strike this morning, causing damage to our school electrical systems we are closed today. We will provide further updates, but anticipate school should be open on Monday as usual.&#34;</p>
+  
+</div>
+
+<a class="read-full" href="https://www.mirror.co.uk/news/uk-news/weather-schools-heatwave-live-thunderstorms-37328605" target="_blank" rel="noopener">
+  Read full article at The Mirror →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-5/">UK June temperature record broken for third consecutive day, reaching 37.3C in Suffolk amid heatwave and thunderstorms</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
