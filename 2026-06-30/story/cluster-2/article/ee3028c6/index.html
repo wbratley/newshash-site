@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will Andy Burnham&#39;s devolution plan raise economic growth? — BBC News — Newshash</title>
+  
+<meta name="description" content="BBC Verify has looked at what impact further devolution could be expected to have on the UK.">
+<link rel="canonical" href="https://newshash.com/2026-06-30/story/cluster-2/article/ee3028c6/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Will Andy Burnham&#39;s devolution plan raise economic growth?">
+<meta property="og:description" content="BBC Verify has looked at what impact further devolution could be expected to have on the UK.">
+<meta property="og:url" content="https://newshash.com/2026-06-30/story/cluster-2/article/ee3028c6/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Will Andy Burnham&#39;s devolution plan raise economic growth?">
+<meta name="twitter:description" content="BBC Verify has looked at what impact further devolution could be expected to have on the UK.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-06-30</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="active">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-06-30</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-06-30/story/cluster-2/">← Andy Burnham delivers first major speech as Labour leadership frontrunner, promising devolution and regional economic reform</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Will Andy Burnham&#39;s devolution plan raise economic growth?</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Will Andy Burnham&#39;s devolution plan raise economic growth?
+- Published
+Andy Burnham promised the &#34;biggest rebalancing of power our country has seen&#34; as part of his plans for the UK if he becomes the next prime minister.
+In his first major policy speech, Burnham said on Monday he would seek to take power away from Whitehall and devolve it to all parts of the UK. This would include Greater Manchester and other city regions in England.
+But the former Mayor of the Greater Manchester Combined Authority also said he would further extend devolution in Scotland, Wales and Northern Ireland - though not giving detail - and also promised to give Greater London more devolved powers.
+Burnham, who was sworn in as the new MP for Makerfield last week, said this radical devolution of power was essential for delivering higher economic growth in all parts of the UK. &#34;We will never get growth up to the level Britain needs unless every single postcode in the land is set up to contribute to it,&#34; he said.
+BBC Verify has looked at what impact further devolution could be expected to have on economic growth across the UK.
+What powers are devolved?
+Scotland has had extensive devolution, with the Scottish parliament now holding powers covering health, education, local government, environment, justice and policing.
+Holyrood also has powers to set most income tax rates (although not the level of the tax-free personal allowance) and has some control over welfare.
+The Welsh Senedd&#39;s devolution powers are more limited compared with Scotland, though it does include running the NHS in Wales, education, local government and housing.
+The Senedd also has some tax powers, including the ability to to vary income tax rates. But, unlike Scotland, it has no justice or policing powers.
+Under the terms of the 1998 Good Friday Agreement, the Northern Ireland Assembly has significant devolved powers, including over health, education and housing.
+There has also been some devolution, external to English city regions over the past decade, albeit less extensive than for Scotland, Wales and Northern Ireland.
+Manchester has some of the most extensive devolved powers of any of the English city regions, with some authority over transport, housing, skills and health spending.
+Has devolution helped growth in the nations?
+Most economists who have studied the impact of devolution have not identified any significant increase in overall economic growth rates in Scotland, Wales and Northern Ireland over the past quarter of a century.
+There is also no clear evidence of those nations catching up with the UK average, although it&#39;s important to stress the UK average is heavily influenced by the performance of London and the South East of England.
+Official statistics show that the GDP per capita - a measure of productivity - of Scotland, Wales and Northern Ireland in 2023 was broadly similar relative to the UK average as it was in 1998, with Scotland at around 93%, Northern Ireland at 83% and Wales at 74%.
+However, analysts say this does not mean that devolution has been an economic failure, external, as it is possible that the nations might have experienced economic decline relative to the rest of the UK if they had still been centrally governed.
+Events like Brexit might also have had a disproportionate effect, external on some parts of the UK, making it harder to separate out the impact of devolution.
+And some Scottish nationalists argue full independence is required for Scotland to realise its underlying economic potential. Some Welsh nationalists argue similarly for Wales.
+Has Manchester grown faster due to devolution?
+Burnham has argued that Greater Manchester is a case study in how devolution can lift economic growth.
+The city region has been progressively granted more powers in successive devolution deals since 2009.
+When George Osborne was chancellor in 2014 the city region was granted an uplift in powers over transport, housing and strategic planning., external
+Official statistics suggest that Greater Manchester has grown faster than other English city regions, including London, since 2015.
+And those statistics point to impressive productivity growth, external in the city of Manchester and the greater Greater Manchester region since 2020.
+Some analysts have questioned whether those recent productivity figures are reliable, in part, because some of the high growth spots are in residential areas, and that they could be explained in part by errors in the data, external.
+Nevertheless, many economists do think Greater Manchester has performed better than other UK city regions over the past 15 years - and they argue it&#39;s justified to partially attribute this to the devolution of powers, particularly on transport, planning and housing.
+Devolution has helped to deliver this record on housing because the Greater Manchester mayoralty is empowered to set the city-region&#39;s housing strategy, direct housing investment funding and co-ordinate affordable housing programmes. Devolution has enabled the increase in investment because one of the devolved roles of the mayor of a city region is to encourage companies to invest in an area, particularly multinationals, to create jobs and drive local growth.
+Some economists also point to the Bee Network of buses which brought the system under control of the mayoralty, and the encouragement of private sector investment in Manchester city centre.
+&#34;There&#39;s been a recognition [among the Greater Manchester leadership] that the future of Manchester is a big city that is offering lots of different opportunities, but particularly to higher value added activity,&#34; says Andrew Carter of the Centre for Cities think tank.
+&#34;They&#39;re prepared to do what is required - build the housing, support the expansion of the university, support research and development, try to introduce a transport system which really supports all of that kind of stuff. And as a result you become more attractive to investment, whether it&#39;s foreign or domestic.&#34;
+Would devolution help the wider UK economy to grow faster?
+Many economists argue that one of the things that has held the overall UK economy back over many decades has been the fact that economic activity has been heavily concentrated in London, while cities in the Midlands and the North of England - such as Manchester, Birmingham, Leeds and Newcastle - have been relatively weak.
+Evidence suggests that in other European economies such as France, Germany, Spain and Italy, their second-tier cities are closer in terms of their economic productivity to their capital cities.
+For instance, the output per worker in French cities such as Toulouse and Lyon are considerably closer to the levels in Paris, than Birmingham and Manchester are to London.
+The productivity of big Germany cities such as Munich and Frankfurt and Spanish cities such as Barcelona and Madrid are also relatively similar, avoiding the kind of extreme inequality between London and other UK cities. Analysts point to the much greater level of devolution, external in those countries as a reason for this.
+The Resolution Foundation has argued, external that closing these gaps between London and big UK cities would not just boost jobs, incomes and prosperity in those regions, but would improve the performance of the national UK economy, both by lifting the overall level of economic activity and increasing its long-term potential growth rate.
+How much would devolution cost?
+Burnham is not the first politician who has sought to boost growth in the North and Midlands.
+Boris Johnson&#39;s Conservative government had an objective of &#34;levelling up&#34; the UK economically.
+Some analysts say that Johnson&#39;s project failed in part because it did not put sufficient state resources and investment into achieving it.
+That government established a £5bn levelling up fund, external to, among other things, regenerate high streets and upgrade local transport.
+But analysts pointed out that the post-reunification plan to bring up East Germany closer to the productivity, external of West Germany after 1990 had cost around €2 trillion in state spending between 1990 and 2014, or the equivalent of £70bn a year.
+Burnham on Monday pledged &#34;to strive for equivalent living conditions in all parts of Britain&#34; and said that this would borrow from Germany&#39;s &#34;basic law&#34;, which has a similar wording.
+However, he also said that he would stick to the &#34;current fiscal rules&#34; and the existing Labour manifesto, which would likely limit how much his government would be able to borrow or raise tax to finance devolution.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/c5yz4x9ew49o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-06-30/story/cluster-2/">Andy Burnham delivers first major speech as Labour leadership frontrunner, promising devolution and regional economic reform</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
