@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How not to be rude in 2026 — The Guardian — Newshash</title>
+  
+<meta name="description" content="Do you keep your headphones on at the checkout? Or chat people up then never follow through? You need our expert guide to the new social faux pas – and how to avoid them*** Continue reading...">
+<link rel="canonical" href="https://newshash.com/story/cluster-6/article/5a98dff3/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="How not to be rude in 2026">
+<meta property="og:description" content="Do you keep your headphones on at the checkout? Or chat people up then never follow through? You need our expert guide to the new social faux pas – and how to avoid them*** Continue reading...">
+<meta property="og:url" content="https://newshash.com/story/cluster-6/article/5a98dff3/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How not to be rude in 2026">
+<meta name="twitter:description" content="Do you keep your headphones on at the checkout? Or chat people up then never follow through? You need our expert guide to the new social faux pas – and how to avoid them*** Continue reading...">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-11</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-6/">← World in brief: July 10, 2026</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">How not to be rude in 2026</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Work
+Emailing colleagues out of hours
+The old rules of rudeness were partly about showing respect to people above you in the social hierarchy, says Bridget Dalton, a semiotician and cultural analyst at Truth Consulting. “It would once have been considered impolite for a junior employee to set a boundary with a senior colleague, but now it’s much ruder to impose on people who are more junior.”
+For example, now that most email services allow you to schedule messages, Dalton believes emailing junior staff outside working hours is an intrusion. “Contacting them out of hours implicitly suggests they should pick it up, and that’s not fair.”
+Single-word responses on Teams/Slack
+“Yep.” “Nope.” “Noted.” In an era when so much workplace communication happens via chat, ultra-brief replies can come across as dismissive, says Sophie Jewes, co-founder of the image consultancy agency Raven. “These aren’t replies; they’re shrugs. Could you really not locate a single additional word?”
+She also can’t stand a double chase. “Following up on a follow-up feels like walking into someone’s office and standing there until they look up,” she says.
+Instant messaging when you could ask in person
+Relying on chat platforms for conversations that could easily happen in person risks treating colleagues more like names on a screen than people sharing the same space.
+“It comes back to an idea of when is technology helpful versus when does it make people feel bad?” says Christine Porath, a professor at UNC Kenan-Flagler Business School in North Carolina.
+Taking Zoom calls from cafes
+“There’s always a dog barking,” says Ione Gamble, editor of The Polyester Book of (Bad) Taste. “There’s always someone trying to squeeze behind them.” It gives the impression, she says, “that they think they have somewhere more important to be than talking to you, that they couldn’t have just made sure they were at home or at their place of work at that time”.
+Permanent out-of-office messages
+Gamble can’t stand out-of-office messages that say, “I only reply to emails within these hours” or, “I have an extremely busy and important job, so please do not expect a quick reply.”
+She says: “It’s like, ‘OK. Sorry for bothering you.’ I’m not doing this for the good of my heart. There’s a reason we’re talking to each other on email … ”
+Public spaces
+Playing TikTok videos out loud on your phone
+Few behaviours attract as much annoyance as playing TikToks – or any audible content – out loud on public transport, in cafes, restaurants and waiting rooms. Gamble says taxis should be included too. “You’re prioritising your own comfort over everyone else’s, which is the definition of rudeness to me.”
+Keeping your earphones in at the till
+Porath says a study she conducted of 2,000 workers in the US found grocery store assistants were increasingly reporting shoppers continuing phone calls on their earphones while checking out. “They’re interfacing with humans, but humans are not treating them with dignity or respect.”
+Dalton argues there’s a hierarchy of earphones-in behaviour. “You can say to whoever you’re talking to on the phone, ‘Sorry, I’m just going to pay for something,’ which at least lets the person you’re buying something from know that you register their existence.”
+Still, she says, best practice is taking your earphones out before you enter a shop. “Otherwise you’re faffing around with little tiny earphones at the till and holding up the queue – which is also rude.”
+Dating
+Chatting people up and never following through
+For Olivia Petter, an author and founder of the Red Lips singles night, the ultimate pre-date sins are initiating a meet-up and never following through with a plan, or going to a singles event when you’re not emotionally available. “If you’re looking for an ego boost, post a thirst trap on Instagram instead,” she says.
+Trying to kiss someone on a train platform or at a bus stop
+Don’t try to rush a smooch in the last few minutes of date extra time, says Petter. “If it hasn’t happened before public transport enters the picture, you need to wait until the next date.”
+Sending a rejection message when a first date has gone badly
+Once ghosting was seen as the worst dating habit of all, but perceptions have changed, says Kitty Drake, the Guardian’s Blind date matchmaker.
+“It’s actually sometimes quite polite,” Drake argues. “If you go on a first date, neither of you really feels anything and you both know it, you mutually ghost. I think that’s the kindest way.” By contrast, the now obligatory, “You’re lovely, but … ” rejection text can feel oddly presumptuous. “It wasn’t a match for me either. I’m just not rude enough to tell you!”
+Promising to set a friend up and not following through
+“Lots of people think: ‘I can’t actually be bothered to do the setup, because it’ll be awkward for me if it goes wrong,’” says Drake. “It’ll be awkward for you?! I might have to stay alone for the rest of my life because you might be a tiny bit awkward for half an hour on one day?!”
+Messaging friends and family
+Using ChatGPT to write a heartfelt message
+Using AI to write a sincere message may actually signal that the sender cares deeply but struggles to express their feelings, says Dalton. Even so, she believes it can come across as if you don’t care. “You’re outsourcing your feelings.”
+Replying to a text with a voice note
+“My God, so rude,” says Gamble. “They presume the other person has time to stop everything else they’re doing to listen to your voice. Short ones are rude because you could just type them more easily than speaking them. Long ones are rude because you’re requesting that people take time out of their day to listen, memorise all the bits and then respond to you.”
+Adding someone to a WhatsApp group without getting their consent
+Communications expert Ivana Giachino, from the PR consultancy Lo Studio, sees this as an invasion of privacy. “Suddenly you’re part of this avalanche of texts from people you don’t even know,” she says.
+Not “hearting” friends’ suggested plans
+Carrera Kurnik, the expert behind the cultural analysis Substack Internet Anthropology, says it is seen as rude when someone suggests plans in a group chat and nobody responds, even to decline. “Leaving them hanging undermines their social position and leaves their attempt at connection unreciprocated.”
+Leaving a WhatsApp group without warning
+“It’s only acceptable if someone in the group has done something abhorrent, like sleeping with your very recent ex,” says Petter.
+Content creation
+Making content about strangers
+“Is it rude to make content about a first date and post it on TikTok? Is it rude for influencers to film in public spaces?” says Kurnik. “The trouble is that in the social media age of ‘rage bait’, there is often something to be gained from being rude – engagement. Rudeness gets clicks.”
+While Kurnik thinks we are still figuring out the rules of this new frontier of interaction, Gamble has a stronger take. “Ban them,” she says of social media street vox poppers. “You’re not asking to be in a piece of content, to then be judged for your inane opinion on a question, or to ‘finish a song’. It’s just such an encroachment on your privacy.”
+Using social events as content opportunities
+“Weddings have become especially vulnerable to content opportunity for some guests’ social media,” says Sarah Haywood, a wedding planner. “We see them filming every detail: posing in the aisle and posting themselves and all the details before the couple have had a chance to share anything themselves. Good guest etiquette at a wedding means remembering that you are there to witness, support and add warmth to the day, not to behave like a member of the production team.”
+Posting unflattering content of pals
+Alexandra Dudley, a cook and food writer, says if you are going to post from a holiday or a friend’s party, turn the sound on your videos off. “Some of those conversations could be incredibly private or juicy,” she says. “Also, maybe don’t post a picture of any of your friends if you feel like if that was you, you wouldn’t post it of yourself.”
+Sharing pictures of friends’ children
+Giachino says she believes many adults have become too casual about documenting their friends’ children online, often without considering whether they want to be photographed at all. “Kids absolutely hate being photographed and displayed like show ponies. We think it’s cool; they think it’s extremely uncool.”
+Social events
+Never RSVPing
+Haywood says: “There is an epidemic of RSVP amnesia: guests who are ‘certain’ they replied because they thought about replying. It is very much a symptom of digital life.”
+Worse still is when people don’t RSVP because they’re waiting to see if a better plan comes up. “Grow up, make a decision and commit to it,” says Petter.
+Cancelling in the public WhatsApp group
+“You can’t pull at the thread, because then that gives permission to everyone else to cancel,” says Dalton.
+Leaving your phone face up on the table
+“We have an entire social life that’s running concurrently with our IRL experiences, so managing that distinction is vital,” says Dalton, so it is polite to keep your phone face down in company.
+Dudley goes one step further for dinner parties. “In general, phones shouldn’t be at the table. Even as someone who spends a lot of my time on my phone, I still really believe in the sacred element of sharing a meal with someone.”
+Vaping or smoking before dessert
+Dudley says the problem isn’t smoking itself, so much as what it does to the atmosphere around the table. “It’s incredibly rude when half the table gets up and leaves before the food is finished,” she says. “It separates the party.”
+Always assuming your dog is invited to plans
+“So rude,” says Gamble – especially if the plans are at someone’s house. “I feel like we used to have more of an understanding that not everyone likes pets, and not everyone wants to be around them all the time. That’s eroded.”</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/lifeandstyle/ng-interactive/2026/jul/10/guide-to-modern-etiquette" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-6/">World in brief: July 10, 2026</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who is scrawling poetry on London streets? And why? — City AM — Newshash</title>
+  
+<meta name="description" content="London’s self-styled street poets are scrawling messages on walls and pavements. Lucy Carter tracked down the creators Walk down any central London street and you’ll spot them: pithy statements scrawl">
+<link rel="canonical" href="https://newshash.com/2026-07-10/story/cluster-0/article/13a0f773/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Who is scrawling poetry on London streets? And why?">
+<meta property="og:description" content="London’s self-styled street poets are scrawling messages on walls and pavements. Lucy Carter tracked down the creators Walk down any central London street and you’ll spot them: pithy statements scrawl">
+<meta property="og:url" content="https://newshash.com/2026-07-10/story/cluster-0/article/13a0f773/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Who is scrawling poetry on London streets? And why?">
+<meta name="twitter:description" content="London’s self-styled street poets are scrawling messages on walls and pavements. Lucy Carter tracked down the creators Walk down any central London street and you’ll spot them: pithy statements scrawl">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-10</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="active">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-07-10</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-07-10/story/cluster-0/">← Mbappé stunner ends Morocco resistance to send France into World Cup semi-finals</a>
+
+<div class="article-outlet lean-centre-right">
+  <span class="outlet-name">City AM</span>
+  <span class="lean-badge lean-centre-right">centre-right</span>
+</div>
+
+<h1 class="article-headline">Who is scrawling poetry on London streets? And why?</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>London’s self-styled street poets are scrawling messages on walls and pavements. Lucy Carter tracked down the creators
+
+
+
+Walk down any central London street and you’ll spot them: pithy statements scrawled on paving slabs, walls and hoardings. They often take the form of simple white words, signed off with an Instagram handle. 
+
+
+
+These pavement poems are part of a scene that’s exploded in recent months. A favourite of mine is an artist who signs their work @beakandsqueak, featuring the musings of a cynical pigeon called Beak and an optimistic rat called Squeak, complete with little sketches of the characters. In one piece, Beak asks: “How are we friends?” Squeak responds: “I’m too optimistic to quit on you and you’re too cynical to find better.” In the nine-or-so months since the project began, these creations have spread across the city. But who’s creating them? And, more importantly, why? I decided to find out.
+
+
+
+Beak and Squeak’s creator agreed to speak with me provided he could remain anonymous. He says revealing his identity would make the project about him rather than his epigrams: “I know that some people want fame, or to make money, or to deliver a message,” he says. “I just do it because it’s fun. The last thing I want to do is feel important. I’m writing some BS on the floor. I don’t think I deserve anything for that!”
+
+
+
+Although he keeps his name out of the spotlight, his identity is not entirely a mystery. “I’m not operating in the shadows or anything,” he says. “People see me all the time and come up to say hi. I’ve got to get better at receiving compliments. I hope I’m not too weird when I say thank you!”
+
+
+
+He says there’s no real plan to the placement of his messages, rather he just writes them as he goes about his daily business. “When I first started I was more intentional about trying to spread them out. It’s the same way you get excited about a new game. Now I try to keep it as passive as possible and do them really randomly,” he says. “Day or night, it doesn’t matter too much. Wherever you see them it’s just where I’ve been, which I like, because that’s how London is. We’re all just going to the same places at different times. I’m just saying, ‘I was here’, saying hi to people.”
+
+
+
+When it comes to inspiration, some of the Beak and Squeaks are derived from real-life conversations. Others represent internal conflicts, jotted down in his Notes app, awaiting the perfect paving slab to present itself.
+
+
+
+“Some of my friends think it’s really cool, some make fun of me. It’s a balance,” he laughs. “I’m glad I had people making fun of me when I was writing the sad, embarrassing ones. It really is just whatever I’m feeling at the time. People close to me will notice recent ones and say, ‘Oh, you’re in a good mood this week’.”
+
+
+
+The other street poetry creators
+
+
+
+Other London creators are more open about their identities. @Undressd__ is the work of Tilda Eliasson, who also posts under her own name. As well as the familiar white-pen messages, she sometimes prints out full-length poems and leaves them around the city. Her most recognisable works, though, are short, sharp messages: “What does your soul crave?” daubed on a white-washed brick wall, or “Would you stay a little longer?” graffitied on a toilet door.
+
+
+
+“Doing this anonymously was my approach at the start,” she tells me. “But as time progressed I found out that with social media it’s very, very hard to keep that up. Writing is something I’ve always loved doing. It’s been a really important part of how I express myself. Most of the quotes I share are outtakes from things I’ve written in the past.”
+
+
+
+She says she picks her locations based on what she has to say. “Most of my work circles around topics of really intense love and heartbreak or personal growth, and the inward-looking journey that comes from experiencing these things. The idea of putting something somewhere where you know there’s going to be a lot of foot traffic is fun, but because of [the subject matter], I like placing them in slightly quieter, calmer areas, maybe a little hidden away.”
+
+
+
+A street poetry piece by @losinglxve
+
+
+
+Another creator I spoke to, Lucas Abbott, is even more open about his identity. He is the man behind the @losinglxve account, creating love-lorn, slightly emo messages including “It took a lot of pain to be this soft,” and “My softness is made of things I do not speak about.”
+
+
+
+His feed features photographs of him putting paint-pen to pavement, sometimes modelling losinglxve-branded hoodies. He says he takes the opposite approach to Eliasson when placing his work. “I put pieces anywhere I know there’s going to be a lot of foot traffic,” he says. “Pretty much every time I go out writing, people come up and talk to me,” he adds. “It’s still very surreal. I didn’t know what to do at first and it was a bit awkward, but now I really do enjoy it when people come up and say hi.”
+
+
+
+Online followings
+
+
+
+I’m surprised to note that none of the creators I spoke to have especially large online followings: just over 6,000 for both @beakandsqueak and @losinglxve, and less than 500 for @undressd_. But you wouldn’t be surprised if one of them were to take off. Beak and Squeak now has 375 pieces and counting, and has even expanded overseas, with his work appearing in nine cities. “I thought it would just be London that liked Beak and Squeak, but other cities have really liked it too. French people don’t like people who don’t speak French, but that’s a whole other thing.”
+
+
+
+The bigger the artists become, of course, the more chance they have to monetise the work. Abbott uses his Instagram account to sell hoodies and streetwear emblazoned with his messages, while Eliasson says she may go down a similar route. “Long-term I’d love for Undressd__ to grow into a more physical entity,” she says. “Poetry collections, art, clothing, and eventually a creative hub where different forms of expression can exist together.”&amp;nbsp;
+
+
+
+There’s certainly a precedent for turning pithy messages into a solid business. New York City-based @7soulsdeep – sample piece: “I’m not hopeless. I’m just a Romantic” has amassed more than 130,000 followers and uses his platform to sell not only merch but “artisanal wine” and NFTs. He has taken part in exhibitions in Italy and New York and sell some of his pieces, usually painted on mirrors.
+
+
+
+With money and fame at stake, is there some healthy competition between London’s creators? Apparently not. “I’m good friends with [Abbott],” Beak and Squeak’s creator tells me. “My friends make fun of me because they say we should be rivals, but we’re not at all. I think it’s good that other people are doing things like this. It makes it less embarrassing, and also more motivating.”
+
+
+
+Eliasson says competition hadn’t even crossed her mind. “When it comes to art of any kind, there’s a place for everyone to co-exist.”
+
+
+
+Does London street poetry come with a risk?
+
+
+
+I can’t help but worry that creating these poems comes with a degree of risk. While they’re generally not permanent – a strong downpour will wash them away – graffiti remains illegal. Are they anxious about being busted?
+
+
+
+“Yeah, I guess. That’s scary stuff,” says Beak and Squeak. “I get in my head about pedestrians not liking it, let alone the law. I would have regretted not doing it, though. I’m not trying to hurt or disrespect anyone.”
+
+
+
+Both Eliasson and Abbott tend to head out under cover of darkness or at the crack of dawn to make their doodles, which must mitigate some of the risk. Still: “It’s something that crosses my mind,” says Eliasson, “but we live in London: there’s already so much graffiti. Personally, I love it – of course, everything isn’t for everyone, but I think it’s valuable.”
+
+
+
+Scrolling through their feeds, it seems others agree. Under @beakandsqueak’s photos, people share where they last saw the tag, like an urban scavenger hunt. Others comment that spotting the doodles makes their day. Responses to Eliasson’s “What does your soul crave?” message are surprisingly emotional. “Silence,” one person answers. “Feeling secure,” says another.&amp;nbsp;
+
+
+
+There are, of course, haters too, with some people taking to forums such as Reddit to bemoan these platitudes appearing in their neighbourhoods. “People can engage, interpret, love it, or hate it, and all of that feels equally important and human to me,” shrugs Eliasson.&amp;nbsp;
+
+
+
+While I started out on the side of the cynics, these earnest doodles have grown on me. I’ve also become attuned to noticing their signatures around London. Occasionally, I’ll encounter one somewhere unexpected, like last week when I was rushing to get something to eat at Hackney Bridge, and there they were, the familiar rat-pigeon double act. Hey, friends!
+
+
+
+These messages seem to offer connection in an often-lonely city – physical affirmations in an increasingly digital world.“Absolutely,” says Eliasson. “There’s something beautiful about being able to pause for a moment. We live in such a fast-paced city, and generally have bad scrolling habits. Being able to break that pattern and create a different space is nice.
+
+
+
+“In a city like London, where there is a lot of loneliness, it’s always nice to find places and people you can really connect to. People can relate to my pieces because they’re all about very human experiences, but maybe ones people don’t know how or where to talk about.”
+
+
+
+Beak and Squeak, however, is less on board with my romanticised interpretation. “That’s a cool idea,” he says. “But I just love cartoons.”</p>
+  
+</div>
+
+<a class="read-full" href="https://www.cityam.com/who-is-scrawling-poetry-on-london-streets-and-why/" target="_blank" rel="noopener">
+  Read full article at City AM →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-07-10/story/cluster-0/">Mbappé stunner ends Morocco resistance to send France into World Cup semi-finals</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
