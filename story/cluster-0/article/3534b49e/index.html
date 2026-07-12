@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup last eight, Wimbledon finals and the Tour de France – follow with us — The Guardian — Newshash</title>
+  
+<meta name="description" content="Here’s how to follow along with our coverage – the finest writing and up-to-the-minute reports Continue reading...">
+<link rel="canonical" href="https://newshash.com/story/cluster-0/article/3534b49e/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="World Cup last eight, Wimbledon finals and the Tour de France – follow with us">
+<meta property="og:description" content="Here’s how to follow along with our coverage – the finest writing and up-to-the-minute reports Continue reading...">
+<meta property="og:url" content="https://newshash.com/story/cluster-0/article/3534b49e/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="World Cup last eight, Wimbledon finals and the Tour de France – follow with us">
+<meta name="twitter:description" content="Here’s how to follow along with our coverage – the finest writing and up-to-the-minute reports Continue reading...">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-12</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-0/">← England Advances to World Cup Semi-Finals</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">World Cup last eight, Wimbledon finals and the Tour de France – follow with us</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Saturday
+World Cup
+8am-7pm (BST) World Cup liveblog 
+Cometh the day, cometh our crack rolling news crew with all the latest news and vibes in the countdown to Saturday evening’s World Cup quarter-final. The back-to-back European Championship finalists, England, continue their quest for glory against Erling Haaland and Norway’s merry band of rowers in the Miami heat at Hard Rock Stadium. Argentina or Switzerland await the victors on Wednesday in Atlanta, where England started the knockouts by surviving a scare in the 2-1 comeback win against the Democratic Republic of the Congo. Thomas Tuchel’s side then overcame hostility, altitude and a red card to beat the cohosts Mexico in Sunday’s 3-2 last-16 tie for the ages and there is belief that the best is yet to come. Plus transfer and breaking news swirl as the 2026 tournament rushes headlong towards its climax.
+Cricket
+11amEngland v India first women’s Test live
+After 150 men’s Tests dating back to 1884, it’s about time the women had a crack at a Lord’s Test match. The four-day clash marks a milestone occasion for the women’s game as England finally get to experience a long-form, red-ball match at the sport’s most historic venue. But the pride and fulfilment attached to the occasion is tempered by the rawness of Sunday’s T20 World Cup final defeat at the hands of Australia. Nat Sciver-Brunt will play for the final time alongside Tammy Beaumont, who is bringing her long international career to a close at the end of the game. James Wallace is on over-by-over duty; Raf Nicholson reports.
+Cycling
+12pmTour de France live
+The vineyards of Bergerac and Montravel provide the backdrop to the 180.4km stage. Luke McLaughlin saddles up for stage eight, another flat day as the riders loop around the Dordogne, with the sprinters straining at the leash since the second half of the race leaves them with fewer chances to make an impact. After exiting Périgueux, the route heads east and turns south towards the Dordogne and the Côte de Domme. Then onwards to the Côte de Buisson-de-Cadouin, with the intermediate sprint staged in between at Saint-Cyprien.
+Horse racing
+12pmNewmarket’s July Festival live
+We’ll be online at midday for racing news and updates from Newmarket, where the feature race is the July Cup Stakes at 4.35pm. The blisteringly quick six-furlong straight will be packed with Europe’s elite sprinters, including Venetian Sun, Almeraq, Mission Central and Coppull, who have all enjoyed wins at Ascot in recent times. Be sure to join us.
+Cricket
+2.30pmEngland v India fifth men’s T20 live
+England cruised to their first-ever T20 series victory over India with 37 balls to spare as the tourists fell to a record fifth consecutive loss in completed 20-over matches at Bristol. They have an unassailable 3-0 lead in the five-match series after comfortably winning the past three games, including Tuesday’s 125-run win at Trent Bridge, with the first match at Chester-le-Street having been washed out. England have now won 19 out of 22 completed T20s since Harry Brook became captain last year. His India counterpart, Shreyas Iyer, who took over as T20 skipper in June, is under increasing pressure after the run of losses following two shock defeats by Ireland before this series. Geoff Lemon is at the OBO controls as Simon Burnton reports from the Rose Bowl, Southampton.
+Tennis
+4pmWimbledon women’s singles final live
+Saturday’s showcase will feature the 21-year-old Linda Noskova and fellow Czech Karolina Muchova, the first time two Czech women have faced off in the singles final at a grand slam in the professional era. That it has happened at Wimbledon should surprise no one. Whoever prevails, it will be the third time in four years that a Czech woman has held aloft the Venus Rosewater Dish following the triumphs of Marketa Vondrousova in 2023 and Barbora Krejcikova in 2024. Before them there was Petra Kvitova, who won the title in 2011 and 2014 and the late Jana Novotna in 1998 and, of course, the grass-court titan Martina Navratilova, who won the first of her nine singles titles as a Czech in 1978 before later becoming an American citizen. Czech success is not limited to Wimbledon, but something in the water – or even the strawberries, cream, Pimm’s and petunias – clearly agrees with them. Katy Murrells hosts the liveblog, with Tumaini Carayol reporting.
+World Cup quarter-final
+10pm (5pm EDT)Norway v England live
+England’s quest to end the 60-year wait to win the World Cup again comes up against Norway’s scoring machine Erling Haaland in a Miami showdown for a place in the last four. After overcoming high altitude and a fervent home crowd in Mexico City to progress to the last eight in a World Cup classic, an England side boasting the in-form Harry Kane and Jude Bellingham are favourites to reach the semis in south Florida. However, the Three Lions’ defensive deficiencies will be severely tested by Haaland, who put Brazil to the sword in the last 16 and has seven goals in his first four World Cup appearances. Although their long wait for major tournament glory persists, this generation of England players has come as close as any since 1966 to ending that drought. They have lost in the last two finals of the European Championship and also reached a semi-final and quarter-final in the past two World Cups. As pivotal to England’s progress as Haaland for Norway, have been Bellingham and Kane. The Real Madrid midfielder and Bayern Munich striker have combined for 10 of their side’s 11 goals so far. Join Scott Murray for minute-by-minute coverage, with David Hytner, Jacob Steinberg, Ed Aarons and Barney Ronay reporting from the heat and humidity of Miami.
+Sunday
+World Cup quarter-final
+2am (9pm EDT)Argentina v Switzerland live
+Argentina and Switzerland meet again in the World Cup knockout stage carrying memories of a tense match 12 years ago in Brazil, when Ángel Di María’s extra-time strike finally broke Swiss resistance and sent Lionel Messi’s side through. Much has changed since that last-16 clash in São Paulo. Back then, Argentina were trying to balance the brilliance of Messi at his peak with the burden of ending a World Cup drought stretching nearly three decades. Switzerland, meanwhile, had become regular tournament participants but were still chasing a first quarter-final appearance since 1954. Murat Yakin’s side reached the quarter-finals for the first time in 72 years by defeating Colombia on penalties after a goalless draw, and believe they stand a chance against the title holders. We’ll have live coverage of their last-eight clash in Kansas City.
+World Cup
+10amWorld Cup liveblog
+After two monumental quarter-finals, Will Unwin clocks on early with all the aftermath from Norway v England and Argentina v Switzerland. He will be covering all the latest domestic news too, plus breaking transfer updates. Why not join the conversation.
+Cricket 
+11amEngland v India first women’s Test live
+Harmanpreet Kaur’s India have the chance to end their tour of England on a high after the disappointment of a T20 World Cup group-stage exit at the Home of Cricket a fortnight ago. India’s six-wicket defeat by the eventual champions, Australia, on 28 June ended the 50-over World Cup title-holders’ dreams of holding both major limited-overs trophies simultaneously. But it did leave them with 11 days to prepare for this landmark four-day Test. Picking up the OBO baton for day three are Cameron Ponsonby and James Wallace.
+Cycling
+12pmTour de France live
+After two flat days, the Tour ends week one by heading to the hills of the Massif Central and four categorised climbs. The picturesque, flowing landscape of south-central France is always among the finest of Tour canvases, and the parcours is unlikely to disappoint as the riders tackle Côte de Naves after 70km and onwards to the 977m-high Mont Bessou. Expect many in the peloton to suffer during the 3.8km climb over Suc au May before the Côte de la Croix comes into view. Tom Bassam helms the rolling liveblog of stage nine.
+Tennis
+4pmWimbledon men’s singles final live
+Daniel Harris helms the liveblog for Sunday’s men’s singles denouement on Centre Court. Second-seeded Alexander Zverev put an end to the “Fery-tale” run of a British wild card on Friday and punched his ticket to the Wimbledon final for the first time, where he’ll face defending champ Jannik Sinner, who knocked out seven-time champion Novak Djokovic.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/sport/2026/jul/10/world-cup-last-eight-wimbledon-finals-and-the-tour-de-france-follow-with-us" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-0/">England Advances to World Cup Semi-Finals</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
