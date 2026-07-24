@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapped: Where droughts have been declared in the UK after record-breaking heatwaves — The Independent — Newshash</title>
+  
+<meta name="description" content="North Wales has seen less than 2 per cent of expected rainfall for the month and has endured several wildfires">
+<link rel="canonical" href="https://newshash.com/story/cluster-5/article/87dbf1b2/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Mapped: Where droughts have been declared in the UK after record-breaking heatwaves">
+<meta property="og:description" content="North Wales has seen less than 2 per cent of expected rainfall for the month and has endured several wildfires">
+<meta property="og:url" content="https://newshash.com/story/cluster-5/article/87dbf1b2/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mapped: Where droughts have been declared in the UK after record-breaking heatwaves">
+<meta name="twitter:description" content="North Wales has seen less than 2 per cent of expected rainfall for the month and has endured several wildfires">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-24</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-5/">← Drought Declared in Parts of Wales</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Independent</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Mapped: Where droughts have been declared in the UK after record-breaking heatwaves</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Mapped: Where droughts have been declared in the UK after record-breaking heatwaves
+North Wales has seen less than 2 per cent of expected rainfall for the month and has endured several wildfires
+- Bookmark
+- CommentsGo to comments
+Prolonged dry weather and record-breaking heatwaves have prompted the first declaration of drought as the UK faces increasing incidents of extreme weather due to climate change.
+Natural Resources Wales (NRW) has declared drought status in North Wales and the Upper Severn due to drying riverbeds, the risk of wildfires and concern over crops.
+North Wales and the Upper Severn have received less than 2 per cent of the expected rainfall for the month so far, with river flows across large parts of the region exceptionally low, and some locations recording or approaching record lows.
+In many areas of North Wales, there has been no significant rainfall since 6 July, NRW said.
+The areas affected by the drought status declaration include North Gwynedd, Ynys Mon, South Gwynedd, Dee (Wales), Clwyd, and Upper Severn.
+The area has experienced several blazes in recent weeks amid the heat, with July on course to become the driest on record for Wales for almost 190 years without significant rainfall in the next week.
+Monitoring by the agency also shows groundwater levels continue to fall and river temperatures have been high.
+All remaining catchments across south-west Wales have also moved from “normal” to “prolonged dry weather” status, following the same change in status last week for south-east Wales.
+As a result, all of Wales is now either in drought or prolonged dry weather status.
+NRW said it declares drought when a combination of indicators show a significant shortage of rainfall and water availability, affecting rivers, groundwater, agriculture, natural systems and land management.
+While water companies report that reservoir levels remain healthy overall, NRW is urging people to use water wisely.
+Many parts of England are in prolonged dry weather status as the country has received just 3 per cent of its average July rainfall, with hosepipe bans in place for 23 million customers and suppliers warning they may stay in place all summer.
+Wildfires have been raging in a number of places in England, while Scotland has also been hit by a major wildfire in the Cairngorms, and in the Republic of Ireland, a nationwide hosepipe ban is in place in response to the dry conditions.
+This summer’s dry conditions follow last year’s drought summer, as the UK increasingly faces more extreme weather fuelled by human-caused climate change, mostly from burning fossil fuels.
+As warm weather continues, yellow heat health alerts – warning of minor impacts for health and social care services – have been issued in England for the East Midlands, West Midlands, South East, South West, East of England, and London running from 9am on Friday to 9am on Sunday.
+The Met Office said temperatures would be more towards average for the time of the year, in the low to mid 20Cs, although into next week Tuesday could be warmer.
+While the south is expected to remain dry, there is some rain in the forecast and parts of northern Scotland could see 10 to 15mm (0.4 to 0.6 inches) of rain over a few hours on Saturday, while 30mm (1.2 inches) could fall in parts of west Scotland.
+But just 3 to 4mm (0.1 inches) is expected further south on Saturday and Sunday, with Met Office spokesperson Stephen Dixon warning: “Although some areas will have more than they have seen in a while, it’s not the heavy rain that some areas may be after in terms of topping up water supplies.”
+Rhian Thomas, sustainable water and nature manager at NRW, said: “The prolonged period of hot, dry weather we have experienced this summer is now having serious impacts on the environment across parts of Wales.
+“We have seen rivers fall to exceptionally low levels, groundwater continuing to decline, and increasing reports of environmental impacts affecting wildlife, fisheries, farming and sensitive habitats.
+“The recent wildfires across North Wales and South East Wales are one of the clearest and most visible signs of how dry our landscapes have become.
+“Our teams continue to work closely with fire and rescue services, local partners and land managers to respond to these incidents and reduce risks where possible.”
+She added: “While drought status does not automatically mean water shortages for customers, it does reflect the growing pressure being placed on our environment.
+“We are asking everyone to play their part by using water wisely and helping to protect Wales’ natural resources during this exceptionally dry period.”
+Join our commenting forum
+Join thought-provoking conversations, follow other Independent readers and see their replies
+Comments</p>
+  
+</div>
+
+<a class="read-full" href="https://www.independent.co.uk/news/uk/home-news/drought-mapped-north-wales-heatwaves-b3020329.html" target="_blank" rel="noopener">
+  Read full article at The Independent →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-5/">Drought Declared in Parts of Wales</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
