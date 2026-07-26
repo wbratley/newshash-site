@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to keep your children and pets safe in a heatwave – everything you need to know — The Independent — Newshash</title>
+  
+<meta name="description" content="Britain continues to swelter amid a record-breaking summer">
+<link rel="canonical" href="https://newshash.com/story/cluster-1/article/407d6ec1/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="How to keep your children and pets safe in a heatwave – everything you need to know">
+<meta property="og:description" content="Britain continues to swelter amid a record-breaking summer">
+<meta property="og:url" content="https://newshash.com/story/cluster-1/article/407d6ec1/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to keep your children and pets safe in a heatwave – everything you need to know">
+<meta name="twitter:description" content="Britain continues to swelter amid a record-breaking summer">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-26</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-1/">← Van crashes into Berlin Pride crowd</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Independent</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">How to keep your children and pets safe in a heatwave – everything you need to know</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>How to keep your children and pets safe in a heatwave – everything you need to know
+Britain continues to swelter amid a record-breaking summer
+- Bookmark
+- CommentsGo to comments
+Britain continues to swelter amid a record-breaking summer, with a fourth heatwave of the summer expected after the weekend when temperatures rise again.
+After long-awaited rainfall this weekend, hot and dry weather is likely to return for much of England and eastern Wales, with BBC Weather warning temperatures couls hit 35C.
+It follows a summer of scorching temperatures, with records broken for June when a sweltering 37.7C was recorded in Lingwood, Strumpshaw Hill.
+Hot spells are classed as a heatwave when temperatures exceed thresholds for the area for three consecutive days.
+How can I get to sleep in hot weather?
+Getting to sleep during a heatwave can seem like an impossible task, particularly when you don’t have access to air conditioning – but there are steps you can take to get a good night’s sleep.
+Julie Gooderick, an “extreme environments” expert at the University of Brighton, says it is key to set your environment before sleeping.
+The ideal room temperature for sleeping is around 18-21C, she says, and to avoid your bedroom becoming too hot she advises using fans, opening windows at night, and keeping curtains closed during the day.
+She also advises using a thin sheet instead of your regular duvet, avoiding napping during the day, and cooling your body down as much as possible – this can be done using cooling pads, a cold shower, or even putting your pyjamas in the freezer a few hours before bedtime.
+How can I avoid heatstroke?
+Extreme hot weather poses the risk of conditions such as heatstroke and heat exhaustion, which can sometimes be fatal. Each year, the UK Health Security Agency (UKHSA) sees excess deaths during periods of extreme hot weather.
+Make sure you are drinking plenty of fluids and try to avoid the sun (and physical exertion outdoors) between 11am and 3pm, when the sun is strongest.
+The UKHSA advises people to walk in the shade, apply sunscreen regularly, and wear a wide-brimmed hat in the heat, and to make sure fridges and freezers are working properly.
+How can I help someone experiencing heat exhaustion?
+Some people are more vulnerable than others in the heat, particularly those who are aged 75 or older, people with serious health conditions, and those who are unable to keep themselves cool.
+Ensure you check in on those who live alone, and be aware of the symptoms of heat exhaustion – these can include dizziness and confusion, a headache and a high temperature.
+If you notice someone is experiencing the symptoms of heat exhaustion, they need to be cooled down – make sure they are drinking enough water, lie them down and move them to a cold place if possible.
+How can I keep my baby cool in hot weather?
+It is essential to avoid babies becoming dehydrated and overexposed to sunlight – regularly apply sunscreen with a protection factor (SPF) of at least 30, and keep their faces cool with a wide-brimmed sun hat.
+Babies less than six months old should be kept out of direct sunlight, the NHS says, and older babies should also be kept out of the sun as much as possible.
+Sleep consultant and CEO of Just Chill Mama, Rosey Davidson, advises putting bottles of frozen water in front of a fan to achieve “a mini air con solution” to help babies sleep when it is hot outside.
+“You can also hang a wet towel over a chair – pre-freezing this in your freezer helps – the evaporating water cools the air,” she adds. “If it is very hot in your baby’s room they can just sleep in a vest or nappy.”
+Save the Children has previously published a list of tips to keep children safe and entertained on hot days:
+Staying in the house with the curtains drawn and the fans on is a great way to ward off the heat, but being stuck at home all day could make children become anxious or restless.
+Save the Children recommends finding ways to have fun and encourage play indoors, such as dressing up, making dens in the living room or painting and drawing.
+Playing in a paddling pool is also a good way to keep children cool in the garden, but the charity suggests ensuring the pool is kept under the shade when the weather is hot.
+In order to ward off any stress your child may be feeling from the hot weather, Save the Children also urges parents and caregivers to keep calm and answer kids’ questions openly and honestly.
+One way to maintain a sense of order and structure is to stick to regular bath and sleep times for your child.
+Keeping cool on the move
+It is paramount that children are never left unsupervised in parked cars.
+Even in a less threatening climate, vehicles can rapidly heat up to dangerous temperatures, and leaving your child inside puts them at risk of severe heat-related illness or death, even if the windows are cracked open, the charity warns.
+Another vital tip is to ensure you choose your child’s clothing appropriately. Lightweight, light-coloured, and breathable fabrics such as cotton are your best options.
+It is also vital to ensure your child is covered top-to-toe in broad-spectrum sunscreen with protection from both UVA and UVB sun rays. This will ensure your child from both the heat and potential sun-related skin damage.
+Hats and umbrellas can also be used to limit exposure to harmful rays.
+Also make sure to tune in to local news and weather channels for health, safety and weather-related updates, including heat warnings, watches and advisories before setting off.
+Drink lots of fluids and get lots of rest
+Regardless of your activity level, whether that be a water fight in the garden or a puzzle in the living room, remember to drink plenty of liquids. Fluids should be drunk before, during and after being exposed to extreme heat.
+Save the Children also recommends checking your baby’s nappy for concentrated or dark in colour urine, which can indicate dehydration.
+Hot meals are also best avoided when the temperatures are especially high.
+Strenuous activities should be reduced, eliminated or rescheduled to the coolest time of the day.
+Pay special attention to the needs of babies
+Save the Children suggests giving your baby a cool bath before bedtime, keep nightwear to a minimum and if your baby kicks and pushes off covers during the night consider putting them in just a nappy with a single well-secured sheet, that will not work loose, cover their face or get entangled during the night.
+Your baby will sleep most comfortably at room temperature between 16C and 20C, a nursery thermometer will help you monitor the temperature of the baby’s room.
+How can I keep my pets safe in the heat?
+Not just babies struggle with the heat – pets are also at risk in extreme temperatures.
+The Department for Environment, Food and Rural Affairs (Defra) advises dog owners to walk their pets in the morning or evening when it is cooler, and to ensure they have enough shade and water.
+You can also keep them cool with pet-friendly frozen treats, and pet-safe sun cream is also available.
+Never leave pets alone in parked cars, and make sure you are aware of the key signs of heatstroke – symptoms in dogs and cats can include panting, diarrhoea and restlessness.
+Should I exercise in a heatwave?
+Avoid extreme physical activity during the hottest parts of the day, but there are ways to exercise safely during the heatwave.
+Try to do so during the cooler hours – in the early morning or evening – and ensure you take enough water.
+Going for a swim can be a good way to cool down, but make sure to do so in safe, lifeguarded sites.
+“People will want to cool down but don’t dive into open water as it’s colder than it looks,” the London Fire Brigade warns. “There is the risk of cold water shock, which can cause your body to go into shock no matter how fit you are.”
+Join our commenting forum
+Join thought-provoking conversations, follow other Independent readers and see their replies
+Comments</p>
+  
+</div>
+
+<a class="read-full" href="https://www.independent.co.uk/news/uk/home-news/heatwave-uk-excessive-heat-warning-how-to-keep-baby-cool-heatstroke-dogs-b3021420.html" target="_blank" rel="noopener">
+  Read full article at The Independent →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-1/">Van crashes into Berlin Pride crowd</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
