@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The maps that show the terrifying threat of wildfires to parts of France and Spain — i Paper — Newshash</title>
+  
+<meta name="description" content="Devastating blazes are tearing through parts of Europe forcing hundreds of thousands to evacuate">
+<link rel="canonical" href="https://newshash.com/story/cluster-0/article/4546d5ba/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="The maps that show the terrifying threat of wildfires to parts of France and Spain">
+<meta property="og:description" content="Devastating blazes are tearing through parts of Europe forcing hundreds of thousands to evacuate">
+<meta property="og:url" content="https://newshash.com/story/cluster-0/article/4546d5ba/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The maps that show the terrifying threat of wildfires to parts of France and Spain">
+<meta name="twitter:description" content="Devastating blazes are tearing through parts of Europe forcing hundreds of thousands to evacuate">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-28</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-0/">← Wildfires Rage in France and Spain</a>
+
+<div class="article-outlet lean-centre">
+  <span class="outlet-name">i Paper</span>
+  <span class="lean-badge lean-centre">centre</span>
+</div>
+
+<h1 class="article-headline">The maps that show the terrifying threat of wildfires to parts of France and Spain</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>French and Spanish firefighters face a critical few days in their battle against wildfires with the “intensity of several atomic bombs” as temperatures across the continent are set to rise to up to 40°C this week.
+
+
+
+Authorities in both countries are calling on support from across Europe to tackle the devastating blazes that have forced hundreds of thousands of people to flee their homes, with emergency services braced for soaring temperatures and high winds in regions already engulfed by flames.
+
+
+
+Satellite imagery and mapping of wildfire hotspots on Monday show the scale of the challenge facing governments and responders as the fires spread further.
+
+
+
+
+
+
+
+
+
+Spain’s interior minister, Fernando Grande-Marlaska, said the next couple of days will be “decisive” as fire crews battle to hold back the flames from both the ground and the air, and as residents and tourists continue to be evacuated.
+
+
+
+In the region around the city of Bordeaux, extraordinary atmospheric conditions have generated giant “fire clouds” that are intensifying the devastating fires and are now threatening some of France’s key strategic military and scientific bases. French President Emmanuel Macron convened a crisis cabinet meeting on Monday morning.
+
+
+
+Lieutenant-Colonel David Annotel of the National Federation of French Firefighters told French media that 42,000 hectares of land – more than the size of the Isle of Wight – in the southwest region of Gironde, around Bordeaux, had gone up in smoke.
+
+
+
+A wildfire near the Bay of Arcachon, south-western France (Photo: Romain Perrocheau/AFP)
+
+
+
+With over 220,000 people evacuated from homes in the region, including British tourists and expats, Annotel warned that “this fire will last for many weeks, undoubtedly several months, before it can be extinguished”.
+
+
+
+Following Marcon’s emergency meeting, Interior Minister Laurent Nuñez said the flames no longer seemed to be moving towards Bordeaux itself, but that response teams needed to “remain very concentrated, very determined, to go at any moment,” if conditions change.
+
+
+
+French rescue crews are also facing increasing risks as they tackle the fires, with local agencies reporting that 88 firefighters have been injured since the wildfires broke out in Gironde.
+
+
+
+
+
+
+
+
+
+Across Europe, governments are bracing for further damage, with satellite imagery showing wildfires burning across the continent and forecasters highlighting high-risk areas in holiday hotspots including Italy, Greece, France and Spain.
+
+
+
+Early data from the ongoing French and Spanish infernos show far greater areas of land burned than in previous summers, with experts warning that this could be the start of a dangerous new period for Europe.
+
+
+
+“We have entered an era of fires that cannot be extinguished,” said Víctor Resco de Dios, a lecturer in forestry engineering and global change at the University of Lleida in Spain.
+
+
+
+“These are fires that burn with the intensity of several atomic bombs and, as such, putting them out is extremely complex,” he added.
+
+
+
+
+ Spain  declared a national emergency as multiple wildfires continue to burn across the country. #CopernicusEU Sentinel-3 captured dense smoke over central &amp;amp; W Spain, while @CopernicusEMS supports authorities in monitoring  progression. https://t.co/hw6EjnEmJ9 pic.twitter.com/M1w5je7t46— Copernicus EU (@CopernicusEU) July 27, 2026
+
+
+
+
+The scale of the fires currently raging is due in part to a complex set of circumstances that include a large amount of dry vegetation acting as fuel, high temperatures combined with low humidity, strong winds and rugged terrain.
+
+
+
+“The fires in Spain reflect a sequence of conditions developing over several months,” according to Francesca Di Giuseppe, a fire forecast coordinator at the European Centre for Medium Range Weather Forecasts.
+
+
+
+“A relatively wet spring promoted vegetation growth and increased the amount of potentially burnable material; this was followed by persistent heat, limited rainfall and low humidity, which rapidly dried soils and vegetation,” she said.
+
+
+
+A firefighting aircraft dumps water over a blaze burning near San Martín de Valdeiglesias, about 70km west of Madrid, as much of the country faces an increased risk of wildfires (Photo: Cesar Manso/AFP) 
+
+
+
+Emergency services have also prioritised evacuating homes and businesses, leaving wilder areas with fewer resources to tackle blazes that have spread through the countryside, according to Jesús Santiago Notario del Pino, a professor at the University of La Laguna.
+
+
+
+The European Union’s civil protection mechanism, which includes nations outside the EU bloc, has sent assistance to both France and Spain, with aircraft and helicopters from Czechia, Croatia, Germany, Portugal, Slovakia, Sweden and Turkey.
+
+
+
+But as climate change drives hotter and drier summers, Europe, including the UK, will likely have to get used to conditions more regularly seen in North America and Australia, where large-scale fires have become more common in recent decades.
+
+
+
+The wildfires show little sign of being brought under control 
+
+
+
+Cristina Santín Nuño, a senior scientist at the Spanish National Research Council, said that “we have to accept that these incidents may become increasingly frequent and dangerous” and that European countries need to invest more in prevention.
+
+
+
+“We must work together to mitigate this risk but transforming the landscape and minimising the impact of climate change are long and complex processes. It is essential to strengthen prevention, regional planning, coordination between authorities, early warning systems, civil protection and public education.”
+
+
+
+Meanwhile, residents are being forced from their homes and tourists across the continent face having their summer holidays further disrupted, with travellers warned that their insurance may not cover issues caused by the blazes.</p>
+  
+</div>
+
+<a class="read-full" href="https://inews.co.uk/news/world/maps-show-terrifying-threat-wildfires-france-and-spain-4671188" target="_blank" rel="noopener">
+  Read full article at i Paper →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-0/">Wildfires Rage in France and Spain</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
