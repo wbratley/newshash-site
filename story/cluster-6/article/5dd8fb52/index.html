@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan earthquake live: Death toll climbs to 13 as rescue efforts continue — The Mirror — Newshash</title>
+  
+<meta name="description" content="Multiple people have died while more are missing after a shopping centre collapsed following a huge 7.1 magnitude earthquake on the Japanese island of Kyushu">
+<link rel="canonical" href="https://newshash.com/story/cluster-6/article/5dd8fb52/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Japan earthquake live: Death toll climbs to 13 as rescue efforts continue">
+<meta property="og:description" content="Multiple people have died while more are missing after a shopping centre collapsed following a huge 7.1 magnitude earthquake on the Japanese island of Kyushu">
+<meta property="og:url" content="https://newshash.com/story/cluster-6/article/5dd8fb52/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Japan earthquake live: Death toll climbs to 13 as rescue efforts continue">
+<meta name="twitter:description" content="Multiple people have died while more are missing after a shopping centre collapsed following a huge 7.1 magnitude earthquake on the Japanese island of Kyushu">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-07-29</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-6/">← Japan Earthquake Death Toll Rises</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Mirror</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Japan earthquake live: Death toll climbs to 13 as rescue efforts continue</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Japan earthquake live: Death toll climbs to 13 as rescue efforts continue
+Multiple people have died while more are missing after a shopping centre collapsed following a huge 7.1 magnitude earthquake on the Japanese island of Kyushu
+A major magnitude-7.1 earthquake struck the Japanese island of Kyushu on Tuesday, according to Japan&#39;s meteorological survey.
+The quaketoppled buildings, sparked fires, brought down part of an ancient castle and even triggered an explosion at a popular shopping centre.
+13 people have been confirmed dead, including two women who were at an Aeon Mall shopping centre in Kumamoto prefecture, where the explosion occurred following the massive earthquake.
+Multiple people remain missing at the nearby Nippon Paper Industries Yatsushiro Plant, where the tip of a chimney fell down, national broadcaster NHK has reported.
+The massive quake measured at the highest possible level seven on Japan&#39;s own Shindo &#34;scale of shaking&#34;.
+This is an ongoing incident. Check back as the day progresses for further updates.
+Key Events
+A slew of photographs have documented the scale of damage at an Aeon Mall in the wake of an explosion, thought to have been triggered by gas, after the earthquake on Tuesday.
+Specialist teams from around Japan are now heading to Kumamoto to join in on rescue operations.
+The Tokyo Metropolitan Police Department took to X to confirm its Disaster Preparedness Division&#39;s Special Rescue Team and Aviation Unit travelled to the prefecture today &#34;to support rescue operations&#34;.
+&#34;The team members will do their upmost,&#34; the team said on X, formerly Twitter.
+The Japanese government has confirmed that more than 9,000 people were reported as staying at evacuation centres.
+&#34;As of 7am today, 9,186 people have sought refuge in 506 evacuation centres across five prefectures, including Kumamoto and Fukuoka,&#34; government spokesman Minoru Kihara said.
+Kumamoto Castle, a top tourist site in the prefecture, was among one of many locations to suffer damage during yesterday&#39;s earthquake.
+Parts of the 400-year-old castle&#39;s exterior walls collapsed, with the aftermath caught on camera by local eyewitness Ryu.
+The iconic Kumamoto castle that we see today was completed in 1607 by Kato Kiyomasa, the first daimyo - or feudal lord - of the castle. It is now without parts of its exterior wall following Tuesday&#39;s quake.
+Prime Minister Sanae Takaichi has issued her condolences to those who had died and has praised emergency services for their continued efforts to rescue those trapped.
+She says there are still many people waiting to be rescued, adding that it is a &#34;race against time&#34;.
+Officials in Kumamoto prefecture report that 9,872 people have been evacuated from their homes. A further 36,700 residences are without electricity after an earthquake struck south-west Japan.
+Japanese Prime Minister Sanae Takaichi says the death toll from the quake has risen to 13.
+A third person is now dead, as per an official from Kumamoto Prefecture&#39;s Disaster Management Division.
+The person died after going into cardiac arrest.
+One person described feeling like the &#34;building beneath you turns into liquid&#34;, while another told the BBC: &#34;My TV fell on me.&#34;
+Others have reported &#34;constant aftershocks&#34; in the hours since the quake.
+Eight people have been pulled from the rubble of Kumamoto&#39;s Aeon Mall, Kumamato Prefecture Public Relations official Akino Sonoda has said.
+Of those eight, two women in their 20s were confirmed dead and another was in cardio arrest, local officials have reported. The remaining five extricated from the collapsed building were injured, but their conditions were deemed not to be life-threatening.Japan&#39;s public broadcaster NHK said that two hospitals have taken in at least 50 injured patients each, with one hospital staffer quoted as saying: &#34;People are coming in with burns and fractures from being trapped under objects due to the earthquake, and ambulances are constantly bringing in injured people. Inside the hospital, there are water leaks and electrical system failures.&#34;
+Rescue operations have continued through the night, with Japan&#39;s fire, police, and Self Defence Force all working to help people from the rubble of razed buildings.
+Two women have been confirmed dead in the the Aeon Mall collapse, local officials have told Japan&#39;s public broadcaster NHK.
+As per reports, three others were in a state of cardio arrest, NHK said, including two at a factory in Yatsushiro where a smokestack had collapsed.
+A gas explosion reportedly caused the devastation at Aeon Mall Kumamoto in Kashima Town, Kumamoto Prefecture where up to 30 people are missing, tearing away one side of the mall.
+A spokesperson for mall operator Aeon 8267.T said the exact cause of the ensuing blast was unclear, however local news repots do indicate the explosion is being treated as gas-related, as per broadcaster NTV has reported.
+Kazuya Tsurunaga told news channel TBS he had been cleaning up dishes broken by the earthquake in a nearby pub, located about 300 metres from the mall.
+&#34;It was a huge impact,&#34; he said, revealing he had been left stunned by the follow-up blast. &#34;A large cloud of smoke billowed up, and because the wind happened to be blowing and the wind direction was towards the shop, the area around us was in a state like volcanic ash was falling.&#34;
+The latest earthquake is among more than 200 “significant” quakes in Japan since 2000 and it is one of the more powerful.
+Japan has so many because it lies on the Ring of Fire, an area of intense seismic and volcanic activity on both sides of the Pacific Ocean.
+“Japan sits on the boundaries of four tectonic plates, which makes it one of the most earthquake-prone areas in the world,” Shoichi Yoshioka, a professor at Japan’s Kobe University, previously told CNN.
+“About 10% of the world’s earthquakes of magnitude 6 or higher occur in or around Japan, so the risk is much higher than in places like Europe or the eastern United States, where earthquakes are rare.&#34;
+The worst was the 9.1 magnitude Tohoku earthquake in 2011 that led to a tsunami with around 20,000 people killed.
+Footage from Kumamoto shows the destruction with a road destroyed by the earthquake and buildings damaged.
+A 7.1 magnitude earthquake shook Japan ’s southern main island of Kyushu on Tuesday, leaving dozens of people injured or missing after part of a shopping centre and a huge chimney at a paper factory collapsed, officials said.
+A person wrote on X along with the clip: &#34;The Kumamoto earthquake is hitting hard right now. Got a video from a friend - people in Kyushu, especially Kumamoto, stay safe.&#34;
+Officials in Kumamoto Prefecture said that two workers were in a state of cardiac arrest at a factory in Yatsushiro City and that nine others are missing.
+The earthquake caused a smokestack to collapse and other damage at Nippon Paper Industries.
+The local government stated that 11 people were trapped at the plant, two of the rescued individuals had already suffered cardiac arrest, while the whereabouts of the remaining nine are still unknown.
+More than 175 schools and centres have been closed following the earthquake in the city of Kumamoto.
+Some locations have been set up as evacuation points with 178 sites with closed facilities also including sports centres and public parks
+Many events have also been cancelled over the coming days with the fear also of follow-up tremors.
+A hospital in Kumamoto is “at full capacity” with dozens of people injured in the earthquake.
+Saiseikai Kumamoto Hospital, with 400 beds, said it has had to suspend “pre-scheduled hospitalizations”, NHK reported.
+“People injured by furniture that fell during the earthquake, such as those with fractures, are being brought in one after another. We have 400 beds, but we are already at full capacity,” said a statement from the hospital.
+People can be seen running for cover following an explosion at the Aeon Mall Kumamoto shopping centre in Kashima, Kumamoto Prefecture.
+Unconfirmed reports say that the second floor of the building collapsed following a gas explosion during the earthquake.
+People can be seen running for cover following an explosion at the Aeon Mall Kumamoto shopping centre in Kashima, Kumamoto Prefecture.
+Unconfirmed reports say that the second floor of the building collapsed following a gas explosion during the earthquake.
+An explosion caused the collapse of the Aeon Mall Kumamoto shopping centre in Kashima, Kumamoto Prefecture, with 10 people still missing.
+The second floor of the building is understood to have given way with four people now rescued but 10 remain missing.
+A senior government official told reporters: &#34;We don&#39;t know if it was the cause of the explosion, but there have been reports that gas was leaking.
+&#34;The main gas valve has been shut off, and the police, fire department, and Self-Defense Forces are conducting rescue operations.&#34;
+An earthquake with an estimated magnitude of 7.1 struck the Kumamoto area causing significant damage to buildings and roads.
+Footage shows the Kyushu Expressway which was partly ripped up due to the impact of the tremor.
+&#34;The situation near the Yatsushiro Interchange on the Kyushu Expressway in Kumamoto,&#34; wrote an X user along with the clip.
+Shinkansen bullet trains and local trains in Kyushu have been suspended for safety checks, and the runway at Aso Kumamoto Airport was closed, with “no prospect of resuming operations,” according to a notice on the airport’s website.
+The Japanese Defense Ministry said it dispatched aircraft to the area to assess the situation.
+A train derailed and fell on its side at Yatsushiro station, and stone walls were damaged at Kumamoto castle, Kyodo said.
+“The shaking reminded me of the Kumamoto quake (10 years ago) and I was frightened,” said Hiroki Shimoda, an official at Mifune town hall, who saw roof tiles of nearby homes crash to the ground. Kumamoto was hit with a deadly quake in 2016 that left more than 50 people dead.
+A gas explosion reportedly caused the devastation at Aeon Mall Kumamoto in Kashima Town, Kumamoto Prefecture where up to 30 people are missing.
+The second floor collapsed as a result of the explosion, and several deaths have now been confirmed while there are understood to be people trapped inside.
+Local media has reported that the Aeon Mall was not on the city&#39;s gas supply but had LP gas stored nearby which ignited.
+An earthquake registering a magnitude of 7.1 shook Japan’s southern main island of Kyushu and caused part of a shopping center to collapse on Tuesday, leaving dozens of people missing or injured, officials and reports said. A tsunami advisory was issued but quickly lifted.
+The second floor of the Aeon Mall shopping center in Kashima Town collapsed, trapping an unknown number of people. Around 20 to 30 employees were missing while several other people were dug out and taken to a hospital, Kyodo News agency reported, quoting local police.
+The affected area is about 540 miles southwest of Tokyo. A tsunami advisory for the Ariake and Yatsushiro Seas on the western coasts of Kumamoto prefecture and three neighboring prefectures was lifted within two hours, the Japan Meteorological Agency said.
+Japan’s Prime Minister Sanae Takaichi told reporters there were reports of damage to roads, bridges and buildings, as well as blackouts and fires, though details were unclear.
+A clip has been shared on social media of the devastation caused to the car park at the Aeon Mall shopping centre in Kashima Town
+Inside the mall the second floor is understood to have collapsed with dozens of people missing.
+And outside vehicles have been badly damaged with debris and rubble in the car park.
+The Japanese government&#39;s disaster response taskforce have held a meeting at the prime minister&#39;s office.
+Prime Minister Takaichi Sanae said: &#34;The governor of Kumamoto has requested the SDF be sent, so 3,600 SDF members (self defence force) will be dispatched for disaster relief work.
+&#34;This is a very crucial moment, and human lives comes first: we would like to minimize the harm to people, and to ensure the safety of our people. We will work closely with the local government, and the government will make all-out efforts.&#34;
+The Fire and Disaster Management Agency says many people could be trapped inside the Aeon Mall Kumamoto in Kashima.
+An explosion was reported there following the earthquake, and the building&#39;s second floor has collapsed.
+Police say they believe about 20 to 30 people are unaccounted for in the shopping mall, with details still unclear about whether these are mainly shop workers or customers.
+Authorities say rescue operations continue.
+Troops have been deployed on “life-saving operations” as dozens of people remain missing and thousands are without power.
+Defense Minister Koizumi said: &#34;The 42nd Rapid Deployment Regiment and the 8th Reconnaissance Unit of the Ground Self-Defense Force are primarily engaged in life-saving operations. We will continue to work with a sense of urgency and full effort in information gathering and providing support for daily life.&#34;
+About 40,000 households in Kumamoto Prefecture are experiencing power outages, meanwhile about 9,500 households are also without gas in the region.
+The Kumamoto Prefectural Police said one person who was found in a collapsed house and transported to a hospital in Kumamoto has died. Casualty figures are starting to emerge as hospitals in the area receive people injured in the quake.
+Meanwhile at the Aeon Mall, there are still 20 to 30 employees currently unaccounted for and feared trapped after the second story of the massive building collapsed.
+There are also reports that a further 10 people are still missing and their whereabouts are unknown as a result of the earthquake.
+About 10 people were also injured at a special nursing home for the elderly in Hikawa town, but none of them seriously, according to NHK.
+Firefighters are currently working to rescue nine people at the Nippon Paper Industries Yatsushiro Plant in Yatsushiro City. Several people were reported missing at the plant which saw a massive smokestack collapse in the quake.
+About 80 people injured by the earthquake are receiving treatment at the Yatsushiro Northern Regional Medical Center, local media reports. Meanwhile Uki General Hospital in Uki City has admitted 40 injured people, 10 of whom are seriously injured.
+Kumamoto Red Cross Hospital in Higashi Ward, Kumamoto City, is also reported to have received a large number of injured patients.
+At Yatsushiro Station, a freight train derailed and overturned due to the strong shaking. There were no passengers on board. The driver is being checked for injuries.
+Rail services across Kyushu, including the Shinkansen bullet train, were suspended.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.mirror.co.uk/news/world-news/japan-earthquake-kumamoto-tsunami-warning-37483971" target="_blank" rel="noopener">
+  Read full article at The Mirror →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-6/">Japan Earthquake Death Toll Rises</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
