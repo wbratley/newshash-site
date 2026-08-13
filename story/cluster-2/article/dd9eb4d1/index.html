@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything you need to know about university costs — BBC News — Newshash</title>
+  
+<meta name="description" content="With rising tuition fees and living costs, do higher graduate earnings cover the cost of a degree?">
+<link rel="canonical" href="https://newshash.com/story/cluster-2/article/dd9eb4d1/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Everything you need to know about university costs">
+<meta property="og:description" content="With rising tuition fees and living costs, do higher graduate earnings cover the cost of a degree?">
+<meta property="og:url" content="https://newshash.com/story/cluster-2/article/dd9eb4d1/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Everything you need to know about university costs">
+<meta name="twitter:description" content="With rising tuition fees and living costs, do higher graduate earnings cover the cost of a degree?">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-13</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-2/">← A-Level Results Released in UK</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Everything you need to know about university costs</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Everything you need to know about university costs
+- Published
+Graduates in England leave university with more than £47,500 in student debt, according to the latest statistics.
+Figures from the 2025-26 financial year suggest that the amount borrowers owe when they first become eligible to repay has, on average, fallen compared to the year before.
+Many students getting their A-level and other Level 3 results might still be unsure about whether to pursue a university degree - so is it worth it?
+Can graduates still expect to earn sufficiently more than those without a degree to cover the cost of going in the first place?
+How much are tuition fees in England and Wales and why have they gone up?
+Last August, the annual cost of an undergraduate degree in England and Wales went up to £9,535 a year. It is set to rise again to £9,790 in 2026.
+The increases came after universities expressed growing concerns about funding pressures in recent years, pointing out that tuition fees had been frozen at £9,250 since 2017.
+They argued that inflation meant those fees were worth less in real terms and there had been fewer international students to help make up the financial shortfall.
+In October 2025, the government said that university tuition fees in England would go up every year in line with inflation from 2026.
+They are expected to increase every year by an inflation measure called the Retail Price Index minus mortgage payment interest, or RPIx.
+How much are university fees in Northern Ireland and Scotland?
+UK nations set their own fees.
+In Northern Ireland, external, the maximum annual cost of an undergraduate degree is £4,855 for Northern Irish students or £9,535 for other UK students. That will rise to £4,985 and £9,790 respectively in 2026-27.
+In Scotland, external, undergraduate tuition is free for the majority of Scottish students and £9,535 for other UK students - rising to £9,790 in 2026-27.
+How do student loans work?
+Student loans are made up of two components, external:
+- a loan for tuition fees 
+- a maintenance loan for living costs 
+Most people are entitled to the tuition fee element, which is equal to the annual cost of their course.
+Maintenance loans are means-tested, so how much you can borrow depends on your family&#39;s income, and may not cover your actual bills.
+The maximum maintenance loan for students in England is also set to increase by inflation every year from 2026.
+For example, the maximum maintenance loan for students from England who live away from their parents outside London will increase to £10,830 for 2026-27, up from £10,544 the year before.
+You are charged interest on your total loan from the day you take it out, but do not have to start paying it back until your annual income reaches a certain level.
+Once you reach that level, you make a regular payment which covers both your tuition fees and maintenance loans.
+Repayment rules are also different across the UK. They changed in England in 2023, meaning current and future students are likely to pay back more, over a longer period of time, than those who went to university earlier.
+Money saving expert Martin Lewis said the extended repayment period would increase &#34;costs by thousands&#34; for lower and mid-earners., external
+Graduates in England who became liable to pay back their loans in April 2026 had an average debt of £47,730, external, according to the Student Loans Company - down from £53,000 the year before.
+That&#39;s partly because this was the first year that any students who took out Plan 5 loans – introduced in England in 2023 – became eligible to repay, and their loans accrue less interest than earlier Plan 2 loans.
+Plan 5 borrowers accounted for more than 10% of the total number of borrowers in the 2025-26 financial year.
+- Former students urged to check for loan refunds - Published9 November 2024
+ 
+What does student accommodation cost across the UK?
+Student rents have risen sharply in recent years, alongside other living costs.
+The Higher Education Policy Institute (Hepi), external says average weekly costs for a first-year student in 2023-24 were £260 without rent, or £418 when rent is included.
+Average annual rent across 10 university towns and cities, external - excluding London and Edinburgh - rose from £6,520 in 2021-22 to £7,475 in 2023-24.
+Separate figures for London found that, external the average rent for purpose-built student accommodation in the capital was £13,595 in 2024-25.
+Hepi said last year that students needed £61,000 over the course of a three-year degree in order to have a &#34;minimum socially acceptable standard of living&#34; - and that&#39;s excluding tuition fees. In London, that figure is £77,000.
+The think tank&#39;s 2026 student survey, external found the percentage of full-time undergraduates in paid employment during term time was 65% - a slight fall from the previous year, but much higher than the 45% in 2022.
+- My student loan doesn&#39;t cover my bills, so I wear my work uniform to lectures - Published21 September 2025
+ 
+- Struggling students skip meals as living costs rise - Published28 April 2025
+ 
+What extra financial help can students get?
+Eligible students in Wales and Northern Ireland can claim maintenance grants which do not have to be repaid.
+Full-time undergraduates normally resident in Wales are entitled to at least £1,000, external, rising to £1,020 in 2026-27. Students from the poorest backgrounds who choose to study in London can get up to £10,124, which will rise to £10,325.
+In Northern Ireland the maximum grant is £3,475, external, rising to £3,569 in 2026-27.
+The government in England is bringing back maintenance grants of up to £1,000 per year for students from lower income households on courses that support its Industrial Strategy. They will be available from 2028 and the government is still drawing up a list of eligible courses.
+The Scottish government offers financial support to certain categories of students, external, such as those with dependants.
+Across the UK, students in financial difficulty can apply for hardship funding and they may also be entitled to financial assistance from charities., external
+Will I earn more money with a degree?
+Recent research, external from Hepi and AdvanceHE suggests that 45% of undergraduate students think the value for money of their course is &#34;good&#34; or &#34;very good&#34;, up from 37% last year and the highest proportion recorded in more than ten years.
+Whether or not university can be considered &#34;worth it&#34; will vary from person to person, depending on what they want to get out of it.
+When thinking about the financial cost, it&#39;s important to consider that, once graduates earn a certain amount, they are required to pay back student loans over a period of up to 40 years. MPs launched an inquiry into student loans in England this year amid &#34;widespread dissatisfaction&#34; over repayment terms.
+In general, graduates can expect to earn more than non-graduates, according to government statistics from 2024., external
+Median pay for working-age graduates rose to £42,000 in 2024, ahead of the £30,500 earned by non-graduates - though this data does not account for external factors, like prior academic attainment.
+However, the Higher Education Statistics Agency (HESA), external has said that when taking account of inflation, graduate wages have declined in real terms - and the level of the decline varies depending on which job you&#39;re in.
+When measured against prices in 2015, graduates surveyed in 2022 were earning £448 per year less on average than their counterparts who graduated three years earlier.
+Earnings also depend on the subject studied and university attended.
+Research published in 2020 by the IFS think tank, external in England suggests that, on average, women who study creative arts and languages degrees earn the same amount in their lifetime as if they had not gone to university.
+In contrast, women who study law, economics or medicine earn over £250,000 more during their career than if they did not have a degree.
+Men who studied creative arts on average earn less across their lifetimes than if they had not attended university. Male medicine or economics graduates earn £500,000 more.
+Attending university can help students from poorer backgrounds earn more than their parents might have done, according to 2021 research by education charity the Sutton Trust, external in England.
+But it found that only a fifth of graduates who were eligible for free school meals went on to be in the top 20% of earners - compared to almost half of graduates who attended private schools., external
+The Sutton Trust says attending a selective university - such as those in the Russell Group of leading universities - gives young people the &#34;best chance of being socially mobile&#34;.
+Get in touch
+Are you applying to University or choosing another path? Get in touch.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/cwyegp0dnq9o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-2/">A-Level Results Released in UK</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

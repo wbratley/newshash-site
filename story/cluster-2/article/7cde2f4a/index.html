@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to get the most out of university clearing on results day — BBC News — Newshash</title>
+  
+<meta name="description" content="From listing potential outcomes to picking up the phone, these are some top tips for getting through clearing.">
+<link rel="canonical" href="https://newshash.com/story/cluster-2/article/7cde2f4a/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="How to get the most out of university clearing on results day">
+<meta property="og:description" content="From listing potential outcomes to picking up the phone, these are some top tips for getting through clearing.">
+<meta property="og:url" content="https://newshash.com/story/cluster-2/article/7cde2f4a/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="How to get the most out of university clearing on results day">
+<meta name="twitter:description" content="From listing potential outcomes to picking up the phone, these are some top tips for getting through clearing.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-13</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-2/">← A-Level Results Released in UK</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">How to get the most out of university clearing on results day</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>How to get the most out of university clearing on results day
+- Published
+Have you changed your mind about the university course you want to start after getting your results?
+Maybe you did not apply to university originally but now want to go, or you might not end up getting the grades you need to make it into your firm choice.
+If that is you, the clearing process will have you covered.
+While students in Scotland received their results last week, young people in England, Wales and Northern Ireland will find out how they did in their exams on Thursday 13 August.
+Here is everything you need to know about clearing.
+What is clearing?
+Clearing is how universities and colleges fill any places that they still have on their courses and how students can change their course or place of study.
+This year, clearing runs from 2 July to 19 October.
+Prospective students can use clearing if:
+- You are applying after 30 June 
+- You did not receive any offers (or none you wanted to accept) 
+- You did not meet the conditions on your offers 
+- You have declined your firm place using the &#34;decline my place&#34; button in your application 
+- You are not already holding any offer from a university or college, and the course still has places 
+- You want to go to your insurance choice instead of your firm. You will have to check in clearing whether your insurance choice will accept you 
+- You have done better than expected and want to go to a different university 
+What can students do to prepare for clearing?
+Clementine Wade, an education consultant and content creator, says there are things students can do to prepare for clearing.
+She suggests writing down all possible outcomes that you could get, and then finding alternatives to those outcomes.
+For example, depending on available places:
+- If I get AAA, then I could do physics at Sussex 
+- BBC could be physics at Aberystwyth 
+- CCD could be physics at Nottingham Trent 
+If you are doing BTecs, T-levels or other qualifications, you can work out how many Ucas points your results are worth using the calculator tool on their website, external.
+The Ucas website has a search tool to find courses, which you can find here, external. You can filter the options to the year of study, type of course and to those with clearing vacancies. It is the only official vacancy list, so it is the most up-to-date.
+For those who are unsure about their course choice and want to change, Wade says it is important to talk to a trusted adviser first, like a family member or teacher.
+She says students should think about why they chose that option in the first place, and why you might now be changing your mind.
+She says she finds most of the people who go through clearing are those that are applying to university for the first time.
+Haadi Nasir, a student at the University of Manchester, was one of those people.
+At first, he wanted to take a gap year after his A-levels so did not apply for university, but was persuaded to go by family and friends after achieving &#34;great grades&#34;.
+On the day, with the help of his A-level teachers, he filled in a Ucas form, applied to six universities via clearing and picked the University of Manchester to study politics and modern history.
+&#34;The good thing about clearing is that you can apply to as many universities as you want, unlike with Ucas, where you are limited to five,&#34; he says.
+&#34;That was definitely stress-relieving,&#34; he says.
+For those on the fence about university, Nasir recommends people put in a Ucas application &#34;just in case&#34; to avoid the stress of results day.
+That&#39;s a piece of advice that is echoed by Wade.
+&#34;You will need a referee, which is why I&#39;d suggest doing it now,&#34; she says.
+&#34;Let&#39;s say [you&#39;ve] got to email the teacher, the teacher&#39;s got to add a reference, then Ucas only gets sent once all of those parts are sent together.&#34;
+Nasir says he wished he was more prepared for clearing, and advises students to write down some notes on location, accommodation and cost for each university you contact.
+&#34;Make sure you know whether you qualify before calling,&#34; he says.
+&#34;With my university I was required to have a specific A-level, so make sure you meet the requirements.&#34;
+How does it work and what do you need to do on results day?
+For those awaiting results, Ucas updates at 08:00 on results day, so you can often find out whether you have been accepted to your firm choice before knowing your grades.
+But Wade advises holding off and waiting until you get your results before you open the Ucas website.
+&#34;I would say try and steer away from the temptation, get your results in hand and then look at your Ucas track, because then you can action that decision as opposed to having 90 minutes of freak-out.&#34;
+Jamie Bradford, head of future students at Leicester De Montfort University, also says it is easier to start conversations about clearing with your results in hand.
+On Ucas, before you add a clearing choice in your application, you need to contact the university or college and give them your clearing number - which you can find in your application - and personal ID, so they can find it.
+&#34;It&#39;s amazing how many students don&#39;t actually talk about the course or the place at all,&#34; says Bradford.
+&#34;All they want is just the offer - &#39;I&#39;ve got these grades, can you take me?&#39; - in reality, it&#39;s three or more years of your life. The university is a big decision.&#34;
+Bradford says students need to ask about the day-to-day of the course, the campus and whether accommodation is available.
+&#34;Work up a priority list,&#34; he says.
+&#34;For us, it&#39;s about fitting the right student to the right course, not just about getting any offer.&#34;
+Wade says students should go through a list of alternatives, and once they have received offers and discussed student finance with the universities, have a break to chat with a trusted person.
+She also stresses that students need to have the confidence to pick up the phone and call universities.
+&#34;I know it feels scary, but you are the client, you do get to ask these questions,&#34; she says.
+&#34;You don&#39;t even need to ring this university to say, &#39;Can I get into this course, please?&#39; You could say, &#39;Hey, what course could you offer me?&#39; Because you know what, universities need these students.&#34;
+Some universities, like Leicester De Montfort, also operate clearing through WhatsApp as well as via phone.
+How long do you have to decide on an offer?
+Bradford says many students &#34;can&#39;t afford&#34; to spend days ruminating on their offer as popular courses do get filled quickly, but it is important to not agree to one straight away.
+&#34;Spend a small amount of time thinking, what do I really want from my experience? Don&#39;t panic buy and accept the first offer that comes along.&#34;
+Wade says students need to ask their preferred university how much time they have to accept the offer on results day as every university is different.
+&#34;The more super-selective the university, the less time they will have,&#34; she says.
+&#34;Generally, I would always say sleep on it. Most universities will give students some time, but ask that question on the phone.&#34;
+Clarification 12 August: This article was amended to include further details about the process for Scottish students which were omitted from the previous version.
+Get in touch
+Are you affected by issues covered in this story? Do you have any questions?</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/c20dpj3peglo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-2/">A-Level Results Released in UK</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
