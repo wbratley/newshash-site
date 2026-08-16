@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What we know so far about the West Midlands fires — BBC News — Newshash</title>
+  
+<meta name="description" content="Several fires swept across the West Midlands on Thursday destroying homes and forcing residents to flee.">
+<link rel="canonical" href="https://newshash.com/2026-08-15/story/cluster-3/article/1d92b192/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="What we know so far about the West Midlands fires">
+<meta property="og:description" content="Several fires swept across the West Midlands on Thursday destroying homes and forcing residents to flee.">
+<meta property="og:url" content="https://newshash.com/2026-08-15/story/cluster-3/article/1d92b192/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="What we know so far about the West Midlands fires">
+<meta name="twitter:description" content="Several fires swept across the West Midlands on Thursday destroying homes and forcing residents to flee.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-15</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-08-16
+      </a>
+      
+      <a href="/2026-08-15/"
+         class="active">
+        2026-08-15
+      </a>
+      
+      <a href="/2026-08-14/"
+         class="">
+        2026-08-14
+      </a>
+      
+      <a href="/2026-08-13/"
+         class="">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-08-15</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-08-15/story/cluster-3/">← UK Wildfires Prompt Emergency Alerts</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">What we know so far about the West Midlands fires</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>What we know so far about the West Midlands fires
+- Published
+Firefighters in the West Midlands are extinguishing remnants of fires, a day after multiple blazes swept across the region.
+As the UK recorded its hottest day of the year on Thursday, residents fled their homes as fires spread through dry grass and tore through houses.
+A total of 54 patients were treated by paramedics and 19 were taken to hospital.
+Here is what we know about the fires.
+Where did the fires take place?
+On Thursday, fire crews responded to multiple blazes across the West Midlands that led to thousands of 999 calls.
+In Stourbridge just before 13:30 BST, West Midlands Fire Service (WMFS) were alerted to a large grass fire near Stourbridge Golf Club in the Racecourse Lane area.
+More than 100 firefighters fought to tackle the flames as they spread over more than 500 acres and destroyed and damaged homes, forcing residents to evacuate.
+Declared a major incident, one firefighter was taken to hospital and has been discharged, with a further five suffering minor injuries, including smoke inhalation. Six members of the public were also treated for smoke inhalation and a child was taken to hospital.
+WMFS chief fire officer Simon Tuhill said 19 houses had been fully destroyed by the fire, while 18 more had been damaged.
+He described the conditions as &#34;some of the most challenging&#34; he has seen in 28 years of service, and residents have been warned they could be away from their homes for days.
+On Friday, firefighters were continuing to damp down affected areas and extinguish hotspots.
+In neighbouring Worcestershire, a number of homes were damaged and 30 properties evacuated in the market town of Pershore, Hereford and Worcester Fire and Rescue Service said. One person was treated for smoke inhalation and about 200 properties were also left without power.
+In Staffordshire, a fire in the Goldenhill area of Stoke-on-Trent saw four homes destroyed. A man and woman have been arrested on suspicion of arson, Staffordshire Police said.
+Later, Staffordshire Fire and Rescue Service said six firefighters had to be taken to hospital for smoke inhalation and heat exhaustion after battling blazes in the county.
+Elsewhere, a major incident was declared in Warwickshire, where fire crews responded to a large fire in Salford Priors, near Stratford-upon-Avon.
+In the Castle Vale area of Birmingham, homes on the street were badly damaged in a fire, causing part of a roof on one building to collapse. A woman suffered serious injuries, while a man was also taken to hospital. In Willenhall, three homes and several gardens were destroyed in the market town between Walsall and Wolverhampton.
+Separately in the Kings Norton area, a man has been arrested on suspicion of arson to endanger life.
+And in the Druids Heath area of the city, a blaze also broke out, with video showing flames tearing through a row of houses. Nearby in Highters Heath, multiple terraced properties caught fire.
+Who has been affected?
+Harrowing stories have emerged from people who had their homes destroyed.
+Andrew Reynolds, whose mother&#39;s house burnt down in Highters Heath area of Birmingham, said his family had lost everything, including 100 years&#39; worth of family photos.
+He described the scene as an &#34;inferno&#34; as the blaze &#34;ripped through&#34; the properties.
+Reynolds, 42, said: &#34;Everyone&#39;s gutted, grieving, people have lost so much and no-one can go in to see if they can salvage anything.&#34;
+Jane Baxter, whose house backs directly on Stourbridge Golf Club, was evacuated from her home.
+She told BBC Radio 4&#39;s Today programme: &#34;The police knocked our door and said that everyone had to be evacuated quickly because they thought the fire was changing directions.
+&#34;So, it was literally grab what you need and get out.
+&#34;So, get out we did with the cat and away to go to our son&#39;s house.&#34;
+Farmers in the area tried to use tractors to make a firebreak to halt the spread of the blaze.
+Daniel Pardoe, of Iverley Park Farm, said: &#34;There was about eight of us in total with various tractors and sprayers.&#34;
+A total of 54 people were treated by paramedics, with 19 admitted to hospital, following the fires, West Midlands Ambulance Service said.
+What can impacted homeowners do?
+For people whose homes have been affected by the fires, the Association of British Insurers (ABI) advises that they should contact their insurer &#34;as soon as it is safe to do so&#34;.
+Insurers &#34;will be able to explain the claims process, provide practical support and help you understand what assistance may be available under your policy&#34;, ABI says.
+They should be able to offer support for things like emergency payments and helping to repair or rebuild damaged properties, as well as providing alternative accommodation when properties are damaged and no longer safe to live in.
+It adds that if people are evacuated as a precaution and the property has not been damaged, temporary accommodation is typically arranged through the local authority.
+If home owners don&#39;t have insurance, the ABI advises contacting the local authority or the Red Cross.
+How did the fires start?
+On Thursday the UK experienced it hottest day of the year and fifth hottest day on record, as the heatwave gripped much of the country.
+In the West Midlands, the highest maximum temperature was 38C in Pershore, Worcestershire, according to Met Office figures.
+Speaking about the Stourbridge blaze, WMFS chief fire officer Tuhill said the &#34;tinder dry conditions&#34; in the UK and West Midlands had meant that &#34;the fire has spread rapidly&#34;.
+WMFS urged the public to:
+- avoid using fireworks 
+- not to light disposable barbecues or burn any waste at home or in public 
+- dispose of cigarettes safely and to be mindful of glass items 
+Dr Kerryn Little - a wildfire researcher at the University of Birmingham - says the Midlands has been hit badly because of vegetation in urban areas.
+She added: &#34;There&#39;s a high amount of people moving around, resulting in ignitions.
+&#34;When that meets with large areas of continuous vegetation that is built up, that can lead to wildfires.&#34;
+A total of 1,017 wildfires have been recorded in England and Wales this year, according to data shared by the National Fire Chiefs Council (NFCC), which matches last year&#39;s record.
+Most fires are started by humans, whether deliberately or accidentally, but this summer&#39;s hot and dry weather has created ideal conditions for blazes.
+Repeated heatwaves have drawn extra moisture out of the soil. Combined with a lack of rainfall, this has left vegetation tinder-dry, making it easier for fires to ignite and quickly spread.
+Last year saw a record area burnt by wildfires in the UK, and this summer has been far above average too.
+This is consistent with expectations of a greater risk of more extreme fires due to climate change, driven by greenhouse gas emissions.
+Some researchers also warn that the UK and Europe need to improve preparations for fires, including better management of landscapes.
+Where else in the UK have there been fires?
+Elsewhere in England, a large number of fires are burning in Dorset and Wiltshire, where a major incident has been declared. The fires include a blaze on grassland near the famous Westbury White Horse in Bratton, Wiltshire.
+In Hampshire, firefighters are continuing to tackle a wildfire in the New Forest for a sixth day. An area about the size of 230 football pitches has been affected. The fire service has said the perimeter of the blaze has been brought under control.
+In Cambridgeshire, a wildfire has engulfed half of a nature reserve called Holme Fen, near Peterborough, burning through swathes of the 660-acre (270-hectare) site.
+In Norfolk, a major incident was declared as firefighters tackled a blaze in Mousehold Heath in Norwich, and another in Sipdham, near Dereham. The incident has since been stood down, with the fire service saying its resources were in a more stable condition by Thursday evening.
+In Wales, a major incident has been declared near Llandovery, Carmarthenshire. Fire crews have been tackling the flames since Wednesday afternoon, as the wildfire continues to affect about 250 hectares of land.
+Elsewhere, fire services said crews were attending 30 incidents in south Wales on Thursday, with a &#34;significant number of resources&#34; at the scene at Porth, Rhondda Cynon Taf.
+Additional reporting by Mark Poynting
+Related topics
+- Published1 day ago
+ 
+- Published25 July
+ 
+- Published5 November 2025</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/cp8xr2n9560o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-08-15/story/cluster-3/">UK Wildfires Prompt Emergency Alerts</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
