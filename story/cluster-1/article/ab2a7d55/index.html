@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We asked Facebook and TikTok if they will stop deadly driving videos. This is their reply — i Paper — Newshash</title>
+  
+<meta name="description" content="The i Paper quizzed social media companies following crash in Middlesborough that killed seven">
+<link rel="canonical" href="https://newshash.com/story/cluster-1/article/ab2a7d55/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="We asked Facebook and TikTok if they will stop deadly driving videos. This is their reply">
+<meta property="og:description" content="The i Paper quizzed social media companies following crash in Middlesborough that killed seven">
+<meta property="og:url" content="https://newshash.com/story/cluster-1/article/ab2a7d55/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="We asked Facebook and TikTok if they will stop deadly driving videos. This is their reply">
+<meta name="twitter:description" content="The i Paper quizzed social media companies following crash in Middlesborough that killed seven">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-25</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-08-25
+      </a>
+      
+      <a href="/2026-08-24/"
+         class="">
+        2026-08-24
+      </a>
+      
+      <a href="/2026-08-23/"
+         class="">
+        2026-08-23
+      </a>
+      
+      <a href="/2026-08-22/"
+         class="">
+        2026-08-22
+      </a>
+      
+      <a href="/2026-08-21/"
+         class="">
+        2026-08-21
+      </a>
+      
+      <a href="/2026-08-20/"
+         class="">
+        2026-08-20
+      </a>
+      
+      <a href="/2026-08-19/"
+         class="">
+        2026-08-19
+      </a>
+      
+      <a href="/2026-08-18/"
+         class="">
+        2026-08-18
+      </a>
+      
+      <a href="/2026-08-17/"
+         class="">
+        2026-08-17
+      </a>
+      
+      <a href="/2026-08-16/"
+         class="">
+        2026-08-16
+      </a>
+      
+      <a href="/2026-08-15/"
+         class="">
+        2026-08-15
+      </a>
+      
+      <a href="/2026-08-14/"
+         class="">
+        2026-08-14
+      </a>
+      
+      <a href="/2026-08-13/"
+         class="">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-1/">← Five Men and Two Police Officers Die in Middlesbrough Wrong-Way Crash</a>
+
+<div class="article-outlet lean-centre">
+  <span class="outlet-name">i Paper</span>
+  <span class="lean-badge lean-centre">centre</span>
+</div>
+
+<h1 class="article-headline">We asked Facebook and TikTok if they will stop deadly driving videos. This is their reply</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Despite TikTok, Snapchat and Facebook prohibiting content that promotes crime, videos glamorising dangerous driving appear to be falling through the cracks.
+
+
+
+The i Paper asked the social media companies whether they will remove joyriding content; if they planned to update any algorithms to stop promoting this content; and whether they flag these videos and accounts to the police.
+
+
+
+TikTok and Meta – which owns Facebook and Instagram – did not provide an on-the-record comment, while Snapchat did not respond before the deadline for publication.
+
+
+
+
+
+Concern over dangerous driving content online has intensified after two high-speed crashes on the A66 near Middlesbrough and in Ireland – both involving cars driving the wrong way – led to the deaths of 12 people.
+
+
+
+Some of the young men in the speeding cars appear to have previously posted footage of dangerous driving on social media, including joyriding, speeding, and other reckless use of the road.
+
+
+
+‘Social media should take down anything like this’
+
+
+
+Claire Corkery’s parents were killed by a man driving 87mph down a quiet country lane in Kent. He lost control of an SUV while showing off to a barber who was his passenger and had just cut his hair. Sue, 68, Tom, 61, and Gracie, the dog they had been walking, died. Claire has since been campaigning for action to tackle speeding.
+
+
+
+“When I read the news, I was devastated for the families of the police officers,” she told The i Paper. “I know exactly what it’s like to be told that your loved ones aren’t coming home, and it’s just even more devastating when you find out that it’s because of something that’s completely preventable and because of someone else’s incredibly selfish decisions.
+
+
+
+“The fact that they’re posting themselves on social media doing this shows that driving dangerously and speeding is just accepted. It’s a real problem that men and young boys find it impressive.
+
+
+
+Claire Corkery with her mother Sue and father Tom (Photo: Isabelle Elliott)
+
+
+
+“Social media platforms should be absolutely taking down anything like this because it’s encouraging others to do the same. We need to start calling people out over people speeding and being on their phones.
+
+
+
+“We need to start seeing cars for what they are, and that they can be lethal weapons in the wrong hands as we have seen by terrorists carrying out car ramming attacks.
+
+
+
+“They are so dangerous in the wrong hands.”
+
+
+
+TikTok trend
+
+
+
+Filming of dangerous driving has become a TikTok trend, although Cleveland Police said that so far no evidence had emerged to suggest any filming of the joyride on the A66 was posted on TikTok. This has also not been confirmed for the crash in Ireland.
+
+
+
+Downing Street has told social media companies to act and called the videos “utterly disgraceful”.
+
+
+
+The i Paper understands TikTok works with law enforcement across the UK and will, where content suggests there is a threat to life, raise content directly with forces.  
+
+
+
+Dangerous driving is among the content that its policies prohibit as it can cause significant physical harm. Between January and March this year, of the content the platform removed for violating policies that prohibit dangerous activities, 99.8 per cent were taken down by TikTok proactively, according to the tech giant.
+
+
+
+Content that can promote unsafe and dangerous behaviour is monitored through proactive detection technologies, human moderation, and user reporting, according to TikTok.
+
+
+
+Tiktok has been under investigation by Ofcom, the regulator for online safety, since July over the platform’s compliance with child safety duties.
+
+
+
+“Under the Online Safety Act, platforms must minimise children’s exposure to violent material and content promoting dangerous challenges… We’ve shown we’ll take action if evidence suggests companies are falling short,” said an Ofcom spokesperson.
+
+
+
+Under the Online Safety Act, tech firms must mitigate the risk of Britons coming across illegal content on their platforms, such as the criminal offence of dangerous driving, and remove it swiftly.
+
+
+
+They must also protect under-18s from content that is legal but harmful, which, according to Ofcom, would include content promoting dangerous challenges, including trends such as glamorising harmful driving.
+
+
+
+Meta’s own policies are broadly similar, taking down content that promotes and encourages dangerous behaviour. 
+
+
+
+This paper understands that reckless driving against incoming traffic would fall, for Meta, under a breach of policies concerning high-risk viral challenges.
+
+
+
+Meta also blocks higher-risk content from users who report their age as under 18, and this would include content related to reckless driving.
+
+
+
+Snapchat did not respond to this paper before publication, but their public community guidelines state they do not allow content that encourages or promotes dangerous behaviour, and like Meta and TikTok, states that it may refer content to the police where “imminent threats to human life and safety”.
+
+
+
+The high-speed crash on the A66 near Middlesbrough in the early hours of Saturday led to the deaths of PC Matthew Blades, 37, PC Tom Clough, 38, and five men in a Volkswagen Passat, aged between 17 and 23.
+
+
+
+The Volkswagen was driving the wrong way down the dual carriageway when it hit the police car at speed.
+
+
+
+On 16 August in County Kildare, Ireland, five teenage boys died when the car they were in, which was travelling the wrong way up the M9 motorway, struck another car, carrying a family. The family – three woman and a boy – suffered severe injuries.
+
+
+
+A Downing Street spokeswoman told The Times ministers had raised the issue with social media companies.
+
+
+
+She said: “The glorification of dangerous driving for clips and entertainment is utterly disgraceful and that is why we have raised the issue of this appalling content with social media companies since the tragedy, and [Lisa Nandy, the Digital Secretary] is clear that it should be removed in line with their legal obligations.”
+
+
+
+A Department for Business and Trade source told The i Paper it was proactively engaging with social media platforms to understand their processes around such content and how they sought to address it.
+
+
+
+Andy MacNae, Labour MP for Rossendale and Darwen and chairman of the all-party parliamentary group for transport safety, sair: “Social media companies must take action on content which encourages harmful behaviour, including dangerous driving, which far too often causes serious injuries and loss of life.”</p>
+  
+</div>
+
+<a class="read-full" href="https://inews.co.uk/news/facebook-tiktok-stop-deadly-driving-videos-reply-4727663" target="_blank" rel="noopener">
+  Read full article at i Paper →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-1/">Five Men and Two Police Officers Die in Middlesbrough Wrong-Way Crash</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
