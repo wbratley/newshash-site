@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolly Parton’s lessons for life — i Paper — Newshash</title>
+  
+<meta name="description" content="The musical legend and philanthropist lived a rich and productive life, and we could all learn from it">
+<link rel="canonical" href="https://newshash.com/2026-08-27/story/cluster-7/article/0b75d854/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Dolly Parton’s lessons for life">
+<meta property="og:description" content="The musical legend and philanthropist lived a rich and productive life, and we could all learn from it">
+<meta property="og:url" content="https://newshash.com/2026-08-27/story/cluster-7/article/0b75d854/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Dolly Parton’s lessons for life">
+<meta name="twitter:description" content="The musical legend and philanthropist lived a rich and productive life, and we could all learn from it">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-27</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-08-28
+      </a>
+      
+      <a href="/2026-08-27/"
+         class="active">
+        2026-08-27
+      </a>
+      
+      <a href="/2026-08-26/"
+         class="">
+        2026-08-26
+      </a>
+      
+      <a href="/2026-08-25/"
+         class="">
+        2026-08-25
+      </a>
+      
+      <a href="/2026-08-24/"
+         class="">
+        2026-08-24
+      </a>
+      
+      <a href="/2026-08-23/"
+         class="">
+        2026-08-23
+      </a>
+      
+      <a href="/2026-08-22/"
+         class="">
+        2026-08-22
+      </a>
+      
+      <a href="/2026-08-21/"
+         class="">
+        2026-08-21
+      </a>
+      
+      <a href="/2026-08-20/"
+         class="">
+        2026-08-20
+      </a>
+      
+      <a href="/2026-08-19/"
+         class="">
+        2026-08-19
+      </a>
+      
+      <a href="/2026-08-18/"
+         class="">
+        2026-08-18
+      </a>
+      
+      <a href="/2026-08-17/"
+         class="">
+        2026-08-17
+      </a>
+      
+      <a href="/2026-08-16/"
+         class="">
+        2026-08-16
+      </a>
+      
+      <a href="/2026-08-15/"
+         class="">
+        2026-08-15
+      </a>
+      
+      <a href="/2026-08-14/"
+         class="">
+        2026-08-14
+      </a>
+      
+      <a href="/2026-08-13/"
+         class="">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-08-27</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-08-27/story/cluster-7/">← Dolly Parton, country music legend and philanthropist, dies at 80</a>
+
+<div class="article-outlet lean-centre">
+  <span class="outlet-name">i Paper</span>
+  <span class="lean-badge lean-centre">centre</span>
+</div>
+
+<h1 class="article-headline">Dolly Parton’s lessons for life</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Dolly Parton, the genuinely iconic country star with the sparkly outfits, bouffant blonde locks, preposterous bust, be-dimpled grin, high-pitched twang and a heart of gold, has died at the age of 80.
+
+
+
+She is being mourned and remembered not only as a musical legend, but as a philanthropist who gifted the world a no-nonsense kindness and warmth. Her all-American determination saw her soar above the venal and fractious culture wars that embody the grimmer underbelly of her country.
+
+
+
+She lived a productive, rich and happy life, while staying keenly aware of her emotions. So to be a bit more Parton, we’ve brought together some of her best mantras, bon mots and rules to life.
+
+
+
+
+
+On men
+
+
+
+Parton was quietly – and loyally – married to Carl Dean for almost 60 years until his death in 2025, aged 82. She was a romantic, of course – and emotional availability was key to her creativity, as she explained in 2023: “I have to not harden my heart, because I want to stay open to feel things.”
+
+
+
+But she admitted: “Yeah, I flirt, I’m not blind, and I’m not dead!” She’d “never met a man I didn’t like” and applied her inclusivity to the flirting pool, too. “I love bald men. Just because you’ve lost your fuzz doesn’t mean you aren’t a peach”.
+
+
+
+Coming from a family of six brothers meant she knew how to deal with men in business, separating the individual men from the concept of The Man: “It’s a man’s world, and it’s not their fault any more than it is just life.”
+
+
+
+She worked with plenty of men, saying: “Nobody can trick me. Nobody can fool me. I can sit in a room with the biggest businessmen in the world, working on some of the biggest business deals, and I don’t feel a bit inadequate. In fact, I always feel like I got a little something on most of them”. She’d later say that: “I look like a woman, but I think like a man. And in this world of business, that has helped me a lot. Because by the time they think that I don’t know what’s goin’ on, I then got the money, and am gone.”
+
+
+
+On women
+
+
+
+As well as writing the politest diss track in Jolene – at no point does she insult the woman threatening to steal her man – Parton starred in the 1980 film 9 To 5, which was, underneath the sugary-schmaltzy comedy, all about women’s workplace rights. She would later reflect that “For some reason, I have better luck when I work with women. I guess I have a good sense of sisterhood.”
+
+
+
+However, while never calling herself a feminist – her joke was that “I was the first woman to burn my bra; it took the fire department four days to put it out” she certainly did feminism, and in 2019 she told BBC Newsnight: “I still believe that women should get paid equal and should be treated with respect. I’m all about that. I don’t get out and have to preach it or march in the streets; I write about it.”
+
+
+
+Politics
+
+
+
+She tried to stay out of formal politics, saying, “You’ll find me and my opinions in a lot of my songs. But most of it is based on love, acceptance and lifting people up. My daddy was a Republican, my mama was a Democrat, and I’m a hypocrite.”
+
+
+
+Equality
+
+
+
+The woman who quietly funded bands in black-majority schools in the South was short and simple on this: “And of course black lives matter. Do we think our little white asses are the only ones that matter? No!”
+
+
+
+And with hair like that and torch songs like those, it’s no wonder Parton became an LGBT icon, kicking off with the 1991 song Eagle When She Flies, with lyrics: “Some are preachers, some are gay, some are addicts, drunks and strays. But not a one is turned away when it’s family”. She would joke on 90s TV: “If I’d been born a man, I’d have been a drag queen”.
+
+
+
+In 2016, she reiterated: “I do not believe we should criticise and judge other people. If you’re the fine Christian you think you are, why are you judging people? I just think we should be more loving, more caring. We are who we are. If you’re gay, you’re gay. If you’re straight, you’re straight. You should be allowed to be how you are and who you are”
+
+
+
+And in 2023, Parton said that trans people “cannot help” being trans “any more than I can help being Dolly Parton.”
+
+
+
+Money
+
+
+
+Hailing from an impoverished family of 14 from the Appalachian Mountains in Tennessee, Parton did not always have material wealth – or even material anything. The family were known to dress in donated rags. To her: “We didn’t have any money, but we were rich in things that money don’t buy. You know, like love and kindness and understanding”.
+
+
+
+She would go on to sell 100 million records worldwide, amassing a fortune of $450m (£330m) at the time of her passing. And this money came in handy, because “Nobody can ever make enough money for as many poor relatives as I’ve got.” That said, she also said: “I always count my blessings more than I count my money. I don’t work for money. Never did. It was the art.”
+
+
+
+Charity
+
+
+
+Parton gave millions of dollars to charitable causes, including the Imagination Library, which still gives millions of books to children around the world, including in the UK. She said: “It seems like the more I give, the more I get, and that is the way it is supposed to go in life”, and that “if you see someone without a smile today, give them yours”. In a letter to millions of children who benefited from her free books scheme, she wrote: “Just remember the lessons my family taught me – dream big dreams; learn everything you can learn; and care for all those who care for you. You do all of these things and you can be anyone you want to be.
+
+
+
+Family
+
+
+
+Parton is survived by oodles of siblings, their children, grandkids and great-grandkids, who call her “Aunt granny” and “Gigi”. But partly due to endometriosis, she did not have her own children, and later said: “God has a plan for everything. I think it probably was his plan for me not to have kids so everybody’s kids could be mine. And they are now.”
+
+
+
+Image
+
+
+
+Parton was proud of her gaudy, garish looks, saying: “It cost a lot of money to look this cheap” and claiming the neighbourhood “tramp” was her inspiration. She quipped: “The higher the hair, the closer to god” and joked along that: “I’m not offended by all the dumb blonde jokes because I know I’m not dumb… and I also know that I’m not blonde.” She was open about using surgical interventions to maintain her look, admitting: “If I see something sagging, bagging and dragging, I’m going to nip it, tuck it, and suck it.”
+
+
+
+But to judge her by her looks was to be short-sighted. “I know I look totally bizarre and artificial, but I’m totally real inside,” she once said. And she had little time for diet culture: “I tried every diet in the book. I tried some that weren’t in the book. I tried eating the book. It tasted better than most of the diets”.
+
+
+
+Resilience
+
+
+
+Many of Parton’s most powerful bon mots describe endurance in the face of adversity. There’s the line she gave to Michael Parkinson when he asked her feelings about her stratospheric rise: “I didn’t know I couldn’t do it until I had it done”.
+
+
+
+Then there’s the lyrics to her song I Try, which she would always sign off with in every handwritten note of encouragement she sent to Reese Witherspoon: “I’ve chased after rainbows, I’ve captured one or two, I’ve reached for the stars, I’ve even held a few, I’ve walked that lonesome valley, topped the mountains, saw the sky, I’ve laughed and I have cried, but I have always tried.”
+
+
+
+Parton also once told The Muppet Show, of all places, “You’ve got to have a broken heart. You’ve got to lose a great love. You’ve got to suffer some. Hard work and heartbreak is what country music is all about”
+
+
+
+“Find out who you are. And do it on purpose” was the advice she’d hand out to young musicians. And even though it was a joke in The Office, “The way I see it, if you want the rainbow, you gotta put up with the rain” continues to make sense.
+
+
+
+Hope is such an enduring part of Parton’s legacy that her final public statement, made just four days before her death, was “I still have so many things I want to achieve”. Maybe now that achievement is in the legacy of her words, her wisdom and hope.</p>
+  
+</div>
+
+<a class="read-full" href="https://inews.co.uk/inews-lifestyle/more-give-more-get-dolly-parton-guide-life-4731511" target="_blank" rel="noopener">
+  Read full article at i Paper →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-08-27/story/cluster-7/">Dolly Parton, country music legend and philanthropist, dies at 80</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
