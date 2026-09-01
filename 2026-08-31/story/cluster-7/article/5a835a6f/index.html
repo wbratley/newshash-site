@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where did we come from? How did we get here? — Morning Star — Newshash</title>
+  
+<meta name="description" content="Humans are part of the ‘animal kingdom’ – and of nature in general – but also distinct from it and labour (work) is part of what makes us unique, declared Engels. His insights 150 years ago into how o">
+<link rel="canonical" href="https://newshash.com/2026-08-31/story/cluster-7/article/5a835a6f/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Where did we come from? How did we get here?">
+<meta property="og:description" content="Humans are part of the ‘animal kingdom’ – and of nature in general – but also distinct from it and labour (work) is part of what makes us unique, declared Engels. His insights 150 years ago into how o">
+<meta property="og:url" content="https://newshash.com/2026-08-31/story/cluster-7/article/5a835a6f/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Where did we come from? How did we get here?">
+<meta name="twitter:description" content="Humans are part of the ‘animal kingdom’ – and of nature in general – but also distinct from it and labour (work) is part of what makes us unique, declared Engels. His insights 150 years ago into how o">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-08-31</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-09-01
+      </a>
+      
+      <a href="/2026-08-31/"
+         class="active">
+        2026-08-31
+      </a>
+      
+      <a href="/2026-08-30/"
+         class="">
+        2026-08-30
+      </a>
+      
+      <a href="/2026-08-29/"
+         class="">
+        2026-08-29
+      </a>
+      
+      <a href="/2026-08-28/"
+         class="">
+        2026-08-28
+      </a>
+      
+      <a href="/2026-08-27/"
+         class="">
+        2026-08-27
+      </a>
+      
+      <a href="/2026-08-26/"
+         class="">
+        2026-08-26
+      </a>
+      
+      <a href="/2026-08-25/"
+         class="">
+        2026-08-25
+      </a>
+      
+      <a href="/2026-08-24/"
+         class="">
+        2026-08-24
+      </a>
+      
+      <a href="/2026-08-23/"
+         class="">
+        2026-08-23
+      </a>
+      
+      <a href="/2026-08-22/"
+         class="">
+        2026-08-22
+      </a>
+      
+      <a href="/2026-08-21/"
+         class="">
+        2026-08-21
+      </a>
+      
+      <a href="/2026-08-20/"
+         class="">
+        2026-08-20
+      </a>
+      
+      <a href="/2026-08-19/"
+         class="">
+        2026-08-19
+      </a>
+      
+      <a href="/2026-08-18/"
+         class="">
+        2026-08-18
+      </a>
+      
+      <a href="/2026-08-17/"
+         class="">
+        2026-08-17
+      </a>
+      
+      <a href="/2026-08-16/"
+         class="">
+        2026-08-16
+      </a>
+      
+      <a href="/2026-08-15/"
+         class="">
+        2026-08-15
+      </a>
+      
+      <a href="/2026-08-14/"
+         class="">
+        2026-08-14
+      </a>
+      
+      <a href="/2026-08-13/"
+         class="">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-08-31</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-08-31/story/cluster-7/">← Where did we come from? How did we get here?</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">Morning Star</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">Where did we come from? How did we get here?</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>ROB WARZYNIAK recalls the emblematic 1906 book, The Jungle, in its analysis of the crisis presently engulfing the US Food and Drug Administration
+Humans are part of the ‘animal kingdom’ – and of nature in general – but also distinct from it and labour (work) is part of what makes us unique, declared Engels. His insights 150 years ago into how our species came to be and how we differ from the rest of nature, are as important today as they were then, says the MARX MEMORIAL LIBRARY
+MANY readers will have come across Marx and Engels’ writings on history, from The Peasant War in Germany (Engels, on the 16th century “peasant’s revolt”) to those that deal with contemporary events such as The Civil War in France, (Marx, on the Paris Commune of 1871).
+Engels’ The Part Played by Labour in the Transition from Ape to Man goes way back. It deals with the origin of us, humans, as a species.
+A short and unfinished essay of about 5,000 words, written in 1876, shortly after the publication of Darwin’s The Descent of Man (1871), the title is a gendered mistranslation from the original German: “Anteil de Arbeit an der Menschwerdung des Affen” — “Menschwerdung” means “incarnation” or “becoming human,” not “man.”
+Today recognised as a foundational text, it builds on the recognition by earlier classical economists such as Adam Smith and David Ricardo, that alongside nature itself, human labour is the only source of value — an analysis that was developed by Marx in Capital.
+Engels takes this further: much further.
+Marx and Engels were enthusiastic about Charles Darwin’s On the Origin of Species published in 1859. Marx declared that “Darwin’s book is very important and serves me as a basis in natural science for the class struggle in history.’”
+Darwin’s essentially materialist explanation for the variety and complexity of life challenged religious dogma. His sequel in 1871, full title The Descent of Man, and Selection in Relation to Sex applies evolutionary theory to humans. It was particularly inspirational to Engels.
+By 1871 it was broadly accepted that humans had evolved from “lower” animals and the controversial elements in The Descent of Man relate primarily to sexual selection and human gender and racial differences. Darwin followed up in 1872 with The Expression of the Emotions in Man and Animals sometimes considered an early text anticipating modern scientific psychology.
+Both texts, The Descent of Man and The Part Played by Labour answer the first part of our question. We “came” from hominid ancestors and prior to them, from the “apes.”
+That’s not to say that Darwin and Engels agreed. For Darwin the driver was mental capacity; “intelligence.” For Engels it was the physical reality of survival. Today, with the benefit of DNA sequencing and a much richer fossil record we know that it was a much more complex (if you like, a “dialectical”) coevolutionary (gene-culture) process.
+Neither was our evolution a simple “ladder” but rather a tree with many extinct branches, some of which lived alongside (and even interbred with) “us.” The term “ape” as ancestor is itself misleading. Humans are a species of ape (or hominoid), but our last common ancestor — chimpanzee and bonobo (“pan”) species diverged from other apes between five and 12 million years ago.
+It is Engels’ The Part Played by Labour (rather than The Descent of Man) that makes the most significant contribution to our present understanding of human origins, providing in outline the answer to the second part of the question: how did we get to where we are today? The answer, in essence, is labour (work) — something unique to humans (and possibly our other close hominid relatives) and central to our subsequent physical and social evolution.
+That answer has ramifications in many areas. For example, both Darwin and Engels argued that morality is not a metaphysical or religious “given.” But Darwin asserted that it is the social extension of our biological instincts; Engels that it is an historically conditioned social product, not a biological constant, changing with material conditions, modes of production and class relations.
+Well before the publication of Darwin’s Origin of Species, Marx in his “1844 manuscripts” emphasised that our human essence is not fixed or predetermined but is rather shaped by historical circumstances — in the words of his Sixth Thesis on Feuerbach (1845) by the “ensemble of social relations” as they have developed over time.
+In The Part Played by Labour Engels develops this argument. His first sentence reads: “Labour is the source of all wealth, the political economists assert. And it really is the source — next to nature, which supplies it with the material that it converts into wealth. But it is even infinitely more than this. It is the prime basic condition for all human existence, and this to such an extent that, in a sense, we have to say that labour created ourselves.”
+Labour, declares Engels, “begins with the making of tools” when our ancestors developed bipedalism and an upright stance. This freed their hands to become progressively more dexterous and capable of crafting rudimentary implements. The hand, with its opposable thumb and forefinger, he declares “is not only the organ of labour, it is also the product of labour.” Alongside labour came an ever more developed brain, capable of conceptual thought and phonetically dynamic mouths — and language.
+In parallel, fishing, hunting and dietary changes were accompanied by the development of new tools, the use of fire, domestication of animals and the colonisation of new environments. Humans no longer occupied what we today would call a specific ecological niche; they had become distinct from all other animals in their ability to manipulate nature in multiple ways.
+Nature itself becomes transformed. That “mastery” however has its contradictions declares Engels.
+“Let us not, however, flatter ourselves overmuch on account of our human victories over nature. For each such victory nature takes its revenge on us … at every step we are reminded that we by no means rule over nature like a conqueror over a foreign people, like someone standing outside nature — but that we, with flesh, blood and brain, belong to nature, and exist in its midst, and that all our mastery of it consists in the fact that we have the advantage over all other creatures of being able to learn its laws and apply them correctly.”
+The Part Played by Labour synthesises Darwinian evolution, socialist thought, and a materialist interpretation of history to offer a vital perspective on human evolution, highlighting the transformative power of labour in shaping both our biology and social development. Understanding where we came from — the “special features” of humans — and in particular the role of labour, production, is part of historical materialism.
+Engels’ essay has profound philosophical implications for ideas on our own “human nature,” our relations to each other and (particularly in the context of the planetary environmental crisis) the relationship of our own species to the rest of nature.
+It also answers another question — “where are we going?”
+The answer is… it’s up to us.
+This Q&amp;A is based on an online Marxist Classics “taster” session last April; its resource sheet can be found on tinyurl.com/PartPlayedByLabour. A further series of tasters features in the forthcoming Marx Memorial Library and Workers’ School rich autumn programme — see www.marx-memorial-library.org.uk.
+Dignity is important to all humans, argues the Marx Memorial Library and Workers’ School, but it does not come about automatically. In a less than perfect world, dignity can accompany suffering, but the collective dignity of working people is achieved through acting together to change the world.
+Internationalism is deeply embedded in socialist theory and practice. Examination illuminates its complexity asserts the Marx Memorial Library and Workers’ School
+Nature as well as society works dialectically, asserts the Marx Memorial Library and Workers’ School
+The selection, analysis and interpretation of historical ‘facts’ always takes place within a paradigm, a model of how the world works. That’s why history is always a battleground, declares the Marx Memorial Library</p>
+  
+</div>
+
+<a class="read-full" href="https://morningstaronline.co.uk/article/where-did-we-come-how-did-we-get-here" target="_blank" rel="noopener">
+  Read full article at Morning Star →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-08-31/story/cluster-7/">Where did we come from? How did we get here?</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
