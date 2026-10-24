@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worldwide website emergency explained: How a critical PHP weakness sparked a global cybersecurity alert - and exactly what it means for you — Daily Mail — Newshash</title>
+  
+<meta name="description" content="A critical weakness has gone unnoticed in the very foundations of the internet for decades, but now AI has triggered a global cybersecurity alert by bringing it to light.">
+<link rel="canonical" href="https://newshash.com/2026-10-23/story/cluster-5/article/7e06abdc/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Worldwide website emergency explained: How a critical PHP weakness sparked a global cybersecurity alert - and exactly what it means for you">
+<meta property="og:description" content="A critical weakness has gone unnoticed in the very foundations of the internet for decades, but now AI has triggered a global cybersecurity alert by bringing it to light.">
+<meta property="og:url" content="https://newshash.com/2026-10-23/story/cluster-5/article/7e06abdc/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Worldwide website emergency explained: How a critical PHP weakness sparked a global cybersecurity alert - and exactly what it means for you">
+<meta name="twitter:description" content="A critical weakness has gone unnoticed in the very foundations of the internet for decades, but now AI has triggered a global cybersecurity alert by bringing it to light.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-10-23</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="active">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <a href="/2026-10-17/"
+         class="">
+        2026-10-17
+      </a>
+      
+      <a href="/2026-10-16/"
+         class="">
+        2026-10-16
+      </a>
+      
+      <a href="/2026-10-15/"
+         class="">
+        2026-10-15
+      </a>
+      
+      <a href="/2026-10-14/"
+         class="">
+        2026-10-14
+      </a>
+      
+      <a href="/2026-10-13/"
+         class="">
+        2026-10-13
+      </a>
+      
+      <a href="/2026-10-12/"
+         class="">
+        2026-10-12
+      </a>
+      
+      <a href="/2026-10-11/"
+         class="">
+        2026-10-11
+      </a>
+      
+      <a href="/2026-10-10/"
+         class="">
+        2026-10-10
+      </a>
+      
+      <a href="/2026-10-09/"
+         class="">
+        2026-10-09
+      </a>
+      
+      <a href="/2026-10-08/"
+         class="">
+        2026-10-08
+      </a>
+      
+      <a href="/2026-10-07/"
+         class="">
+        2026-10-07
+      </a>
+      
+      <a href="/2026-10-06/"
+         class="">
+        2026-10-06
+      </a>
+      
+      <a href="/2026-10-05/"
+         class="">
+        2026-10-05
+      </a>
+      
+      <a href="/2026-10-04/"
+         class="">
+        2026-10-04
+      </a>
+      
+      <a href="/2026-10-03/"
+         class="">
+        2026-10-03
+      </a>
+      
+      <a href="/2026-10-02/"
+         class="">
+        2026-10-02
+      </a>
+      
+      <a href="/2026-10-01/"
+         class="">
+        2026-10-01
+      </a>
+      
+      <a href="/2026-09-30/"
+         class="">
+        2026-09-30
+      </a>
+      
+      <a href="/2026-09-29/"
+         class="">
+        2026-09-29
+      </a>
+      
+      <a href="/2026-09-28/"
+         class="">
+        2026-09-28
+      </a>
+      
+      <a href="/2026-09-27/"
+         class="">
+        2026-09-27
+      </a>
+      
+      <a href="/2026-09-26/"
+         class="">
+        2026-09-26
+      </a>
+      
+      <a href="/2026-09-25/"
+         class="">
+        2026-09-25
+      </a>
+      
+      <a href="/2026-09-24/"
+         class="">
+        2026-09-24
+      </a>
+      
+      <a href="/2026-09-23/"
+         class="">
+        2026-09-23
+      </a>
+      
+      <a href="/2026-09-22/"
+         class="">
+        2026-09-22
+      </a>
+      
+      <a href="/2026-09-21/"
+         class="">
+        2026-09-21
+      </a>
+      
+      <a href="/2026-09-20/"
+         class="">
+        2026-09-20
+      </a>
+      
+      <a href="/2026-09-19/"
+         class="">
+        2026-09-19
+      </a>
+      
+      <a href="/2026-09-18/"
+         class="">
+        2026-09-18
+      </a>
+      
+      <a href="/2026-09-17/"
+         class="">
+        2026-09-17
+      </a>
+      
+      <a href="/2026-09-16/"
+         class="">
+        2026-09-16
+      </a>
+      
+      <a href="/2026-09-15/"
+         class="">
+        2026-09-15
+      </a>
+      
+      <a href="/2026-09-14/"
+         class="">
+        2026-09-14
+      </a>
+      
+      <a href="/2026-09-13/"
+         class="">
+        2026-09-13
+      </a>
+      
+      <a href="/2026-09-12/"
+         class="">
+        2026-09-12
+      </a>
+      
+      <a href="/2026-09-11/"
+         class="">
+        2026-09-11
+      </a>
+      
+      <a href="/2026-09-10/"
+         class="">
+        2026-09-10
+      </a>
+      
+      <a href="/2026-09-09/"
+         class="">
+        2026-09-09
+      </a>
+      
+      <a href="/2026-09-08/"
+         class="">
+        2026-09-08
+      </a>
+      
+      <a href="/2026-09-07/"
+         class="">
+        2026-09-07
+      </a>
+      
+      <a href="/2026-09-06/"
+         class="">
+        2026-09-06
+      </a>
+      
+      <a href="/2026-09-05/"
+         class="">
+        2026-09-05
+      </a>
+      
+      <a href="/2026-09-04/"
+         class="">
+        2026-09-04
+      </a>
+      
+      <a href="/2026-09-03/"
+         class="">
+        2026-09-03
+      </a>
+      
+      <a href="/2026-09-02/"
+         class="">
+        2026-09-02
+      </a>
+      
+      <a href="/2026-09-01/"
+         class="">
+        2026-09-01
+      </a>
+      
+      <a href="/2026-08-31/"
+         class="">
+        2026-08-31
+      </a>
+      
+      <a href="/2026-08-30/"
+         class="">
+        2026-08-30
+      </a>
+      
+      <a href="/2026-08-29/"
+         class="">
+        2026-08-29
+      </a>
+      
+      <a href="/2026-08-28/"
+         class="">
+        2026-08-28
+      </a>
+      
+      <a href="/2026-08-27/"
+         class="">
+        2026-08-27
+      </a>
+      
+      <a href="/2026-08-26/"
+         class="">
+        2026-08-26
+      </a>
+      
+      <a href="/2026-08-25/"
+         class="">
+        2026-08-25
+      </a>
+      
+      <a href="/2026-08-24/"
+         class="">
+        2026-08-24
+      </a>
+      
+      <a href="/2026-08-23/"
+         class="">
+        2026-08-23
+      </a>
+      
+      <a href="/2026-08-22/"
+         class="">
+        2026-08-22
+      </a>
+      
+      <a href="/2026-08-21/"
+         class="">
+        2026-08-21
+      </a>
+      
+      <a href="/2026-08-20/"
+         class="">
+        2026-08-20
+      </a>
+      
+      <a href="/2026-08-19/"
+         class="">
+        2026-08-19
+      </a>
+      
+      <a href="/2026-08-18/"
+         class="">
+        2026-08-18
+      </a>
+      
+      <a href="/2026-08-17/"
+         class="">
+        2026-08-17
+      </a>
+      
+      <a href="/2026-08-16/"
+         class="">
+        2026-08-16
+      </a>
+      
+      <a href="/2026-08-15/"
+         class="">
+        2026-08-15
+      </a>
+      
+      <a href="/2026-08-14/"
+         class="">
+        2026-08-14
+      </a>
+      
+      <a href="/2026-08-13/"
+         class="">
+        2026-08-13
+      </a>
+      
+      <a href="/2026-08-12/"
+         class="">
+        2026-08-12
+      </a>
+      
+      <a href="/2026-08-11/"
+         class="">
+        2026-08-11
+      </a>
+      
+      <a href="/2026-08-10/"
+         class="">
+        2026-08-10
+      </a>
+      
+      <a href="/2026-08-09/"
+         class="">
+        2026-08-09
+      </a>
+      
+      <a href="/2026-08-08/"
+         class="">
+        2026-08-08
+      </a>
+      
+      <a href="/2026-08-07/"
+         class="">
+        2026-08-07
+      </a>
+      
+      <a href="/2026-08-06/"
+         class="">
+        2026-08-06
+      </a>
+      
+      <a href="/2026-08-05/"
+         class="">
+        2026-08-05
+      </a>
+      
+      <a href="/2026-08-04/"
+         class="">
+        2026-08-04
+      </a>
+      
+      <a href="/2026-08-03/"
+         class="">
+        2026-08-03
+      </a>
+      
+      <a href="/2026-08-02/"
+         class="">
+        2026-08-02
+      </a>
+      
+      <a href="/2026-08-01/"
+         class="">
+        2026-08-01
+      </a>
+      
+      <a href="/2026-07-31/"
+         class="">
+        2026-07-31
+      </a>
+      
+      <a href="/2026-07-30/"
+         class="">
+        2026-07-30
+      </a>
+      
+      <a href="/2026-07-29/"
+         class="">
+        2026-07-29
+      </a>
+      
+      <a href="/2026-07-28/"
+         class="">
+        2026-07-28
+      </a>
+      
+      <a href="/2026-07-27/"
+         class="">
+        2026-07-27
+      </a>
+      
+      <a href="/2026-07-26/"
+         class="">
+        2026-07-26
+      </a>
+      
+      <a href="/2026-07-25/"
+         class="">
+        2026-07-25
+      </a>
+      
+      <a href="/2026-07-24/"
+         class="">
+        2026-07-24
+      </a>
+      
+      <a href="/2026-07-23/"
+         class="">
+        2026-07-23
+      </a>
+      
+      <a href="/2026-07-22/"
+         class="">
+        2026-07-22
+      </a>
+      
+      <a href="/2026-07-21/"
+         class="">
+        2026-07-21
+      </a>
+      
+      <a href="/2026-07-20/"
+         class="">
+        2026-07-20
+      </a>
+      
+      <a href="/2026-07-19/"
+         class="">
+        2026-07-19
+      </a>
+      
+      <a href="/2026-07-18/"
+         class="">
+        2026-07-18
+      </a>
+      
+      <a href="/2026-07-17/"
+         class="">
+        2026-07-17
+      </a>
+      
+      <a href="/2026-07-16/"
+         class="">
+        2026-07-16
+      </a>
+      
+      <a href="/2026-07-15/"
+         class="">
+        2026-07-15
+      </a>
+      
+      <a href="/2026-07-14/"
+         class="">
+        2026-07-14
+      </a>
+      
+      <a href="/2026-07-13/"
+         class="">
+        2026-07-13
+      </a>
+      
+      <a href="/2026-07-12/"
+         class="">
+        2026-07-12
+      </a>
+      
+      <a href="/2026-07-11/"
+         class="">
+        2026-07-11
+      </a>
+      
+      <a href="/2026-07-10/"
+         class="">
+        2026-07-10
+      </a>
+      
+      <a href="/2026-07-09/"
+         class="">
+        2026-07-09
+      </a>
+      
+      <a href="/2026-07-08/"
+         class="">
+        2026-07-08
+      </a>
+      
+      <a href="/2026-07-07/"
+         class="">
+        2026-07-07
+      </a>
+      
+      <a href="/2026-07-06/"
+         class="">
+        2026-07-06
+      </a>
+      
+      <a href="/2026-07-05/"
+         class="">
+        2026-07-05
+      </a>
+      
+      <a href="/2026-07-04/"
+         class="">
+        2026-07-04
+      </a>
+      
+      <a href="/2026-07-03/"
+         class="">
+        2026-07-03
+      </a>
+      
+      <a href="/2026-07-02/"
+         class="">
+        2026-07-02
+      </a>
+      
+      <a href="/2026-07-01/"
+         class="">
+        2026-07-01
+      </a>
+      
+      <a href="/2026-06-30/"
+         class="">
+        2026-06-30
+      </a>
+      
+      <a href="/2026-06-29/"
+         class="">
+        2026-06-29
+      </a>
+      
+      <a href="/2026-06-28/"
+         class="">
+        2026-06-28
+      </a>
+      
+      <a href="/2026-06-27/"
+         class="">
+        2026-06-27
+      </a>
+      
+      <a href="/2026-06-26/"
+         class="">
+        2026-06-26
+      </a>
+      
+      <a href="/2026-06-25/"
+         class="">
+        2026-06-25
+      </a>
+      
+      <a href="/2026-06-24/"
+         class="">
+        2026-06-24
+      </a>
+      
+      <a href="/2026-06-23/"
+         class="">
+        2026-06-23
+      </a>
+      
+      <a href="/2026-06-22/"
+         class="">
+        2026-06-22
+      </a>
+      
+      <a href="/2026-06-21/"
+         class="">
+        2026-06-21
+      </a>
+      
+      <a href="/2026-06-20/"
+         class="">
+        2026-06-20
+      </a>
+      
+      <a href="/2026-06-19/"
+         class="">
+        2026-06-19
+      </a>
+      
+      <a href="/2026-06-18/"
+         class="">
+        2026-06-18
+      </a>
+      
+      <a href="/2026-06-17/"
+         class="">
+        2026-06-17
+      </a>
+      
+      <a href="/2026-06-16/"
+         class="">
+        2026-06-16
+      </a>
+      
+      <a href="/2026-06-15/"
+         class="">
+        2026-06-15
+      </a>
+      
+      <a href="/2026-06-14/"
+         class="">
+        2026-06-14
+      </a>
+      
+      <a href="/2026-06-13/"
+         class="">
+        2026-06-13
+      </a>
+      
+      <a href="/2026-06-12/"
+         class="">
+        2026-06-12
+      </a>
+      
+      <a href="/2026-06-11/"
+         class="">
+        2026-06-11
+      </a>
+      
+      <a href="/2026-06-10/"
+         class="">
+        2026-06-10
+      </a>
+      
+      <a href="/2026-06-09/"
+         class="">
+        2026-06-09
+      </a>
+      
+      <a href="/2026-06-08/"
+         class="">
+        2026-06-08
+      </a>
+      
+      <a href="/2026-06-07/"
+         class="">
+        2026-06-07
+      </a>
+      
+      <a href="/2026-06-06/"
+         class="">
+        2026-06-06
+      </a>
+      
+      <a href="/2026-06-05/"
+         class="">
+        2026-06-05
+      </a>
+      
+      <a href="/2026-06-04/"
+         class="">
+        2026-06-04
+      </a>
+      
+      <a href="/2026-06-03/"
+         class="">
+        2026-06-03
+      </a>
+      
+      <a href="/2026-06-02/"
+         class="">
+        2026-06-02
+      </a>
+      
+      <a href="/2026-06-01/"
+         class="">
+        2026-06-01
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-10-23</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-10-23/story/cluster-5/">← UK government services offline after critical PHP security flaw discovered</a>
+
+<div class="article-outlet lean-right">
+  <span class="outlet-name">Daily Mail</span>
+  <span class="lean-badge lean-right">right</span>
+</div>
+
+<h1 class="article-headline">Worldwide website emergency explained: How a critical PHP weakness sparked a global cybersecurity alert - and exactly what it means for you</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>A critical weakness in the internet&#39;s foundations has gone unnoticed for decades.
+But with the use of AI, it has finally been brought to light - triggering a global cybersecurity alert.
+Researchers this week revealed fatal vulnerabilities in the PHP programming language - a critical open-source system built into millions of websites, from Wikipedia to government agencies.
+Wiz, one of the companies that discovered the flaw, estimates &#39;70 per cent of the internet&#39; is affected as a result.
+It has left security agencies scrambling to contain the damage since PHP released an update to patch the vulnerability on Wednesday.
+Now cybersecurity experts are warning of a wave of hacking attempts in the coming weeks as more details about the vulnerability are made public - putting your private data at risk.
+Thai Duong, chief of Calif, one of the companies that found the vulnerability, told the Daily Mail: &#39;The reality is that there&#39;s very little the average internet user can do.
+&#39;Should they be concerned? Yes, but there&#39;s no need to panic. The responsibility lies with website operators, hosting providers and the broader security community.&#39;
+Here, we explain what the vulnerability is and how it could affect you.
+Cybersecurity researchers using AI tools sparked a worldwide website emergency this week by revealing fatal vulnerabilities in the PHP programming language. Pictured: Researchers using the PHP website to hack a dummy website
+What is PHP?
+PHP, which stands for Hypertext Preprocessor, is a core piece of internet technology that has been used around the world since the early 2000s.
+It was one of the very first pieces of &#39;server-side&#39; web code, and has since become embedded in a vast swath of the modern internet.
+Whenever you visit a website, PHP is the piece of software that gathers the information you need and presents it in a way you can actually read online.
+Mr Duong says: &#39;PHP was one of the first successful dynamic languages designed for the web.
+&#39;As an early mover, it just happens that a lot of popular software in the internet ecosystem was written in PHP. Some of the biggest internet websites are written in PHP.&#39;
+Since it is free and open–source, meaning it is not operated by a private company or provided by a single supplier, it&#39;s particularly popular with governments and universities.
+Experts compare finding a flaw in PHP to discovering that a certain type of brick has a safety recall. As such, a lot of infrastructure will be affected and it&#39;s up to the owners themselves to find out where the weakness lies.
+What is the PHP vulnerability?
+Websites have been cautioned to update to the latest version of PHP or go offline to avoid hackers. Wikipedia temporarily took several systems offline on Wednesday as a result
+The vulnerability in PHP is absolutely fatal for any unpatched website, since it allows hackers to remotely execute code inside PHP itself.
+In simple terms, that means hackers can essentially seize control of any website without needing to guess or steal the passwords.
+Mr Duong says: &#39;Once compromised, attackers could steal sensitive data, modify website content, or disrupt operations.
+&#39;They could also use the compromised websites as a foothold to penetrate deeper into an organization&#39;s internal network.&#39;
+Likewise, experts warn that criminals can spy on and steal data from affected servers, impersonate and control legitimate websites, infect visitors with malware, edit content on websites, shut down entire sites or lock the owners out and steal huge amounts of private data.
+Shockingly, these weaknesses have been hidden inside the architecture of the internet for years.
+Professor Richard Buckland, of the University of New South Wales, says: &#39;The PHP developers have known about this vulnerability for a long time.
+&#39;Two years ago they started to worry about it seriously. Apparently, they initially didn&#39;t think it was urgent as they couldn&#39;t see how an attacker could make use of the weakness.&#39;
+However, the current crisis has come to a head thanks to the work of cybersecurity researchers employing AI tools.
+Wiz and Calif worked with ChatGPT maker OpenAI as part of the &#39;Patch the Planet&#39; project, which is hunting for these exact types of core weaknesses.
+OpenAI CEO Sam Altman, whose firm discovered the significant flaws with a tool it created
+OpenAI says Calif used its cutting-edge AI model, GPT-5.6 Sol, to find two fatal weaknesses in PHP, with Wiz independently discovering and verifying the same bugs.
+In a blog post, OpenAI said it considers this to be &#39;one of the most impactful security issues in recent memory&#39;.
+Wiz added: &#39;With 70 per cent of the Internet affected, the impact of PHP2Shell cannot be overstated.
+&#39;It marks an AI inflexion point. The vulnerable code had been there for more than a decade – what AI changed was the ability to understand the weaknesses and turn them into a working exploit.&#39;
+What happened after the flaws were revealed?
+On Wednesday, developers behind the PHP platform released a new version of the software that includes a fix for the two vulnerabilities.
+The responsibility will now fall on individual companies and website operators to ensure their sites are updated to the latest version of PHP.
+National bodies and cybersecurity agencies have been urging websites to be sure they are protected or go offline.
+The UK&#39;s National Cyber Security Centre said: &#39;Organisations using any version of PHP are affected, and all organisations are highly encouraged to update to the latest fixed version.&#39;
+Meanwhile, the American National Security Agency wrote on X: &#39;Effective Immediately, all organizations using PHP for their systems are advised to be prepared for an update addressing two critical vulnerabilities.
+The National Security Agency cautioned that websites should update their systems or go &#39;offline until it can be fully mitigated&#39;
+&#39;If an immediate update is not feasible, it is recommend that organizations take the system offline until it can be fully mitigated.&#39;
+Even the Japanese prime minister, Sanae Takaichi, took to social media to urge people to check their website&#39;s security.
+She wrote on X: &#39;We have an urgent request for everyone to take action tonight.
+&#39;If it is difficult to apply the fix patch promptly, temporarily suspending websites and similar measures can be considered an effective way to reduce risk.&#39;
+The true scope of the changes will likely become apparent in the coming days, but multiple major sites have already gone down for short periods in preparation.
+The Wikimedia Foundation, which runs the online encyclopaedia Wikipedia, took down &#39;a number of other systems&#39; as a precaution, leaving people unable to access some parts of the site.
+The BBC took down sites hosting programmes such as Doctor Who and The Traitors.
+Multiple Scottish public organisations have taken their websites down, including councils and health boards across the country.
+Japanese PM Sanae Takaichi urged people to check their website&#39;s security or go offline
+Meanwhile, major national organisations have also taken the drastic step of taking their sites down, with the Finnish, Australian and Dutch governments all going offline.
+In the Netherlands, the Dutch Parliament, the Dutch cybersecurity agency and the public-facing website for the Port of Rotterdam were taken offline.
+Has anyone been hacked?
+It is not clear currently whether any sites have actually been hacked.
+But internet service operators are already reporting an increase in hacking attempts, as well as worrying signs that the vulnerability was being used prior to the patch&#39;s release.
+Matthew Prince, CEO of cybersecurity firm Cloudflare, wrote on X: &#39;In the 10 hours before it was publicly announced, across the network we saw thousands of attempts to exploit it.
+&#39;That jumped to tens of thousands in the 45 minutes post–announcement, hundreds of thousands within two hours, and millions now.&#39;
+Dr Junade Ali, cybersecurity expert at the Institution of Engineering and Technology, says: &#39;These new security vulnerabilities are significant, and there is evidence they are already being exploited. A number of firewall companies have already implemented protections.&#39;
+Likewise, Amazon says that the weakness is being &#39;broadly exploited in the wild&#39; and reported that it had faced attacks using the vulnerability as early as October 17 – four days before the public reveal.
+Details of the flaw were then leaked to social media on Tuesday, leading to another attack on Amazon&#39;s systems on October 21.
+We don&#39;t currently know if anyone has been hacked, but cybersecurity company Cloudflare has reported &#39;millions&#39; of attempts since the patch was made public
+CJ Moses, AWS&#39;s chief information security officer, wrote in a blog post that the attack appeared to have been &#39;conducted by a threat actor, though it remains unclear how the actor acquired exploit information prior to disclosure&#39;.
+No one is certain how details of the vulnerability appeared to have become public prior to the announcement, but experts speculate that criminals might have employed AI tools of their own.
+Dr Shaanan Cohney, of the University of Melbourne, says: &#39;AI now makes it far too easy for attackers to find a flaw even when only its existence has been announced and not the details.
+&#39;Previously, the window between the announcement of a potential vulnerability and the time it took for a security researcher or hacker to find the specific vulnerability was long enough that one could responsibly put out an announcement.
+&#39;AI has changed things, and this means that now the world has to rethink how we handle the disclosure process of vulnerabilities.&#39;
+What does this mean for you?
+If you operate your own website, it is absolutely critical that you make sure the PHP patch has been applied.
+However, even the average internet user needs to be cautious in the coming weeks.
+With so many websites affected, experts are anticipating an increase in cybercrime and hacking attempts that could affect your private information.
+Jake Moore, global cybersecurity advisor at ESET, told the Daily Mail: &#39;For people who run their own websites, it is advised to make sure the fix has been applied to any vulnerable sites and to speak to their IT admins to make sure all is secure.
+&#39;But for the average internet user, they should use this situation as a reminder that data on websites can very quickly be stolen and that it is important to reduce the amount of sensitive data we hand over.&#39;
+Cybersecurity experts advise using multi–factor authentication services like Microsoft Authenticator and avoiding giving details to suspicious websites while the issue is resolved
+Mr Moore recommends using multi–factor authentication, passkeys, and digital pay services rather than handing over card details to websites that might have been compromised.
+He also recommends using a guest account when making online purchases to &#39;reduce the amount of information left on a website that could one day become vulnerable.&#39;
+Even if websites do implement the patch, the PHP vulnerability is so deep in the internet architecture that sites may still be vulnerable.
+Most websites include multiple software components, plugins, and third–party services which they have very little control over.
+If just one of these doesn&#39;t patch the PHP weakness, it could lead to the entire network becoming compromised.
+Likewise, since PHP is such old software, some website operators may not even know that they have it in their systems.
+Professor Buckland says: &#39;Don&#39;t believe everything you read on websites over the next few days or longer. It may be possible for malicious attackers to change wording on sites you trust.
+&#39;Wait for government announcements, but in the meantime, you can probably trust that cyber–mature organisations such as banks and telcos have done their patching already. For other websites, perhaps avoid logging into or visiting them for a few days.&#39;</p>
+  
+</div>
+
+<a class="read-full" href="https://www.dailymail.com/sciencetech/article-16229037/Worldwide-website-emergency-explained-PHP.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">
+  Read full article at Daily Mail →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-10-23/story/cluster-5/">UK government services offline after critical PHP security flaw discovered</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
