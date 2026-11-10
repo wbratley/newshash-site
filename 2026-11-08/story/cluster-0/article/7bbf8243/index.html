@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I’m a White House correspondent. I know why Trump lost so badly — i Paper — Newshash</title>
+  
+<meta name="description" content="Voters I spoke to summed up their motivations in two key words">
+<link rel="canonical" href="https://newshash.com/2026-11-08/story/cluster-0/article/7bbf8243/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="I’m a White House correspondent. I know why Trump lost so badly">
+<meta property="og:description" content="Voters I spoke to summed up their motivations in two key words">
+<meta property="og:url" content="https://newshash.com/2026-11-08/story/cluster-0/article/7bbf8243/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="I’m a White House correspondent. I know why Trump lost so badly">
+<meta name="twitter:description" content="Voters I spoke to summed up their motivations in two key words">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-08</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="active">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <a href="/2026-10-17/"
+         class="">
+        2026-10-17
+      </a>
+      
+      <a href="/2026-10-16/"
+         class="">
+        2026-10-16
+      </a>
+      
+      <a href="/2026-10-15/"
+         class="">
+        2026-10-15
+      </a>
+      
+      <a href="/2026-10-14/"
+         class="">
+        2026-10-14
+      </a>
+      
+      <a href="/2026-10-13/"
+         class="">
+        2026-10-13
+      </a>
+      
+      <a href="/2026-10-12/"
+         class="">
+        2026-10-12
+      </a>
+      
+      <a href="/2026-10-11/"
+         class="">
+        2026-10-11
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-08</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-08/story/cluster-0/">← Trump offers Dana White White House press secretary role after midterm losses</a>
+
+<div class="article-outlet lean-centre">
+  <span class="outlet-name">i Paper</span>
+  <span class="lean-badge lean-centre">centre</span>
+</div>
+
+<h1 class="article-headline">I’m a White House correspondent. I know why Trump lost so badly</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>When Donald Trump made the fateful decision to drag the US into war with Iran, his mind was more on trying to cement his historical legacy than on near-term elections.
+
+
+
+High, even giddy from what he saw as a huge military success in Venezuela – completed in a single night, no less – the President perhaps thought that dealing with a country long considered a pariah in the eyes of many Americans could secure his place in the history books. The decision certainly marked a momentous turning point – but not in the way he’d hoped.
+
+
+
+I got to see this firsthand in recent months.
+
+
+
+
+
+Iran was disastrous for Trump, as the consequences of the war spilled out from that initial domino tap. By the summer, spiking prices on US forecourts and inside grocery stores had dragged down not just his personal popularity but Republican electoral hopes. It fueled anger that led voters to be much more focused on – and less forgiving of – other perceived missteps: like the way Trump and his family have seemingly enriched themselves throughout this second presidency. 
+
+
+
+That was a conclusion I had drawn long before the midterm results came in this week – not from reporting at the White House, as I often do, but from traveling across the US, from Tennessee to Florida, Georgia to Texas, Kansas to Michigan, with my colleagues in the Channel 4 News’ Washington bureau.
+
+
+
+The simmering fury was palpable everywhere we went – and it always began with the personal, economic squeeze.
+
+
+
+In Georgia, we worked with a research company, PF Global, which carried out a focus group to assess how people were feeling at that moment. Sitting in the room I was struck by how divisive Trump remained. 
+
+
+
+Voters in Georgia turned against the President’s party in the midterm, electing a Democrat senator and governor (Photo: Erik S. Lesser/AFP via Getty Images)
+
+
+
+We asked the eight people taking part what score they would give Trump for his presidential performance. Some opted for 10 out of 10, others for zero – a love-hate response echoed in a national poll PF Global ran. In that poll, one in eight people went for a perfect 10, but a third opted for zero. So many more wanted Trump to face a rebuke. 
+
+
+
+The most telling response came from a young man with a successful IT job, but who now worked nights doing supermarket deliveries so he could still afford to take his wife and daughter out occasionally. Another man said that almost everyone he knows has a second job now. 
+
+
+
+The same was true in Kansas – where we also explored the factors driving the Christian vote – and again in Michigan this week, on the eve of the elections. Voters, some of whom had backed Trump in the past, summed up their motivations in two words: gas prices. 
+
+
+
+People vote with their wallets, one man told me, quoting the famous phrase of one-time political consultant James Carville in advice to Bill Clinton: “It’s the economy, stupid!”
+
+
+
+Alongside this was the shock – particularly among Hispanic voters – of an immigration crackdown that was meant to focus on the “worst of the worst” but instead seemed to come for their hardworking neighbours. I witnessed the results of this: people from Minnesota to Florida too terrified to leave their homes, with friends and relatives helping get their kids to school and delivering them supplies. 
+
+
+
+All of this made me think back to when I was in Hartlepool in 2021, covering a story that involved another blonde world leader. When I walked around the northeast England constituency in the middle of a by-election, no one seemed bothered about the sleaze claims linked to Boris Johnson’s gold wallpaper. He was a popular prime minister at the time and could brush the allegations easily away. 
+
+
+
+Boris Johnson visits Hartlepool in May 2021 (Photo: Ian Forsyth/Getty Images)
+
+
+
+But that day another politician told me there still ought to be a warning for Johnson – that no one cares about sleaze allegations until something happens to make everyone care. He was so right. For Johnson, the turning point was Partygate. After that, the gold wallpaper suddenly really mattered. For Trump, it was his Iran war.
+
+
+
+And when lame duck leaders are closely tied to disastrous election results, it’s not only the opposition who want to stick the knife in. Those Republicans keen to replace Trump in 2028 are quickly figuring out how to back away from him.
+
+
+
+That’s why JD Vance is suddenly distancing himself not only from the Iran war but also US links to Israel, why Florida’s Ron DeSantis – long accused of being a driver of culture-wars politics – is suggesting that type of campaigning ought to be a thing of the past. Many are now wondering when we will hear from Marco Rubio, Trump’s Secretary of State. 
+
+
+
+However, it won’t be easy for any of them. During my conversations across the US in recent months I’ve seen how anger around Trump and his policies have spilled out over those around him. Vance, Rubio and others will not be able to come out of this clean. The shadow of Trump’s war with Iran will be long.
+
+
+
+Meanwhile, however bad the midterm drubbing, Trump will remain President for another two years. He has a proven ability to wield executive power like few others. But with less sycophancy from colleagues and more scrutiny from Democrats, things will likely start to feel far lonelier in the White House.
+
+
+
+Voters I spoke to on the campaign trail won’t be disappointed with that.</p>
+  
+</div>
+
+<a class="read-full" href="https://inews.co.uk/news/world/white-house-correspondent-know-why-trump-lost-so-badly-4875167" target="_blank" rel="noopener">
+  Read full article at i Paper →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-08/story/cluster-0/">Trump offers Dana White White House press secretary role after midterm losses</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

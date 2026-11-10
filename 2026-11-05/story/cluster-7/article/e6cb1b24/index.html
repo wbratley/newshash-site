@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where Trump and Republicans lost the midterms – a visual analysis of the key states — The Guardian — Newshash</title>
+  
+<meta name="description" content="The Democrats have taken control of the Senate and the House of Representatives. These charts and maps reveal the key trends and races behind this resultLive results from all 50 statesSend us your que">
+<link rel="canonical" href="https://newshash.com/2026-11-05/story/cluster-7/article/e6cb1b24/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Where Trump and Republicans lost the midterms – a visual analysis of the key states">
+<meta property="og:description" content="The Democrats have taken control of the Senate and the House of Representatives. These charts and maps reveal the key trends and races behind this resultLive results from all 50 statesSend us your que">
+<meta property="og:url" content="https://newshash.com/2026-11-05/story/cluster-7/article/e6cb1b24/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Where Trump and Republicans lost the midterms – a visual analysis of the key states">
+<meta name="twitter:description" content="The Democrats have taken control of the Senate and the House of Representatives. These charts and maps reveal the key trends and races behind this resultLive results from all 50 statesSend us your que">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-05</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="active">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <a href="/2026-10-17/"
+         class="">
+        2026-10-17
+      </a>
+      
+      <a href="/2026-10-16/"
+         class="">
+        2026-10-16
+      </a>
+      
+      <a href="/2026-10-15/"
+         class="">
+        2026-10-15
+      </a>
+      
+      <a href="/2026-10-14/"
+         class="">
+        2026-10-14
+      </a>
+      
+      <a href="/2026-10-13/"
+         class="">
+        2026-10-13
+      </a>
+      
+      <a href="/2026-10-12/"
+         class="">
+        2026-10-12
+      </a>
+      
+      <a href="/2026-10-11/"
+         class="">
+        2026-10-11
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-05</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-05/story/cluster-7/">← Democrats win control of Congress in US midterms, Republicans lose seats amid voter discontent</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">Where Trump and Republicans lost the midterms – a visual analysis of the key states</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>The Republicans have lost seven Senators, 25 House districts and five governor races.
+As of 9.25am Eastern Time (ET) on Wednesday, more than 1,900 of nearly 2,500 counties with Senate elections had returned more than 90% of their votes. Americans did not turn out in significant numbers for the Republicans amid high fuel prices and dissatisfaction with the president.
+This allowed the Democrats to pick up a number of seats – and take back control of the US House of Representatives and Senate. Here’s how it happened.
+In the Senate the midterm results have given Democrats the ability to put a serious check on Trump&#39;s agenda – including blocking any new appointments to the supreme court or his cabinet.
+Republicans had previously held a majority of 53 seats out of 100 – but this has now been emphatically overturned.
+Thirty-five seats were on the ballot. Senators serve six-year terms, with a third facing voters at each two-year election cycle.
+In practice, the battle for the Senate was fought across a very small map.
+The Cook Political Report – a prominent US election forecaster – had listed six seats as tossups: Alaska, Iowa, Kansas, Maine, Ohio and Texas.
+Democrats had to flip at least four seats that were held by Republicans to gain a majority. They surpassed this target.
+In an early sign of the Democrats’ momentum, the party won the Senate race in Texas, a longstanding Republican stronghold. In the run-up to the election, polls had shown a razor-thin lead for the Democratic candidate.
+The actual result was, in fact, record-breaking – with James Talarico winning the seat by more than 10 points. No Democrat had won a Senate seat in Texas since 1988.
+Texas has voted Republican in presidential elections for decades. The last Democratic presidential candidate to win the state was Jimmy Carter in 1976. In 2024, Trump won 56% of the vote to Kamala Harris’s 42%.
+Kansas has elected its first Democratic senator since 1932. The state was classed as a toss-up before the vote, and the Democrats ended up securing it with a 21-point swing compared with the 2024 presidential election.
+Adam Hamilton&#39;s victory was a seismic defeat of outgoing Republican Senator Roger Marshall in a deep-red state.
+The Republicans are used to regularly achieving winning margins in the double digits in Kansas, and the state only became a toss-up later in the campaign as Donald Trump&#39;s approval ratings slid further.
+Roy Cooper became the first Democrat elected to the Senate from North Carolina since 2008.
+It recorded one of the biggest swings to the Democrats, with a swing of 22 points since 2024.
+Every single county in North Carolina swung to the Democrats in the election.
+Several House districts in North Carolina were still too close to call at the point of publishing this article. However, the Senate race flipping to the Democrats indicates that they are likely to take several of the remaining House races in this state as well. This would be despite Republicans successfully redrawing the state&#39;s boundaries in their favour before the vote.
+James Talarico’s focus on billionaires in Texas was echoed in Michigan where progressive Democrat Abdul El-Sayed won. His victory came despite a controversial endorsement of the Republican candidate, Mike Rogers, by the Democrat Haley Stevens prior to the election.
+At the presidential level, Michigan remains a swing state. Trump won it in 2016 and 2024, but lost it to Joe Biden in 2020. But El-Sayed’s win extends the Democrats’ long run of Senate victories in Michigan: no Republican has won a seat there since 1994.
+Of the 2,500 counties in states with Senate elections, just over 1,900 counties had enough votes to be accurately analysed. The vast majority of these swung to the Democrats, when comparing against the 2024 presidential election results.
+The biggest state swings were recorded in Texas, Rhode Island, North Carolina and Mississippi.
+On a county level, several counties in Texas - such as the Starr, Webb and Duval counties - and Kansas&#39;s Seward county saw swings of more than 45 points from the Republicans to the Democrats.
+In terms of demographics, counties with a high proportion of urban residents swung towards the Democrats.
+Democrats
+Republicans
+In the metropolitan area of New York, New Jersey&#39;s Passaic county recorded a tight Trump win with 49.8% of the vote in 2024. In the 2026 Senate race, the Democrats won 62.3% of the vote compared with the Republicans&#39; 34.3%.
+Another driving factor in the election was the number of younger voters in an area. When there was a greater share of people aged under 30, the Democrats enjoyed larger swings.
+Democrats
+Republicans
+A key example can be seen in Riley county in the swing state of Kansas, home to Kansas State University and the US army&#39;s Fort Riley, where 42% of the population is under 30.
+Harris carried the county with a very fine margin in 2024, but after a 19-point swing to the Democrats in 2026, they managed to win 59.1% of the vote.
+One of the most important trends in the early results was how areas with higher proportions of Hispanic voters swung away from Trump in comparison with the 2024 vote.
+Starr county in southern Texas, where about 97% of residents are Hispanic or Latino, demonstrates this trend. Trump won in this county in 2024 with 58% of the vote, but this year it returned to the Democrats in the Senate election, with Talarico taking 77% of the votes.
+The House of Representatives will now be controlled by the Democrats after they gained more than 25 seats in the midterm elections.
+The House of Representatives was controlled by the Republicans before the elections. Every seat was up for election, as members only serve two-year terms.
+The Democrats managed to win the House by claiming almost a clean sweep across the 40 races ranked as competitive by the Cook Political Report before the election.
+As the campaign developed, more races moved against the incumbent Republican party, meaning that the Democrats were even able to win seats that the Republicans had held for over a decade, such as Kentucky&#39;s 6th and North Carolina&#39;s 11th district.
+An exit poll conducted by the Associated Press and US broadcasters provided a first look at how different groups of voters shifted nationwide. It indicated that young people, urban voters and households with lower incomes had swung most heavily towards the Democrats.
+These swings helped Hakeem Jeffries&#39; Democrats claim seats including three out of four of Iowa&#39;s districts, four districts in Pennsylvania and two counties along the Texan border with Mexico.
+The incumbent Republican Ann Wagner lost Missouri&#39;s second congressional district, with 46.2% of the votes against the Democrats&#39; 51.1%.
+This is despite the district being redrawn by Republicans ahead of this election, to give the party a further advantage. While the county voted for Trump with a margin of eight points in 2024, the new boundaries would have given him a margin of 11 points.
+A former ambassador under George W Bush, Wagner held the seat from 2013. Her race was ranked as &#34;likely Republican&#34; before the vote.
+The Republicans also lost Indiana&#39;s fifth district, a seat they had held for more than 30 years. The Democrats&#39; JD Ford beat incumbent Victoria Spartz with 51.7% of the vote to 48.3%.
+The differences in the total number of votes cast for the House candidate between the 2024 presidential year - which always has higher turnout - and this year is revealing. The Republican candidate&#39;s votes dropped from almost 203,000 to 134,000, while the Democratic candidate&#39;s votes held steady, changing from 136,000 to 134,000.
+Marcy Kaptur won re-election in north-western Ohio, extending the longest tenure of any woman in Congress. She has held her seat since 1983 and is one of nearly two dozen Democrats representing districts Trump won in 2024.
+Her victory was also in a district with newly redrawn boundaries that increased Republican lean, showing that some voters were still willing to split their tickets between parties.
+Nationwide, a record number of Democratic women were elected to the House of Representatives.
+Across the nation, there was an unprecedented level of politically motivated redistricting in the run-up to the 2026 midterms.
+Nine states redrew congressional boundaries, some to benefit Democrats, others Republicans. Analysis suggested that Republicans would gain more seats overall.
+This redistricting has been subject to several legal challenges. A Democratic gerrymander in Virginia was struck down by the state supreme court, and the US supreme court rejected a Republican attempt in Missouri.
+Democratic victories in redrawn districts in Florida, North Carolina, Alabama and Texas all presented proof that Republicans&#39; gerrymandering did not yield the gains they had hoped for.
+The Democrats look set to finish the elections enjoying a “blue wave” of wins, even in districts that Trump won by wide margins in 2024. It leaves them with a double-digit majority in the House and a larger than expected majority in the Senate.
+This follows a historic precedent: all recent presidents have lost control of a chamber in midterm elections, including Trump in the 2018 election.
+However, the scale of the defeat – with the president&#39;s party losing seats they have held for decades – by far surpasses results from recent elections.
+There are still other potential losses for the Republicans in the Senate, but as things stand, the president&#39;s party has already lost seven seats, making it already the worst performance in the Senate since 1994.
+Data notes
+The election results on this page are reported by the Associated Press. AP calls the winner in a state when they determine that the trailing candidate has no path to victory. This can happen before 100% of votes in a state have been counted.
+Estimates for the total vote in each state are also provided by AP. The numbers update throughout election night and in the following days as more data on voter turnout becomes available.
+Official results can take days or weeks to be fully finalised. This is often because of the verification process of absentee, mail-in and provisional ballots. In some states, mail-in ballots can be received and counted several days after election day.
+County results are only included in the interactive if more than 90% of precincts within the county have reported ballot data.
+The shift in margin compares county-level results for the 2026 Senate election against the 2024 presidential election. It only assesses the change in margin between the two major parties, and discounts votes for third-party candidates.
+Demographic data used has been sourced from the US Census American Community Survey 2024 five-year estimates. Urban and rural classification is sourced from the US Department of Agriculture (USDA) and the Congressional District Health Dashboard. Historical election data is sourced from the Massachusetts Institute of Technology (MIT). Redistricted boundaries are sourced from the Redistricting Data Hub and All About Redistricting.
+Credit for photos used in candidate headshots includes Mikala Compton, Kevin Dietsch/Getty, Reuters, Pacific Press/REX/Shutterstock, Jessica Koscielniak, Nathan Howard, Charlie Riedel/AP, official House photography, YouTube and Dominic Byrd-McDevitt.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/us-news/ng-interactive/2026/nov/04/midterm-election-results-maps-guide" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-05/story/cluster-7/">Democrats win control of Congress in US midterms, Republicans lose seats amid voter discontent</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
