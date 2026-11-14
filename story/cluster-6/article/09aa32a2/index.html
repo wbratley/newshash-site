@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The day Microsoft crashed the world: Anger at 20-hour outage hitting hospitals, schools and police — Daily Mail — Newshash</title>
+  
+<meta name="description" content="Follow the Daily Mail&#39;s live coverage as Microsoft users experience major disruption and the tech giant works to resolve outages impacting some of its most popular services.">
+<link rel="canonical" href="https://newshash.com/story/cluster-6/article/09aa32a2/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="The day Microsoft crashed the world: Anger at 20-hour outage hitting hospitals, schools and police">
+<meta property="og:description" content="Follow the Daily Mail&#39;s live coverage as Microsoft users experience major disruption and the tech giant works to resolve outages impacting some of its most popular services.">
+<meta property="og:url" content="https://newshash.com/story/cluster-6/article/09aa32a2/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The day Microsoft crashed the world: Anger at 20-hour outage hitting hospitals, schools and police">
+<meta name="twitter:description" content="Follow the Daily Mail&#39;s live coverage as Microsoft users experience major disruption and the tech giant works to resolve outages impacting some of its most popular services.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-14</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <a href="/2026-10-17/"
+         class="">
+        2026-10-17
+      </a>
+      
+      <a href="/2026-10-16/"
+         class="">
+        2026-10-16
+      </a>
+      
+      <a href="/2026-10-15/"
+         class="">
+        2026-10-15
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-6/">← Microsoft outage disrupts UK public services and businesses</a>
+
+<div class="article-outlet lean-right">
+  <span class="outlet-name">Daily Mail</span>
+  <span class="lean-badge lean-right">right</span>
+</div>
+
+<h1 class="article-headline">The day Microsoft crashed the world: Anger at 20-hour outage hitting hospitals, schools and police</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>The day Microsoft crashed the world: Anger at 20-hour outage hitting hospitals, schools and police
+By MARK DUELL, DEPUTY CHIEF REPORTER and ELIZABETH HAIGH, SENIOR NEWS REPORTER and ISABELLA MACHIN, REPORTER
+Updated:
+Follow the Daily Mail&#39;s coverage as Microsoft users experience disruption and the tech giant works to resolve outages impacting some of its most popular services:
+Thanks for following along, this live blog is now closed.
+See the below if you would like to read more of our coverage:
+Microsoft says efforts to fix global outage &#39;not going as expected&#39; with millions impacted worldwide
+Microsoft meltdown: Caused by AI? A cyber attack? Your questions answered
+Outlook &#39;is down&#39;: Tens of thousands of users report website, login and app issues
+Microsoft share rises despite disruption
+Shares in Microsoft rose by 0.2 per cent on Wall Street despite an outage that impacted users across the globe.
+State vulnerabilities exposed by outage, AI expert warns
+The Microsoft outage has exposed the vulnerabilities of governments, businesses and critical infrastructure, an AI insider said.
+Walter Pasquarelli, an expert on AI strategy, said that the outage puts &#39;their vulnerabilities and dependence in plain sight&#39;.
+&#39;Looking ahead, as AI assistants are plugged into our email, calendars and files, a failure like this may spread even further,&#39; he told the BBC.
+Services are restored, says Microsoft users in parts of US
+Some users in the US have reported their Microsoft services are now working again.
+The sheriff’s office in Arapahoe County, Colorado, which had earlier warned the outage was disrupting online bond payments, said services had been restored.
+Greensboro Police Department in North Carolina also reported its systems were back online, joking: &#39;While it&#39;s not the outcome we wanted, we would like to let you know that our email is working again.&#39;
+Jacksonville, Florida, said it was &#39;seeing some services restored this morning&#39; and remained &#39;cautiously optimistic&#39; that progress would continue.
+Austin and Dallas, Texas, likewise reported improvements as email services began returning, CNN reported.
+Timeline of Microsoft outage that crashed the world
+November 12 at 5.45pm: Microsoft first acknowledges reports that people in America are blocked from their Exchange Online email
+6.07pm: The company warns that the disruption to Microsoft 365 could be international, not just in the US
+6.15pm: Monitoring website Downdetector first showed a spike in users reporting problems with the Microsoft Teams messaging service in the UK
+7.31pm: Microsoft says its probe discovered a number of services had become &#39;unexpectedly unavailable&#39;
+7.50pm: Servers are unable to access automated health checks after they become unavailable, prompting engineers to investigate
+11.04pm: Microsoft says some of the servers will be put back online, and they &#39;remain stable&#39;
+November 13 at 12.06am: The company announces servers returned to service could be disrupted again and it is investigating the reason why
+4.36am: Microsoft says it is seeing &#39;partial recovery&#39; across some of its areas
+9.24am: &#39;We&#39;re seeing early stabilization and capacity improvements as recovery actions continue,&#39; the company announces
+1.32pm: Microsoft says there are &#39;broader improvements&#39; in North America, &#39;sustained improvements&#39; across much of Europe and &#39;encouraging recovery signals&#39; in the Asia Pacific region
+2.17pm: The company says it is seeing improvements, adding email queues are &#39;significantly reduced and approaching normal levels&#39;
+3.39pm: Microsoft describes its recovery process as &#39;encouraging&#39; and confirms &#39;there is no indication this is the result of malicious or cyber activity&#39;
+UK pharmacies struggle with &#39;horrendous&#39; outage
+Pharmacies in the UK have been forced to return to systems used two decades ago due to today&#39;s outage, while they are blocked from accessing patient information.
+Olivier Picard, chair of the National Pharmacy Association, described today as &#39;horrendous since this morning&#39;.
+&#39;We use NHS mail, which is provided to pharmacies to have a secure link in order to access various platforms, but also communicate with GP surgeries,&#39; he told Sky News.
+&#39;In my case, we work closely with a hospital that sends us encrypted email with patient information. We are unable to receive those at the moment. We are having to literally go back to what we used to do 20 years ago.
+&#39;We put someone in a car, drive to the hospital to collect the pieces of paper and bring them back to the pharmacy. This is what this outage has caused.&#39;
+Cyber Minister: UK&#39;s frontline services disrupted by Microsoft outage
+Global problems with Microsoft’s email and messaging systems caused disruption to some frontline public services, the Government’s cyber minister said.
+Baroness Lloyd of Effra said the outage mainly affected back-office functions and contingency measures had been put in place.
+But she acknowledged there had been &#39;limited reports of impact on frontline service delivery&#39; and the incident had been &#39;inconvenient and disruptive&#39;.
+She said: &#39;The outage has mainly affected back-office functions, such as messaging and email.&#39;
+But she added: &#39;The Government recognises this incident has been inconvenient and disruptive.
+&#39;Affected departments and public sector organisations have plans in place for these events to mitigate potential impacts and continue their business operations.
+&#39;Throughout the day, we have seen limited reports of impact on frontline service delivery, and I encourage people to follow advice from the services they need on alternative ways to get in touch where email or web forms may be unavailable.&#39;
+She said 999 and NHS 111 calls were unaffected, while HM Revenue and Customs and Department for Work and Pensions phone lines remained fully operational, although waiting times may be longer than usual.
+Breaking:Microsoft &#39;deeply sorry&#39; for international outage
+Microsoft has said it is &#39;deeply sorry&#39; for the major worldwide outage that has disrupted its services in at least 74 countries today.
+In a statement, the company said: &#39;We are deeply sorry for the disruption this incident has caused our customers and partners. We know the trust they place in our services and take that responsibility extremely seriously. We are seeing broad recovery and stability across our services.
+&#39;This was a technical issue not related to cyber or AI / agents. The incident was introduced by an issue during an earlier network capacity upgrade that surfaced following a recent network change. We have addressed the underlying issue and continue to restore service to remaining customers and regions.
+&#39;Given the scale of demand, we restored services gradually, validating stability at each stage. While this took longer, it helped ensure a stable restoration.
+&#39;We will provide a full post-incident report once our review is complete.&#39;
+Today&#39;s Microsoft outage is third in 13 months
+Although most Microsoft services are back online, the outage today will not have reassured customers - especially given it is the third in 13 months.
+Microsoft 365 saw a previous large-scale outage in January, and another one in October 2025.
+Microsoft&#39;s Azure cloud platform also reported an outage last month, which impacted its productivity software suite.
+And in 2023, a smaller scale outage was blamed on a &#39;networking configuration issue&#39;.
+As a reminder, the firm has said in the last couple of hours it believes today&#39;s problems were caused by an &#39;underlying bug&#39;.
+Social media users joke the Microsoft outage is linked to wacky 1960 study claiming &#39;doomsday&#39; is today
+If you are reading this, congratulations – you have survived the end of the world.
+That is if a 1960 study predicting today to be ‘doomsday’ is to be believed – although with the Microsoft outage hitting offices, your day may still be a scene of panicked chaos as operations grind to a disastrous halt.
+Conspiracy-minded commenters on social media have found a striking connection between the global disruption and a theory claiming ‘doomsday’ will occur on November 13, 2026.
+One user cheekily suggested: &#39;Is it a mere coincidence? I don&#39;t think so.. it was all planned.&#39;
+Written by Heinz von Foerster, an Austrian-American cybernetics expert, and two of his students, the study examined the last 2,000 years of human population growth and predicted it would ‘approach infinity’ and annihilate itself.
+Breaking:Microsoft &#39;focused on addressing residual impact&#39;
+Here is the latest update from Microsoft which has just been issued on its service status page.
+It says: &#39;We remain focused on addressing residual impact and ensuring reliable service restoration.
+&#39;We continue to assess recovery across various connection methods and are closely monitoring service health to verify sustained stability.
+&#39;At this time, we have no evidence of malicious activity associated with this incident.
+&#39;We will continue to treat this with urgency until full mitigation, and we will share a full post-incident report with root cause and defense-in-depth actions after mitigation is complete.&#39;
+Microsoft &#39;regrets&#39; impact on &#39;those who depend on us&#39;
+Microsoft says it regrets the impact that outages have had on customers who &#39;depend&#39; on its services, as it continues to report improvements.
+&#39;We&#39;re seeing encouraging recovery progress, with service availability and email delivery performance improving across a growing portion of affected infrastructure,&#39; it said in a statement.
+&#39;We know our customers rely on our services to get important work done every day, and regret the impact these outages had on those who depend on us.&#39;
+Microsoft also continued its assertion that there are no signs of the outage being linked to &#39;malicious or cyber activity&#39;.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.dailymail.com/news/article-16289497/Microsoft-outage-live-updates-Outlook-meltdown.html?ns_mchannel=rss&amp;ito=1490&amp;ns_campaign=1490" target="_blank" rel="noopener">
+  Read full article at Daily Mail →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-6/">Microsoft outage disrupts UK public services and businesses</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

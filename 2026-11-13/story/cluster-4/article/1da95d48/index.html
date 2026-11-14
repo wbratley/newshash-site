@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft issues update on cause of global outage of Teams and Outlook — The Mirror — Newshash</title>
+  
+<meta name="description" content="The outage is still plaguing Microsoft users almost 12 hours since it began, affecting several Microsoft Suite platforms, including Outlook, Teams and Copilot, as the tech giant saying it still workin">
+<link rel="canonical" href="https://newshash.com/2026-11-13/story/cluster-4/article/1da95d48/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Microsoft issues update on cause of global outage of Teams and Outlook">
+<meta property="og:description" content="The outage is still plaguing Microsoft users almost 12 hours since it began, affecting several Microsoft Suite platforms, including Outlook, Teams and Copilot, as the tech giant saying it still workin">
+<meta property="og:url" content="https://newshash.com/2026-11-13/story/cluster-4/article/1da95d48/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Microsoft issues update on cause of global outage of Teams and Outlook">
+<meta name="twitter:description" content="The outage is still plaguing Microsoft users almost 12 hours since it began, affecting several Microsoft Suite platforms, including Outlook, Teams and Copilot, as the tech giant saying it still workin">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-13</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="active">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <a href="/2026-10-17/"
+         class="">
+        2026-10-17
+      </a>
+      
+      <a href="/2026-10-16/"
+         class="">
+        2026-10-16
+      </a>
+      
+      <a href="/2026-10-15/"
+         class="">
+        2026-10-15
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-13</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-13/story/cluster-4/">← Microsoft suffers global outage affecting Outlook, Teams and other services</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Mirror</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Microsoft issues update on cause of global outage of Teams and Outlook</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Microsoft issues update on cause of global outage of Teams and Outlook
+The outage is still plaguing Microsoft users almost 12 hours since it began, affecting several Microsoft Suite platforms, including Outlook, Teams and Copilot, as the tech giant saying it still working to solve the issues
+Microsoft is still mired in a major outage affecting users worldwide, impacting Teams, Outlook and Copilot, as the tech giant said it &#39;appreciated the patience&#39; of those impacted.
+Microsoft has been suffering the major outage for around 12 hours, saying that it is &#34;aggressively pursuing&#34; methods to fix the problem. The outage is affecting several Microsoft Suite platforms, including Outlook emails, messaging platform Teams, and the AI assistant Copilot.
+Monitoring website Downdetector first showed a spike in users reporting problems with Microsoft Teams in the UK at around 6.15pm on Thursday. Issues are still being reported as of 5am the following morning.
+“We appreciate your organisation’s patience and understanding while we work with urgency to resolve this incident,” the company said.
+Industries from health services and hospitals, to AI providers, to cybersecurity firms are being affected.
+In an update on Friday, the tech giant said that although it had managed to get servers operating multiple times overnight UK time, those servers had crashed.
+OpenAI, the company behind ChatGPT, also reported issues.
+“We’re investigating an issue with Microsoft connectors where new connections may be broken and tools are not working as expected,” OpenAI said in a statement on its website.
+“We’ll share an update when we know more.”
+Microsoft said it had tried several solutions to mitigate the problems, including isolating parts of its infrastructure and shifting traffic to alternate routes.
+“We’ve monitored the status of the changes applied to improve serviceability and confirmed that change is not taking as expected,” the company said.
+A previous update from Microsoft the problem was caused by a &#34;large number&#34; of servers being made &#34;unexpectedly unavailable&#34;. Microsoft then said it was able to get a &#34;subset&#34; of servers back online and was working to apply those changes more broadly.
+The tech titan has explained: &#34;While we haven&#39;t identified any recent changes that correlate with the start of impact, our investigation indicates the failed health checks may originate from a specific component on the affected servers that&#39;s responsible for processing them.
+&#34;We&#39;re deploying a targeted change to bypass this component on a subset of servers to validate whether this restores availability, and we&#39;ve taken steps to prevent additional servers from being removed from service while we work to return the affected servers to service.
+&#34;We&#39;re also investigating why affected servers are experiencing elevated processor usage while handling requests.&#34;
+More than 3,000 UK users reported issues on outage tracker Downdetector shortly after 6pm, with the majority struggling to log in to their accounts. In the US, almost 130,000 people have been affected.
+Reports have fallen since that peak, but many users continue to complain of being unable to send or receive emails, while others are struggling to load their inboxes altogether.
+To see more of the stories you love from The Mirror and to find them easily in Google then make us your preferred source. Free and easy-to-do, just click on the link here to find more from The Mirror at the top of your feed.
+As problems continued, leaving workers globally twiddling their thumbs, Microsoft reported at around 2am UK time: &#34;We&#39;re seeing positive results with our efforts to restart affected infrastructure.&#34;
+But just under 30 minutes later, Microsoft was less positive, saying: &#34;We&#39;re applying infrastructure capacity improvements where possible in an effort to help support traffic in regions coming online. We&#39;re continuing to monitor the results of changes applied so we can identify strategic actions that can help to improve service health across all affected regions.&#34;
+The list of services which are currently down has been posted on the Microsoft website, and has grown significantly as the hours have worn on.
+Microsoft says features that interact with Exchange Online and email services are impacted. This includes:
+- Exchange Online: Users may be unable to access their mailbox using Outlook on the web, Outlook desktop (MAPI), Exchange ActiveSync (EAS), or REST-based connections, and email delivery may be delayed.
+- Microsoft 365 admin center: Admins may be unable to load some admin center pages.
+- Microsoft 365 apps: Users may be unable to view their recently used files.
+- Microsoft 365 Apps Admin Center: Multiple services including Cloud Update, Cloud Policy, and Inventory are affected.
+- Microsoft 365 Education: Features including Assignments, Reading Progress, and Speaker Progress may be impacted.
+- Microsoft Copilot 365: Users may be unable to load Copilot Chat or receive responses in the web and desktop apps, and Copilot experiences may be unable to access work data such as email, calendar, and files.
+- Microsoft Defender for Office 365: Safe Links may be unable to verify URLs, which may impact users clicking links in Outlook and Teams.
+- Microsoft Defender XDR: Users may be unable to load Microsoft Defender portal pages or solution tabs.
+- Microsoft Fabric: Users may encounter failures when exporting reports with sensitivity labels to PDF or PowerPoint, or when updating artifacts with sensitivity labels.
+- Microsoft Graph: API requests that access Exchange Online data, such as mail, calendar, and contacts, may time out.
+- Microsoft Intune
+- Microsoft Planner: Users are experiencing Plan and Task operation reliability issues.
+- Microsoft Purview: Multiple Purview services including Authorization, auto-labeling, Data Loss Prevention (DLP), Communication Compliance, and Data Classification are impacted, and users may be unable to load Microsoft Purview portal pages.
+- Microsoft Teams: Scenarios that depend on Exchange Online, including calendar, meeting scheduling, and creating chats for organizations using Information Barriers, may fail. Core messaging and online meetings remain largely functional.
+- Microsoft To Do: The app may not load, and users may see operation failures.
+- Power BI: All users may intermittently be unable to export reports with MIP sensitivity labels to PDF in Power BI.
+- SharePoint Online: Features that depend on Exchange Online may be impacted. Accessing files stored directly in SharePoint Online remains functional.
+- Universal Print: Users may encounter errors submitting print jobs or using admin features.
+- Windows 365: Customers who have configured their tenant and Cloud PCs to use Microsoft Purview Customer Key for Windows 365 Cloud PCs may have users who are unable to connect to their Cloud PCs.
+Microsoft says there are some elements of services that don&#39;t rely on interactions with Exchange Online which are functional.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.mirror.co.uk/news/world-news/microsoft-outage-teams-outlook-copilot-37872842" target="_blank" rel="noopener">
+  Read full article at The Mirror →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-13/story/cluster-4/">Microsoft suffers global outage affecting Outlook, Teams and other services</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
