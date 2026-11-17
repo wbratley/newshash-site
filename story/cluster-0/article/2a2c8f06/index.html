@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The young people caught up in Britain&#39;s Neets crisis — BBC News — Newshash</title>
+  
+<meta name="description" content="BBC News speaks to four of the million young people aged 16 to 24 who are not in work, education or training.">
+<link rel="canonical" href="https://newshash.com/story/cluster-0/article/2a2c8f06/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="The young people caught up in Britain&#39;s Neets crisis">
+<meta property="og:description" content="BBC News speaks to four of the million young people aged 16 to 24 who are not in work, education or training.">
+<meta property="og:url" content="https://newshash.com/story/cluster-0/article/2a2c8f06/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The young people caught up in Britain&#39;s Neets crisis">
+<meta name="twitter:description" content="BBC News speaks to four of the million young people aged 16 to 24 who are not in work, education or training.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-17</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-11-17
+      </a>
+      
+      <a href="/2026-11-16/"
+         class="">
+        2026-11-16
+      </a>
+      
+      <a href="/2026-11-15/"
+         class="">
+        2026-11-15
+      </a>
+      
+      <a href="/2026-11-14/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <a href="/2026-10-20/"
+         class="">
+        2026-10-20
+      </a>
+      
+      <a href="/2026-10-19/"
+         class="">
+        2026-10-19
+      </a>
+      
+      <a href="/2026-10-18/"
+         class="">
+        2026-10-18
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-0/">← Alan Milburn publishes review on youth unemployment with welfare and employment reforms</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">The young people caught up in Britain&#39;s Neets crisis</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>The young people caught up in Britain&#39;s Neets crisis
+- Published
+The number of young people who are not in work, at school or in college is both an economic and moral crisis, a landmark report into the problem will say later.
+The 241-page report, by ex-Labour minister Alan Milburn, will set out a raft of recommendations for the government to consider.
+Ahead of its publication, four young people who are not in education, employment or training - those dubbed as &#34;Neets&#34; - tell us why they can&#39;t get a job and how the government could help them get one.
+Michael: &#39;Everything is experience, experience, experience&#39;
+Michael, 19, who lives with his dad in the Wirral, says he dropped out of college and spent a year at home after his social anxiety &#34;got really bad&#34;. It is &#34;very easy&#34; to fall out of the system, he says, if there is little support available.
+Michael&#39;s story is not unique. There has been a large rise in anxiety and mental health problems in young people.
+About one in five Neets have a mental health condition, according to 2025 data, external from the Department for Education (DfE) - more than double the rate in 2012.
+Having signed up for Universal Credit, Michael was put in touch with the Merseyside Youth Association to help him find a job. He says mentors there have helped him improve his mental health, which led to him dropping out of college during his A-levels. He says that left him trapped inside his bedroom.
+He says jobs in his area are scarce and those that do come up tend to go to older people with more experience. Michael says he is trapped in the cycle of not having the experience needed to build more.
+&#34;Everything is experience, experience, experience - that&#39;s the one thing that I always used to hear when going for jobs on my own without the help,&#34; he says.
+We followed Michael for a day, meeting him after his 05:00 start for a work experience shift at a local supermarket that the Merseyside Youth Association helped him get.
+Lots of Neets receive Universal Credit. For under-25s, the standard rate is £338.58 a month, external, which Michael gets. For some people who cannot work because of a health condition, disability or long-term illness, an additional £217.26 to £429.80 per month may be available.
+Ahead of the publication of his full review, it was reported that Milburn would recommend young people should no longer be able to claim those additional health-related benefits, as part of a major overhaul of the welfare system.
+Michael acknowledges some young people may be &#34;taking advantage&#34; of the benefits system, but says most &#34;just want the money to get by so they can get a job&#34;.
+More recently, he has been doing shifts at the Merseyside Youth Centre&#39;s on-site cafe to gain more much-needed experience. His hope is to be in a steady job earning money this time next year, with space to have his own art studio one day.
+&#34;From three months ago I&#39;m a different person,&#34; he says. &#34;I can do stuff, keep going.&#34;
+Maariyah: &#39;I send 20 job applications a week&#39;
+Maariyah, a 22-year-old history and politics graduate, finished her university course last summer. Her dream is to work in museums.
+However, she is currently unemployed and looking for any paid job after working a temporary six-month contract for a housing association earlier this year.
+She says she spends hours each day in her local library - where she feels more able to focus than she can at home - submitting at least 20 tailored job applications a week.
+Those who have not achieved GCSE-level qualifications are more likely to remain Neet for longer periods - however, an estimated one in 10 Neets are university graduates.
+Maariyah says she is applying for roles in retail and restaurants, alongside unpaid work experience opportunities in the heritage sector.
+But she says she has also been rejected for voluntary roles because they had too many applicants, or because she does not have enough experience. &#34;I&#39;m actively going out of my way to do unpaid work, only to get rejected from these positions,&#34; she says.
+Not hearing back from employers &#34;happens so often now that&#39;s it&#39;s like second nature&#34;, she says, adding that she finds it frustrating that many of her applications are likely to be screened by AI before a real person sees them.
+On the day we meet, Maariyah heads to the job centre for her Universal Credit appointment after a library job application session. She says she has noticed an improvement in the support she gets there since she first received the benefit in 2025.
+This time, she will be getting some mandatory hospitality training, which she says she is &#34;really glad&#34; to have.
+She feels there is a growing sense of disillusionment among others her age. Being on benefits has become normalised because it is so hard to find a job, she adds.
+It makes her feel that going to a good university, getting certain grades and doing extracurricular activities &#34;doesn&#39;t make a difference in the end&#34;.
+&#34;I would like employers to give young people a chance to gain experience and take a chance on hard-working people who at the end of the day want a job so that they can contribute to our economy and contribute to their own lives.&#34;
+Matthieu: &#39;You might be surprised what people can do&#39;
+Matthieu, 19, from Edgware in north-west London, is autistic and currently volunteers at a gardening club and a computer repair shop.
+We meet him in Finsbury Park, where he is helping to mulch some newly planted trees. Working in nature is calming, he says.
+He is looking for work with the support of the charity Ambitious About Autism and his mentor, Annie. He previously did a year-long supported internship with the Whittington hospital.
+Matthieu says speaking to people face-to-face there helped his confidence and he enjoyed being part of the team. At his family home, Matthieu&#39;s mentor Annie tells us that not having maths and English GCSE qualifications is a barrier to finding employment.
+Matthieu says he&#39;s more of a manual worker and wants to work in a factory, warehouse or doing deliveries, so that he can contribute financially for his family.
+Those with learning difficulties, including autism, make up an estimated 12% of Neets, DfE data, external shows. Milburn&#39;s interim report, external, which was published in the summer, said 45% of Neets reported having a disability. He said the situation for young disabled people was &#34;devastating&#34;.
+To make work accessible to him, Matthieu says he would need an employer to take their time with him. He says: &#34;I don&#39;t learn that quickly.&#34; But he thinks it would be worth it.
+&#34;Honestly, you might be surprised what the people can do when you take the time with them and give them that chance,&#34; Matthieu says.
+Many employers say they can not afford to do so following rises to National Insurance contributions and the minimum wage, which is increasing further as part of announcements made in October&#39;s Budget.
+Some businesses have told the BBC they are struggling to provide new jobs for young people due to these changes, as well as other factors like rising energy bills.
+Although finding work is hard, Matthieu says he remains hopeful because of the support from his internship and job coach.
+Alex: &#39;Places don&#39;t want to hire us&#39;
+Alex, 20, from St Helens, has been looking for work for a year. She struggles with anxiety and is looking for roles as a cleaner or in retail. She also shares caring responsibilities for her mum with her other family members.
+We meet her at Spear, an employment and mindset coaching programme. Alex says her dream is to work with animals. She says she had been studying Level 3 animal management at college before dropping out last year because of her mental health.
+&#34;I was so burnt out,&#34; she says. &#34;I was struggling to get out of bed, I couldn&#39;t do anything. I was dragging myself to college. I was like, &#39;No, I need to have a break for a bit and try and figure out what to do after that&#39;.&#34;
+Building up her resilience is something she now works on with a mentor, as well as job applications.
+Alex says she is applying for &#34;anything and everything&#34; and wants to get off benefits. She is also currently receiving Universal Credit, which she says is &#34;all the money that I&#39;ve got until I get a job and I&#39;m earning more&#34;.
+When asked what she thinks about potential benefits cuts for young people out of work, Alex says not being able to access benefits would &#34;make life so much worse&#34;.
+And she says trying to find work in a place like St Helens is harder, because many businesses in the town centre have either &#34;gone or moved or shut down&#34;.
+&#34;Lots of people think, &#39;well, young people just don&#39;t want to work,&#39;&#34; she says. &#34;But we do. We so desperately want to work. Places don&#39;t want to hire us.&#34;
+Milburn has already said the system isn&#39;t working for everyone, and that serious action is needed to avoid young Neets becoming a &#34;lost generation&#34;.
+Additional reporting by Branwen Jeffreys and Kate McGough
+Related topics
+- Published27 August</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/cj75pkgrv151o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-0/">Alan Milburn publishes review on youth unemployment with welfare and employment reforms</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
