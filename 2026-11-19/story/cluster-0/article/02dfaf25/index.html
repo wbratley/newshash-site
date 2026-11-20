@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Killer tunes: how Grand Theft Auto conquered the music world — The Guardian — Newshash</title>
+  
+<meta name="description" content="Featuring hundreds of songs from the hippest real-world artists, the radio stations in Rockstar’s crime sagas are as hotly anticipated as the storylines. Contributors including Flying Lotus, Wavves an">
+<link rel="canonical" href="https://newshash.com/2026-11-19/story/cluster-0/article/02dfaf25/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Killer tunes: how Grand Theft Auto conquered the music world">
+<meta property="og:description" content="Featuring hundreds of songs from the hippest real-world artists, the radio stations in Rockstar’s crime sagas are as hotly anticipated as the storylines. Contributors including Flying Lotus, Wavves an">
+<meta property="og:url" content="https://newshash.com/2026-11-19/story/cluster-0/article/02dfaf25/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Killer tunes: how Grand Theft Auto conquered the music world">
+<meta name="twitter:description" content="Featuring hundreds of songs from the hippest real-world artists, the radio stations in Rockstar’s crime sagas are as hotly anticipated as the storylines. Contributors including Flying Lotus, Wavves an">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-19</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-20
+      </a>
+      
+      <a href="/2026-11-19/"
+         class="active">
+        2026-11-19
+      </a>
+      
+      <a href="/2026-11-18/"
+         class="">
+        2026-11-18
+      </a>
+      
+      <a href="/2026-11-17/"
+         class="">
+        2026-11-17
+      </a>
+      
+      <a href="/2026-11-16/"
+         class="">
+        2026-11-16
+      </a>
+      
+      <a href="/2026-11-15/"
+         class="">
+        2026-11-15
+      </a>
+      
+      <a href="/2026-11-14/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <a href="/2026-10-22/"
+         class="">
+        2026-10-22
+      </a>
+      
+      <a href="/2026-10-21/"
+         class="">
+        2026-10-21
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-19</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-19/story/cluster-0/">← Grand Theft Auto VI released to critical acclaim and record pre-orders, amid PlayStation outage and school attendance concerns</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">Killer tunes: how Grand Theft Auto conquered the music world</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>A droptop sports car speeds along a highway blaring 90s west coast rap from its booming sound system. Gradually, the asphalt gives way to rural backwaters, and so the sounds of Grand Theft Auto: San Andreas’s local radio also change: less gangster rap and more twangin’ country – the grizzled croon of Merle Haggard and yearning warble of Patsy Cline.
+The Grand Theft Auto games are massive, stretching across many, many square miles of virtual terrain. Their soundtracks, relayed mostly via in-game radio stations, are manifold. And these two aspects, plus the personal experiences each player brings to the game, mean everyone has a different favourite musical memory from the smash-hit crime series. For acclaimed electronic musician Flying Lotus, it is all the hours he spent cavorting around 2004’s San Andreas that remain special. “It felt like the first time a game saw a different side of culture – black culture,” he says over the phone. “It felt like we were being seen. And with the extent of the music, all the cool California hip-hop, it felt like someone actually cared.”
+Nine years later, Flying Lotus, real name Steven Ellison, contributed to Grand Theft Auto V by curating the radio station FlyLo FM. He mixed wonky left-field rap, blistering Chicago footwork and, naturally, his own jazz-inflected beat music. Upon the game’s release in 2013, he got all his friends over to his home in Los Angeles, jacked a random vehicle, and got the station pumping. “It was just, like, ‘Am I fucking dreaming right now?’” he recalls.
+FlyLo FM is emblematic of how the GTA soundtracks have evolved from aural capsules of distinct historic periods and locales such as 90s California and 80s Miami, into teeming, total documents of the sprawling, multi-faceted zeitgeist of the eras in which the games are released: not so topographically specific, but astonishingly extensive. Go back and listen to the soundtrack of GTA V: it is the sound of the 2010s.
+And now, GTA VI is set to canonise the sound of the 2020s. Cruising around Leonida, a super-sized reimagining of modern-day Florida, players will blast tracks by the likes of Swedish rapper Yung Lean and Texas superstar Travis Scott. These big names sit alongside stations cranking out lilting reggaeton, melodic afrobeats, and grooving amapiano, genres that have exploded in popularity in the 13 years since the last Grand Theft Auto.
+“After a while, there becomes a reputation to uphold,” says New York Magazine music critic Craig Jenkins of the encyclopedic breadth of these soundtracks. “There’s an expectation now.” More than that, Jenkins sees the GTA soundtracks as a major “flex” from Rockstar, in an era when many video game companies are cutting back – a pointed reminder of its singular financial and cultural clout. “Nobody else either has the juice or wants to go to the trouble of making it happen,” he says. “It costs so much to license anything these days.”
+But licensing real-world tracks for in-game radio stations isn’t how the Grand Theft Auto soundtracks started. The audio team at DMA Design (before it became Rockstar North, the maker of GTA today) were experimenting with different song styles, and crediting their compositions to fictitious artists. Then, one of the game’s composers, Colin Anderson, had an epiphany: they could group these tracks according to genre, and package them as radio stations. So frequencies dedicated to icy east coast boom-bap rap, blaxploitation-era funk and hardcore rave became the sounds that made the first game’s New York analogue, Liberty City, come alive.
+Anderson and his colleagues devised a simple test for judging whether the radio station idea was a success or not. “If players treated the tracks we’d recorded as if they were by real bands, and if they started stealing particular cars just to keep listening to particular stations, then we would have done what we set out to do,” he explains. Anderson remembers his vision quickly being vindicated: critics were effusive about the music of these made-up artists, and some players deliberately took longer to finish missions, so they could listen to their favourite songs.
+Grand Theft Auto 3 marked a major turning point: fake artists were out; real musicians were in – the likes of dub originator Scientist and Detroit rapper Royce da 5′9″. But they were cult figures. With Vice City, Rockstar stepped up its soundtrack ambitions, securing prominent features from major acts such as Hall &amp; Oates and the king of pop himself, Michael Jackson. Who can forget cruising down the Miami-inspired neon strip of Vice City listening to the future-funk shuffle of Billie Jean, feeling like the most famous Miami gangster of all time, Tony Montana?
+Canadian R&amp;B star the Weeknd has credited Vice City as a formative experience. “It really opened my eyes to a lot of 80s music,” he said. The underground Dutch producer Kai Hugo, who has released dreamy, 80s-inspired house music under various monikers including Palmbomen, discovered italo-disco through the game. When Soulwax asked him to be part of their Grand Theft Auto V radio station years later, he was taken aback. “To have my music included in the game, it felt quite special – kind of a full-circle moment,” he says.
+“I’m certain that almost the entire millennial cohort can trace at least some aspect of their music taste to the GTA games,” says Jenkins. But it’s not only millennials who have embraced GTA: gen Z rappers, especially, reference the series in their lyrics (see Juice Wrld’s emo-rap anthem Wasted) and music videos (Croydon rapper Pozer’s Habits). For those wishing to bring listeners into their own violent, street-level worlds, GTA is an evocative hook.
+The influence of GTA on musicians is one part of the feedback loop. Another is the material impact it has had on them. Dutch producer Hugo relocated to Los Angeles with his GTA cheque. For Ramona Gonzalez, AKA R&amp;B singer Nite Jewel, who scored a GTA V sync for her dreamy synth-pop anthem Nowhere To Go, the money enabled her to become an independent musician again. “I didn’t have the capital at the time to go back to my label, and Grand Theft Auto really made it possible for me to do that,” she says.
+Think of the GTA soundtracks as a kind of cultural trickle-down economics: in the case of GTA V, which had the biggest entertainment launch ever in 2013, raking in more than $1bn in its first three days on sale alone, the wealth was spread among a broad group, including the soundtrack contributors. But Gonzalez, who recorded Nowhere To Go exclusively for GTA V (in response to a tight, 48-hour turnaround request from soundtrack supervisor Ivan Pavlovich), does not own the copyright for that track – Rockstar does. So even though it is her most popular song on Spotify by some margin (over 8m plays), she makes only a modest residual income from it, and the bulk of her fee was on work-for-hire terms: a one-off payment upon completion of the music.
+“When you look at the royalty statement, is that fair? Well, yes and no,” says Gonzalez. “It’s Grand Theft Auto, it’s Rockstar’s brand. It would be nice if it was different, but at the same time, I’m not complaining about the amount of money that I continue to see from that sync in 2026.”
+For the artists involved in Grand Theft Auto, that long-tail consistency is a major boon. Thanks to GTA Online, the online multiplayer portion of GTA V, which has eclipsed the base game in both revenue and popularity, Gonzalez has remained in players’ minds for over 13 years. When she played a gig in Oxted, a small commuter town Surrey, it was Nowhere To Go that received the most rapturous response. “The reach is insane,” says Gonzalez.
+The frontman of indie-rock band Wavves, Nathan Williams, is unequivocal about the impact hosting a station and recording music for GTA V had on his career. “I was on the cover of Spin magazine, I’ve played Lollapalooza, I’ve had multiple Pitchfork best-new-musics,” says Williams. “All these things move you a little bit but none of them really do anything long-lasting. But people still come up to me at Wavves shows and say, ‘I discovered your band through GTA.’”
+Even in the early 2010s, the name-making impact of Grand Theft Auto was clear. During outreach for FlyLo FM, Ellison recalls having to do very little convincing of artists to take part. “You can pretty much get anybody to do whatever you need,” he says. Case in point: California rap star Tyler, the Creator, who was just starting to crest thanks to Yonkers. “I’d been trying to work with Tyler for forever. And as soon as I said GTA, I got a track the next day. It was the fastest turnaround,” laughs Ellison.
+The Grand Theft Auto games thrive on their sense of cool – their ability to tap up, and tap into, both mainstream and underground culture. Every featured artist, even those such as Tyler, the Creator, who only had a single track included on the soundtrack, can claim to have contributed to this sensibility. And it is one that remains rare in the world of video games: where many franchises look inwards for inspiration, Grand Theft Auto looks out. And whether out of sheer madness, hubris, creative genius, or bottomless riches (likely all of the above, in truth), its makers attempt something no other studio would dare: to roll up practically all of culture into a single work of interactive art.
+Flying Lotus puts great stock in GTA being part of this history. “You know, I’ll always be able to say I was part of the biggest game ever,” he says. “That is, at least until 19 November.”</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/games/2026/nov/16/auto-tunes-music-grand-theft-auto-conquered-zeitgeist-gta" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-19/story/cluster-0/">Grand Theft Auto VI released to critical acclaim and record pre-orders, amid PlayStation outage and school attendance concerns</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
