@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Can AI really help spot Black Friday deals? We put it to the test — BBC News — Newshash</title>
+  
+<meta name="description" content="We put four AI models to the test to see if they could save us money on a new TV.">
+<link rel="canonical" href="https://newshash.com/2026-11-21/story/cluster-5/article/47de4a29/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Can AI really help spot Black Friday deals? We put it to the test">
+<meta property="og:description" content="We put four AI models to the test to see if they could save us money on a new TV.">
+<meta property="og:url" content="https://newshash.com/2026-11-21/story/cluster-5/article/47de4a29/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Can AI really help spot Black Friday deals? We put it to the test">
+<meta name="twitter:description" content="We put four AI models to the test to see if they could save us money on a new TV.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-21</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-22
+      </a>
+      
+      <a href="/2026-11-21/"
+         class="active">
+        2026-11-21
+      </a>
+      
+      <a href="/2026-11-20/"
+         class="">
+        2026-11-20
+      </a>
+      
+      <a href="/2026-11-19/"
+         class="">
+        2026-11-19
+      </a>
+      
+      <a href="/2026-11-18/"
+         class="">
+        2026-11-18
+      </a>
+      
+      <a href="/2026-11-17/"
+         class="">
+        2026-11-17
+      </a>
+      
+      <a href="/2026-11-16/"
+         class="">
+        2026-11-16
+      </a>
+      
+      <a href="/2026-11-15/"
+         class="">
+        2026-11-15
+      </a>
+      
+      <a href="/2026-11-14/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <a href="/2026-10-24/"
+         class="">
+        2026-10-24
+      </a>
+      
+      <a href="/2026-10-23/"
+         class="">
+        2026-10-23
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-21</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-21/story/cluster-5/">← UK news outlets publish varied Black Friday content, from shopping advice to AI testing and fraud warnings</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">BBC News</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">Can AI really help spot Black Friday deals? We put it to the test</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>Can AI really help spot Black Friday deals? We put it to the test
+- Published
+Whether it&#39;s scrolling through endless choice, spotting fake reviews, or working out if a &#34;deal&#34; is a deal at all, Black Friday sums up a lot of online woes.
+Retailers promise bargains - but the sheer number of offers can leave us feeling no closer to finding the best deal.
+It&#39;s an area where generative AI products, such as ChatGPT, Claude and Gemini, have promised to help.
+But are they any good at finding Black Friday deals? We had a go ourselves a week ahead of the big day.
+Figures suggest relatively few UK shoppers currently go to AI tools for help.
+A recent YouGov survey of 19 countries found the UK ranked second-last in the proportion of people who said they had used AI to help them shop.
+Crucially, 36% of respondents who said they would be shopping around Black Friday didn&#39;t plan to use an AI tool at all.
+But the survey suggested a growing number of people were considering it - and tech firms have released features to capitalise on this.
+Amazon launched Alexa for Shopping for UK users in November and OpenAI launched a Shopping Research tool on ChatGPT days before last year&#39;s Black Friday.
+In the US, Google recently launched Universal Cart, with AI-powered features such as price tracking and identification of relevant promo codes.
+But there has been criticism that fact-checking AI ends up taking more time, while some brands are working to try to make sure their products show up in chatbot answers.
+We asked four models to find a 55-inch TV deal, using the free versions of many of the most popular tools.
+While this was not a rigorous scientific test, the experience we had produced mixed results.
+ChatGPT - full price and not available to buy
+OpenAI&#39;s ChatGPT came up with four options.
+Its top pick was a Hisense TV on Chinese retailer Joybuy&#39;s website, on sale for £499 down from £649.
+The next recommendation was a 55-inch TCL-branded TV, but a sidebar showed prices for the 50-inch version, from £379 to £814.
+Option three was the same Hisense TV as before, but for full price at £649 from John Lewis and Richer Sounds.
+This was the &#34;best safer purchase&#34; according to ChatGPT, as the sites offered longer guarantee periods.
+But clicking on the links did not go well. Both retailers said the TV was no longer listed online.
+The fourth option was equally fruitless - another TCL TV, at full price, £150 over our budget and not available online.
+At the bottom, ChatGPT served one last offer - &#34;one OLED option to compare&#34; - for a £1,100 LG TV that was marked as &#34;Ad&#34;.
+Claude - honest, but not too helpful
+Claude produced the shortest answer of all the models we tested, and unlike the others, it did not give much detail on the specifications of each model.
+Instead, it seemed to base its results on a small number of reviews published online.
+It recommended the same two TCL TVs as ChatGPT.
+But when we clicked on the links, they sent us to two dead pages on the Richer Sounds website.
+Some other links led to year-old round-ups of Black Friday 2025 deals.
+Claude was not very enthusiastic about its other two recommendations due to a lack of independent reviews - calling one &#34;a decent option&#34; but saying it &#34;wouldn&#39;t pick&#34; the other.
+It also listed two Samsung TVs, but it told us not to buy them, with one &#34;over budget and not clearly better than the TCLs&#34;.
+We were left wondering why it even mentioned them in the first place.
+Gemini - a familiar pattern
+Different AI model, same TV manufacturers - albeit different Hisense and TCL models to the previous chatbots&#39; recommendations.
+Gemini generated a table comparing four different models, but offered no links to the stores it named, so we searched for them ourselves.
+The prices for one TCL TV were correct at £649, but it was sold out at one of the named retailers.
+It said the other TCL model was available from Argos and Currys for £539 - correct for Argos, but when we checked Currys, it was £60 more expensive.
+Again, it included two Samsung models to avoid due to lower screen specs.
+Alexa - accurate but limited
+Alexa came back with four TVs, from its own Amazon Ember at £532 to a £699 Samsung.
+But its top recommendation was to go for another Samsung model at £616 (down from £749), based on its picture quality and Amazon customer rating.
+Its fourth option was for a Sony TV, but it was only 50 inches, leaving us unsure why it had included it.
+All the prices stated were correct, but Amazon only searches its own store. Alexa did acknowledge this, encouraging us to check its rivals for better deals, &#34;as prices can vary&#34; and we could get longer guarantees elsewhere.
+Inconsistent pricing
+There are methods that can boost the likelihood of getting a better response, from crafting more informative prompts to upping a chatbot&#39;s &#34;thinking&#34; level.
+Tech journalist Alex Hughes had better luck than we did when he used ChatGPT&#39;s agentic AI mode to find a TV in last year&#39;s Black Friday sales.
+Agentic AI is still in its early days, but it allows AI to act with more autonomy and carry out multi-step tasks.
+The search took about 20 minutes &#34;with very little work on my end needed,&#34; Hughes wrote for Tom&#39;s Guide, external in November 2025.
+A year on, he told the BBC he didn&#39;t go through with buying a TV at that time.
+He did later purchase one of the seven models ChatGPT had surfaced - but he had found it for a lower price in a bricks-and-mortar shop.
+Will he be using AI to find Black Friday deals again this year? &#34;Probably not,&#34; he said.
+He reckoned it saved him time, but &#34;when you&#39;re trying to deal with something like live price data... it will be inconsistent and quite often incorrect&#34;.
+Slim pickings
+While we were served up the same brands again and again, in reality there are tonnes of products listed for sale around Black Friday.
+Naureen Mohammed, who advises businesses on how to get their products to appear in AI results, told the BBC customers did not see the full picture when they talked to chatbots.
+If businesses fail to update their prices when people start hunting for bargains, &#34;last year&#39;s prices are served up as today&#39;s deals&#34;.
+&#34;I suspect the whole model for advertising is going to start influencing AI recommendations,&#34; she said.
+Her own analysis of chatbots&#39; Black Friday tech deals in the UK suggested the big retailers came out on top - with Amazon mentioned in half of responses, and Currys following closely behind.
+Her tips include asking an assistant &#34;is that this year&#39;s price?&#34; and clicking on the links provided - &#34;because you shouldn&#39;t take any advice from the AI system at face value&#34;.
+But consumer group Which? recently said inaccurate pricing in AI results added more work, external to Black Friday deal-hunting.
+&#34;If you ask ChatGPT for a list of 10 laptops under £400 and seven of the results are priced higher, you&#39;ve likely wasted a good chunk of time going through them to discover the bot gave you only three options,&#34; said senior researcher Hannah Walsh.
+&#34;The opposite is also true - you could miss out on great models in your budget if ChatGPT tells you they are more expensive than they actually are.&#34;
+Sign up for our Tech Decoded newsletter to follow the world&#39;s top tech stories and trends. Outside the UK? Sign up here.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">
+  Read full article at BBC News →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-21/story/cluster-5/">UK news outlets publish varied Black Friday content, from shopping advice to AI testing and fraud warnings</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
