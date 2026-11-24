@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cop31 draft climate text dissected: what it says and what it means — The Guardian — Newshash</title>
+  
+<meta name="description" content="Fiona Harvey reads between the lines of the draft document that will end up outlining decisions and resolutions from the 31st climate summitCop31 live – latest updatesThe final text is one of the most">
+<link rel="canonical" href="https://newshash.com/2026-11-23/story/cluster-2/article/fe738170/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="Cop31 draft climate text dissected: what it says and what it means">
+<meta property="og:description" content="Fiona Harvey reads between the lines of the draft document that will end up outlining decisions and resolutions from the 31st climate summitCop31 live – latest updatesThe final text is one of the most">
+<meta property="og:url" content="https://newshash.com/2026-11-23/story/cluster-2/article/fe738170/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cop31 draft climate text dissected: what it says and what it means">
+<meta name="twitter:description" content="Fiona Harvey reads between the lines of the draft document that will end up outlining decisions and resolutions from the 31st climate summitCop31 live – latest updatesThe final text is one of the most">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-23</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="">
+        2026-11-24
+      </a>
+      
+      <a href="/2026-11-23/"
+         class="active">
+        2026-11-23
+      </a>
+      
+      <a href="/2026-11-22/"
+         class="">
+        2026-11-22
+      </a>
+      
+      <a href="/2026-11-21/"
+         class="">
+        2026-11-21
+      </a>
+      
+      <a href="/2026-11-20/"
+         class="">
+        2026-11-20
+      </a>
+      
+      <a href="/2026-11-19/"
+         class="">
+        2026-11-19
+      </a>
+      
+      <a href="/2026-11-18/"
+         class="">
+        2026-11-18
+      </a>
+      
+      <a href="/2026-11-17/"
+         class="">
+        2026-11-17
+      </a>
+      
+      <a href="/2026-11-16/"
+         class="">
+        2026-11-16
+      </a>
+      
+      <a href="/2026-11-15/"
+         class="">
+        2026-11-15
+      </a>
+      
+      <a href="/2026-11-14/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <a href="/2026-10-28/"
+         class="">
+        2026-10-28
+      </a>
+      
+      <a href="/2026-10-27/"
+         class="">
+        2026-10-27
+      </a>
+      
+      <a href="/2026-10-26/"
+         class="">
+        2026-10-26
+      </a>
+      
+      <a href="/2026-10-25/"
+         class="">
+        2026-10-25
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+<div class="archive-banner">
+  <span>Viewing archive: 2026-11-23</span>
+  <a href="/">Back to today</a>
+</div>
+
+
+
+<a class="back-link" href="/2026-11-23/story/cluster-2/">← COP31 climate talks end without agreement after fossil fuel dispute</a>
+
+<div class="article-outlet lean-left">
+  <span class="outlet-name">The Guardian</span>
+  <span class="lean-badge lean-left">left</span>
+</div>
+
+<h1 class="article-headline">Cop31 draft climate text dissected: what it says and what it means</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>The final text is one of the most important documents that will come out of the Cop31 climate summit in Turkey. What emerges in the latest draft here is that it will not be a new treaty, but a series of decisions and resolutions. These decisions have legal force in the context of the Paris agreement, so this is a powerful document. But it is also a document that can be accepted only with the consensus of all parties, therefore much of the language is cautious and some is ambiguous or open to interpretation, to the frustration of countries who want to move faster.
+I. Global progress and context
+1. Strongly reaffirms commitment to multilateralism and resolves to remain united in the pursuit of efforts to implement the Convention and achieve the purpose and long-term goals of the Paris Agreement; 2. Recalls that the Paris Agreement will be implemented to reflect equity and the principle of common but differentiated responsibilities and respective capabilities, in the light of different national circumstances; 3. Acknowledges that the Paris Agreement is working and that the global transition towards low greenhouse gas emissions and climate-resilient development is irreversible, and that significant collective progress towards the Paris Agreement temperature goal has been made, from an expected global temperature increase of more than 4°C according to some projections prior to the adoption of the Agreement to an increase of around 2.6°C based on the full implementation of national climate plans; 4. Emphasizes the importance of promoting the economic and social benefits and opportunities of action on climate change, recognizing the significant drop in the cost of mature renewable energy and zero- and low-emission technologies, and the role of the energy transition in strengthening energy security, affordability and availability;
+This reaffirms the Paris agreement and defends it against charges that it is not working, by acknowledging the progress made in bringing down the world’s emissions trajectory that would have taken us well above 4C. But 2.6C is still far too high, and would violate the limit of “well below 2C” set in Paris in 2015, and the 1.5C temperature goal that was set as an aspiration.
+It is the first mention of an “irreversible global transition towards low greenhouse gas emissions and climate-resilient development”. Some countries – chiefly the Arab group, led by Saudi Arabia, but also including Russia and some developing country allies – want this much weaker phrase to replace the commitment to “transition away from fossil fuels” that was set at Cop28 in Dubai in 2023.
+5. Commends the 167 Parties that, as at 18 November 2026, had communicated their new nationally determined contributions, the 81 Parties that have communicated long-term low greenhouse gas emission development strategies, and 96 Parties that have submitted their national adaptation plans, and urges Parties that have not yet made such submissions to do so as soon as possible;
+Nationally determined contributions (NDCs) are the bedrock of Paris. Each country crafts their own, setting out their core emissions-cutting goals and actions to be undertaken to meet those goals. For developing countries, NDCs can operate as development plans, inviting investors to put money into renewable energy or low-carbon technology, as well as help them improve their resilience to the impacts of extreme weather.
+6. Also welcomes the implementation of the enhanced transparency framework, including submissions of 140 first biennial transparency reports, 112 technical expert reviews, 80 Parties undergoing facilitative, multilateral consideration of progress and the 2026 synthesis report of the first biennial transparency reports; 7. Encourages Parties that have not yet submitted their first biennial transparency report to do so as soon as possible and invites all Parties to submit on time their biennial transparency reports due on 31 December 2026, taking into consideration paragraph 4 of decision 18/CMA.1.
+The transparency reports were a central focus at Cop29 in Baku: they lay out commitments on spending of climate finance.
+8. Encourages enhanced support for the implementation of national adaptation plans, and urges Parties to implement the UAE Framework for Global Climate Resilience and to mainstream climate change adaptation into all relevant national plans and strategies, taking into account national circumstances and priorities;
+National adaptation plans are the counterpart to NDCs – they show what countries need in order to protect themselves against extreme weather and can also operate as investable plans to attract private companies or to gain access to climate finance from public sources.
+9. Expresses deep concern that global peak warming is projected to exceed 1.5°C above pre-industrial levels; 10. Underscores that the risks and impacts of climate change will be much lower at the temperature increase of 1.5°C compared with 2°C; 11. Recognizes that 1.5°C overshoot and every increment of warming above current levels will increase the frequency and intensity of loss and damage and result in increasingly adverse, and in some cases irreversible, impacts and risks to human and natural systems; 12. Reaffirms resolve to pursue efforts to limit the temperature increase to 1.5°C, to limit both the magnitude and duration of any temperature overshoot, and to close adaptation gaps, reinforcing the need for deep, rapid and sustained emissions reductions, and to enhance action and support to enable countries and communities to better prepare for, adapt to, respond to and recover from adverse climate impacts;
+Cop31 is the first Cop to acknowledge that the 1.5C temperature limit has already been breached. These paragraphs, if adopted, would be the first ever in an official UN framework convention on climate change (UNFCCC) agreement to recognise this “overshoot” and set out an attempt to deal with it.
+Dealing with the overshoot, and making it as brief and shallow as possible – that is, ensuring temperatures rise as little above 1.5C as possible and for as short a time as possible – is vital to low-lying countries in particular, but is also important more broadly, as temperatures rising above 1.5C can quickly start to trigger tipping points that could have irreversible effects on the climate.
+13. Recognizes the urgency of enhancing action and support in relation to adaptation, means of implementation and mitigation to address the gaps in the implementation of the Paris Agreement as a whole; 14. Recalls with concern the pre-2020 gaps in both the mitigation ambition and implementation of developed country Parties and that the Intergovernmental Panel on Climate Change (IPCC) had previously indicated that developed countries must reduce emissions by 25–40 per cent below the 1990 level by 2020, which was not achieved; 15. Also recalls with concern that the carbon budget consistent with achieving the Paris Agreement temperature goal is now small and being rapidly depleted and acknowledges that historical cumulative net carbon dioxide emissions account for at least four fifths of the total carbon budget for a 50 per cent probability of limiting global warming to 1.5°C; 16. Urges Parties, while implementing their NDCs, to strive to overachieve their targets, in light of national circumstances, recognising that developed countries should take the lead; 17. Reiterates that support shall be provided to developing country Parties for the implementation of Article 4 of the Paris Agreement, in accordance with Articles 9 to 11 of the Paris Agreement, recognizing that enhanced support for developing country Parties will allow for higher ambition in their actions;
+More on NDCs. Note that in climate agreements, mitigation always refers to the reduction of greenhouse gas emissions, or steps taken to curb future emissions growth. It does not mean mitigating the impacts of extreme weather – that is known as adaptation, or resilience.
+This notes that NDCs at last year’s Cop, which was the deadline for them, were inadequate to keep temperatures in line with the Paris agreement. NDCs are submitted every five years, but there is also a mechanism whereby countries can submit improved NDCs without waiting five years. However, almost none have ever done this, and the current round of NDCs is likely to remain unchanged before the “global stocktake” in 2028, which is the mechanism by which NDCs are assessed.
+18. Highlights that costed needs reported in nationally determined contributions of developing country Parties are estimated at USD 5.1–6.8 trillion for up until 2030 or USD 455–584 billion per year and adaptation finance needs are estimated at USD 305 billion annually for up until 2035 and notes with concern the gap between climate finance flows and needs, particularly for adaptation in developing country Parties; 19. Recalls the invitation in paragraph 36 of decision 1/CMA.7 for Parties to develop implementation and investment plans for their nationally determined contributions and to align their nationally determined contributions with their broader economic development strategies and plans, and encourages Parties to accelerate their efforts in this regard;
+This is an important paragraph for developing countries, which are angry at the insufficient finance on offer to help them. However, Cop31 was never intended to be a finance Cop – that was done at Cop29 in Baku, when developed countries agreed to provide $300bn a year by 2035 from public sources, and to help ensure $1tn a year flows to developing countries from private and other sources by the same date.
+20. Notes with deep concern that the adverse impacts of climate change are increasing in frequency and severity, with far-reaching consequences for people, livelihoods and ecosystems, including oceans, mountains and the cryosphere, and further expresses concern over the potential of the ongoing El Niño event, compounded by long-term climate change; 21. Recognizes the growing impacts of climate change on physical and mental health, and underscores the need to strengthen climate-resilient health systems through the integration of health into national adaptation plans and other relevant processes; 22. Recognizes the vulnerability of mountain regions, ecosystems and glacier-dependent communities to the adverse effects of climate change, and decides to establish the Work Programme on Mountains and Climate Change under the Nairobi Work Programme on impacts vulnerability and adaptation to climate change, with a view to enhancing adaptation action, disaster risk reduction, resilience building, data observations and early warning systems, using support through existing channels and building on existing work under the Convention and the Paris Agreement; 23. Requests the Chair of the SBSTA to convene the [XX] [Mountains and Climate Change] Dialogues at SBSTA66 and SBSTA68 with a view to elevating scientific understanding and awareness of the impacts of climate change on mountain regions, ecosystems and glacier-dependent communities, and further requests the Chair of the SBSTA to prepare, with the support of the secretariat, a report upon the conclusion of the [XX] [Mountains and Climate Change] Dialogues for consideration by [SBSTA69][at CMA10]; and decides that a high level dialogue on mountains and climate change is to be convened at COP32 under the guidance of the COP32 Presidency;
+The first mention of this year’s El Niño, which is threatening food price rises and food shortages and having a disastrous impact, particularly on developing countries.
+24. Further decides to hold a high-level dialogue at the ninth session of the CMA focused on scientific findings around 1.5°C overshoot, its implications, and the complementarity between equity, science and sustainable development; 25. Recognizes that systematic observation underpins early warning systems and the assessment of collective progress towards the Paris temperature goal, and expresses concern regarding threats to continuity and sustainability of long-term observational records and networks, both in situ and satellite, of the Earth system, including support for the Global Climate Observing System and for the Global Ocean Observing System, and encourages support for addressing persistent monitoring gaps in under-observed regions, including through the Systematic Observations Financing Facility;
+This section is about the early warning systems against climate disaster that were championed by the outgoing UN secretary general, António Guterres, and could save millions of lives globally. Their potential importance was illustrated by the glacier collapse in Nepal in September.
+II. Accelerating implementation
+A. Concrete solutions
+26. Recognizes that end-to-end multi-hazard early warning systems are among the most effective solutions for saving lives, strengthening adaptation and resilience, and reducing loss and damage; 27. Recalls the call of the Secretary-General of the United Nations to ensure universal coverage of early warning systems for all people on Earth by 2027 and recognizes the contribution of the Early Warnings for All initiative towards achieving this goal; 28. Recognizes that electrification has significant benefits to emission reductions, energy security, energy efficiency, economic development and energy access, and underlines universal access to clean, reliable and affordable energy, sustainable energy, clean cooking and means of implementation for developing country Parties can help realise these benefits;29. Also recognizes that reductions in anthropogenic methane and other non-carbon dioxide emissions provide significant opportunities to slow the rate of global warming in the near term and to limit peak warming and the duration of overshoot, alongside accelerated action to reduce all greenhouse gas emissions, and the importance of technical assistance and support for developing countries to support these efforts;
+Addressing methane could be an “emergency brake” to help bring down global temperature rises in the short term.
+30. Expresses deep concern about the impacts of climate change on the ocean, livelihoods and biodiversity, including through ocean warming and sea level rise, and recognizes the important contribution of sustainable ocean-based climate action to strengthening adaptation and resilience and advancing mitigation efforts while delivering benefits for communities and biodiversity; 31. Recognizes the need to enhance means of implementation and support for sustained global ocean observing and early warning systems, enhanced access to ocean data and technologies and capacity-building; 32. Also recognizes nature-based solutions and ecosystem-based approaches as essential climate solutions that can contribute simultaneously to mitigation, adaptation and resilience, including through the conservation, protection, restoration and sustainable management of forests and other natural ecosystems;
+This inclusion of oceans in the draft text has been one of the few bright spots. Australia had promised to highlight the needs of its Pacific island neighbours.
+33. Recognizes that carbon dioxide removal has a role, as assessed by the Intergovernmental Panel on Climate Change (IPCC), in achieving the long-term temperature goal, but should complement, and not substitute for or delay, deep emission reductions, and stresses that its deployment should ensure environmental safeguards, and respect the rights of Indigenous Peoples and local communities; 34. Welcomes efforts that contribute to urgently and rapidly scaling up the development, dissemination and deployment of Carbon Capture Utilization and Storage and Carbon Dioxide Removal technologies; 35. Recognizes the importance of resource efficiency, sustainable consumption and production, waste reduction and circular economy as important elements of climate action, in accordance with national circumstances and priorities;
+The inclusion of carbon capture and storage here make these paragraphs controversial. Some civil society groups deride CCS as a “false solution” that helps the fossil fuel industry to continue to have a role. However, they are likely to be insisted on by Saudi Arabia and the Arab Group, which can point to findings by the Intergovernmental Panel on Climate Change (IPCC) and UN Environment Programme (UNEP) that CCS will be needed to bring down the overshoot of 1.5C. They could be used as a bargaining chip with Saudi Arabia – if these commitments stay in, Saudi must agree to allowing stronger language in other parts of the text. Whether that works remains to be seen.
+36. Calls for global cooperation across all actors to strengthen implementation, finance, investment, technology transfer and capacity building for concrete solutions to accelerate the irreversible global transition towards low greenhouse gas emissions and climate resilience, and to keep 1.5 degrees within reach, recognizing that countries will take different pathways and solutions in accordance with their national circumstances and development priorities, including through, inter alia: (a) Strengthening and expanding the deployment of end-to-end multi-hazard early warning systems linked to early action, and delivering on the Early Warnings for All initiative and the 2027 target for universal coverage, including in all least developed countries and small island developing States; (b) Strengthening climate risk monitoring, forecasting, preparedness, anticipatory action, and adaptation planning; (c) Accelerating, in line with national circumstances, the uptake of clean, secure, affordable, accessible and resilient energy systems, including through the accelerated development, deployment and diffusion of renewable energy and other zero- and low-carbon energy technologies and fuels, energy efficiency, the accelerated expansion, modernization and improved resilience of electricity grids, transmission and distribution networks; (d) Increasing the share of electricity in total final energy consumption to 35 per cent globally by 2035, complementary to efforts to triple renewable energy capacity globally and double the global average annual rate of energy efficiency improvements by 2030 and alongside storage, system flexibility and modern and resilient grids, and improving energy access; (e) Accelerating action to reduce anthropogenic methane and other non-carbondioxide emissions through practical and cost-effective solutions, recognizing that mitigation pathways, opportunities and implementation approaches vary across sources, sectors and taking into account different cultural practices; (f) Strengthening and accelerating the implementation of sustainable ocean-based action in national climate goals and plans, including, but not limited to, NDCs and NAPs, in a nationally determined manner; (g) Encouraging enhanced efforts to halt and reverse deforestation and forest degradation by 2030; (h) Accelerating Carbon Capture, Utilization and Storage (CCUS) [to at least 500 MtCO2 reflecting current policies by 2035, and to work towards 1.3 to 2.5 Gt] [working towards 2.5 Gt] carbon dioxide per year by 2035 and encouraging all actors, including industry, to scale up research and development and deliver on committed projects, recognizing the role of CCUS, particularly in hard to abate sectors;
+These paragraphs about the “transition towards low greenhouse gas emissions” are significant. As well as repeating the substitution of the “transition away from fossil fuels” with the much weaker phrase, they also weaken the planned target of deriving 35% of final energy consumption from electricity by 2035 by making it one of a suite of voluntary options, rather than a firm and binding commitment.
+37. Encourages locally led and ecosystem-based adaptation and integrated adaptation programmes that combine sustainable land management, ecosystem restoration, drought resilience and climate-resilient livelihoods, supported by finance, technology transfer and capacity-building; 38. Recognizes the important role of domestic energy planning, capacity building, policy strategies and frameworks, as well as cooperation between different levels of government, in creating enabling environments to expand electrification and sustainable fuels use and to attract financing for energy transitions; 39. Calls for the full and expeditious implementation of NDCs and NAPs informed by the outcome of the first global stocktake, as set out in decision 1/CMA.5, across mitigation, adaptation and means of implementation;
+Adaptation is central to developing countries, but these paragraphs fail to recognise their need for strong funding measures to allow that to happen.
+B. Enabling action, including through means of implementation
+40. Underscores the commitment towards the effective implementation of the new collective quantified goal and the call for efforts to at least triple adaptation finance by 2035 in the context of this goal, and resolves to accelerate delivery thereof; 41. Reiterates the importance of reforming the multilateral financial architecture and underscores the need to remove barriers and address disenablers faced by developing country Parties in financing climate action, including high costs of capital, limited fiscal space, unsustainable debt levels, high transaction costs and conditionalities for accessing climate finance; 42. Expresses concern at increasing adaptation impacts and costs and stresses the urgent need for scaled-up provision and mobilization of adequate, predictable, public, grant-based and highly concessional finance for adaptation in developing country Parties, especially LDCs and SIDS and others with significant capacity constraints; 43. Recalls decision 1/CMA.7, paragraph 53, and requests the Standing Committee on Finance to prepare for consideration at the ninth session of the conference of the Parties serving as the meeting of the Parties to the Paris Agreement a technical report identifying options for the baseline of the call for efforts to at least triple adaptation finance by 2035 in the context of decision 1/CMA.6 and to include in the report referred to in paragraph 30 of decision 1/CMA.6 information on the progress on the call for efforts to at least triple adaptation finance by 2035 in the context of 1/CMA;
+The new collective quantified goal on finance mentioned here was the name given to the settlement made Cop29 for $300bn a year to come from public sources in the developed world to the developing world by 2035, along with $1tn from other sources, to help poor countries cut emissions and cope with the impacts of extreme weather.
+Developed countries regard these financial negotiations as having been settled and closed; some developing countries would like to reopen them, finding them insufficient.
+44. Further agrees to discuss, under the work programme on climate finance referred to in paragraph 54 and 55 of decision 1/CMA.7, an implementation pathway for tripling adaptation finance by 2035 that responds to and accelerates delivery of the call for efforts to at least triple adaptation finance by 2035 in the context of decision 1/CMA.65 for consideration at CMA 9; 45. Decides to launch, under the guidance of the COP31 and COP32 Presidencies, in consultation with Parties, the “Antalya-to-Addis Ababa Roadmap on Adaptation and Resilience Finance”, aiming to identify predictable and scaled-up sources of finance for adaptation, including for responding to loss and damage, including through innovative sources, and mechanisms for access, including in the context of decision 1/CMA.6 and paragraph 54 and 55 of decision 1/CMA.7; and requests the Presidencies to produce a report summarizing the conclusions of the work for consideration by the CMA at its ninth session (2027); 46. Recognizes that improved, efficient and equitable access to climate finance is essential to support implementation, including through the measures outlined in the new collective quantified goal, acknowledges progress by multilateral development banks and multilateral climate funds to improve access, and encourages finance providers to take into account country-led programming and ensure the meaningful engagement of vulnerable communities and groups; 47. Encourages enhanced readiness support, institutional capacity-building and technical assistance for developing country Parties to strengthen national financial institutions, including national and public development banks and other entities seeking direct access to climate finance, and invites the operating entities of the Financial Mechanism, funds serving the Paris Agreement, bilateral climate finance providers, and multilateral development banks, upon request and in a country-driven manner, to support funded project preparation and capacity-building; 48. Invites climate finance providers, including the operating entities of the Financial Mechanism, the Adaptation Fund, the Least Developed Countries Fund and the Special Climate Change Fund, and multilateral development banks and other international financial institutions to improve access by taking measures that simplify and expedite approval and disbursement procedures, such as mutual recognition of accreditation across funds, readiness and project preparation support that extends beyond the preparation of strategies and pipelines to support implementation, reduce co-financing requirements and transaction costs, and to enhance transparency on efforts taken in this regard as appropriate; 49. Requests the secretariat, in collaboration with multilateral development banks and multilateral climate funds, including the operating entities of the Financial Mechanism, the Adaptation Fund, the Least Developed Countries Fund and the Special Climate Change Fund, to organize annual workshops from 2027 to 2030 to facilitate the exchange of views on efforts, progress made and next steps on enhancing access to climate finance, with a view to support meaningful engagement of Parties and further requests the secretariat to prepare technical reports on these workshops as inputs to the biennial report by the SCF on the implementation of decision 1/CMA.6 and as inputs to the special assessment of access to climate finance referred to in paragraph 34 of decision 1/CMA.6; 50. Reaffirms paragraph 16 of decision 1/CMA.6, including with regard to pursing efforts to at least triple annual outflows from the operating entities of the Financial Mechanism, the Adaptation Fund, the Least Developed Countries Fund and the Special Climate Change Fund based on 2022 levels by 2030 at the latest, and encourages consideration of these efforts in future pledges and replenishments to these institutions; (a) Welcomes the initial pledges received to date towards the 9th replenishment of the GEF Trust Fund, notes with concern the decline of the resources allocated to GEF-9 compared to GEF-8, including resources allocated for climate change mitigation focal area, and encourages further pledges to the GEF-9 replenishment; (b) Underlines the importance of an ambitious 3rd GCF-replenishment and encourages the GCF to actively reach out to potential contributors; (c) Urges developed country Parties to provide financial resources for the third replenishment of the Green Climate Fund, notes the importance of converting pledges to contributions in a timely manner and also urges the conversion of pledges as soon as possible;
+Here the text plans yet another roadmap – the “Antalya-to-Addis Ababa Roadmap on Adaptation and Resilience Finance”. But it takes more than a roadmap to deliver climate finance. One of the main problems for developing countries is that the finance available is often hard for them to access – it involves not only complex form filling but also proving that the country can handle the money, use it efficiently and meet its stated objectives with it. Donors are quicker to make promises than they are to follow through with cash, and disbursements have been too slow and too focused on the larger and middle-income developing countries rather than the smallest, poorest and most vulnerable, who need it most.
+Last year at Cop30, countries agreed to triple adaptation finance, but they did not set a baseline or say how this would happen. Developing countries would like to see that fleshed out in Turkey.
+51. Recognizes the importance of multilateral climate funds having predictable and ambitious replenishments and contributions that scale and align with increasing programming capacity and allow the funds to respond to growing developing-country needs and continue leveraging additional public and private finance at scale; 52. Notes the establishment and operationalization of the Fund for responding to Loss and Damage, the ongoing progress made by its Board to implement the Barbados Implementation Modalities and the progress achieved in operationalizing the Santiago network and by the Executive Committee of the Warsaw International Mechanism, and stresses the importance of enhancing collaboration, coordination, complementarity and coherence across funding arrangements for responding to loss and damage associated with the adverse effects of climate change; 53. Notes that funding requests under the Barbados Implementation Modalities total approximately USD 2.8 billion against allocations of approximately USD 342 million, that only 50 per cent of USD 822 million in FRLD pledges has reportedly been converted into contributions, and that the Santiago Network and WIM ExCom remain under-resourced; 54. Takes note of the 21 per cent increase in climate finance from multilateral development banks over the prior year in view of reaching their 2030 climate finance estimates announced at COP29, of delivering $120 billion per year and mobilizing a further $65 billion in private capital; 55. Emphasizes the importance of Parties and the international financial architecture to implementing policies, plans, measures and actions which mobilize public, private, bilateral, multilateral and alternative sources of finance, for developing country Parties, in a manner which supports climate resilient development and enhances developing countries’ capacity to 7 attract and absorb climate finance, reduces cost of capital, optimizes the use of grant-based and concessional finance, and crowds in private investment;
+Loss and damage here refers to funds for the rescue and rehabilitation of countries stricken by climate disaster. A loss and damage fund was agreed at Cop27 in Egypt in 2022, but it has been slow to fill and to disburse cash. Nepal received only $21m this year after its glacier collapse disaster.
+56. Affirms that the resolve to pursue efforts to keep 1.5°C within reach and to limit both the magnitude and duration of any temperature overshoot, and to close implementation and financing gaps, requires the full implementation of Article 2, paragraph 1(c) of the Paris Agreement, in a nationally determined manner reflecting different national circumstances, which is complementary to and not a substitute for the provision and mobilization of financial support to developing countries under Article 9 of the Paris Agreement;
+C. International cooperation and collaboration
+57. Underlines the urgent need to address, in a comprehensive and synergetic manner, the interlinked global crises of climate change, biodiversity loss, desertification, and land and ocean degradation in the broader context of achieving sustainable development;
+Addressing the overshoot referenced here will be vital, but this language is not strong enough for the countries most vulnerable to its effects.
+58. Encourages Parties to enhance cooperation and synergies in the implementation of the Convention, the Convention on Biological Diversity, the United Nations Convention to Combat Desertification and other relevant multilateral environmental agreements, as appropriate, in a synergistic and efficient manner, in accordance with national circumstances and priorities and in a manner respectful of the respective mandates of these agreements, without creating new obligations for Parties, and notes the work of the Joint Liaison Group of the Rio Conventions in this regard; 59. Requests the co-facilitators of the 2027–2028 biennium Ocean and Climate Change Dialogue to develop the Antalya Ocean Current, a multi-year plan for future Dialogues, taking into account the ambition cycle of the Paris Agreement with a view to supporting continuity between dialogue sessions, identifying entry points for ocean action across relevant UNFCCC processes, and enhancing uptake of the Dialogues key messages; and invites submissions from Parties and non-Party stakeholders on such a multi-year approach, with updates on progress to be delivered through the Dialogue;
+More good news on the oceans, with a catchy name for a new ocean talking shop. Cop presidencies love to name new initiatives for the cities where their Cop took place, but frequently fail to follow up afterwards with the funds to keep these initiatives going.
+60. Also requests the co-facilitators of the Dialogue, with the assistance of the secretariat, to develop the Blue Imece Synthesis report to be published by 1 June 2028 as an input to the technical assessment of the global stocktake, drawing upon: (a) How Parties have considered ocean-based climate actions in their latest national climate policies, including but not limited to nationally determined contributions, long term strategies and adaptation communications, as relevant; (b) Voluntary submissions from Parties on progress and challenges in implementing their ocean-based climate actions; (c) The best-available science relevant to climate impacts on the ocean and the ocean’s contributions to mitigation, adaptation and resilience; (d) Updates on how work programmes and constituted bodies under the Convention and the Paris Agreement have integrated and strengthened ocean-based action in their existing mandates and workplans, as per the invitation in decision 1/CP.26; and (e) The outcomes of the Ocean and Climate Change Dialogues;
+Calling for a new report on the oceans, which will also please Pacific islands.
+61. Notes the concerns regarding measures that have negative cross-border impacts, particularly for developing countries, reaffirms that Parties should cooperate to promote a supportive and open international economic system that would lead to sustainable economic growth and development in all Parties, particularly developing country Parties, thus enabling them better to address the problems of climate change, and also reaffirms that measures taken to combat climate change, including unilateral ones, should not constitute a means of arbitrary or unjustifiable discrimination or a disguised restriction on international trade; 62. Recognizes that international trade can promote innovation and sustainable economic growth and development, support effective, equitable, cooperative, and inclusive climate action, and create opportunities for value addition, diversification and participation in low emissions value chains; 63. Welcomes the convening of the first dialogue on trade and climate change at the sixtyfourth sessions of the subsidiary bodies and encourages continued engagement at the next two dialogues [involving relevant international organizations: World Trade Organisation, United Nations Trade and Development and the International Trade Centre], and invites the SB chairs, supported by the secretariat, to produce a summary report of the next two trade and climate dialogues to be presented in conjunction with the subsequent session of the subsidiary bodies; 64. Also invites Parties, at their discretion, to share relevant information relating to the potential cross-border effects of trade measures through the trade and climate dialogues;
+Here the anodyne language disguises one of the hottest disputes at Cop31 about trade. Many developing countries now face tariffs from the US and the EU in particular, and a new carbon border adjustment mechanism (CBAM) from the EU.
+The EU’s CBAM is intended to stop carbon leakage – it imposes costs on imports to the EU of goods, in particular high-carbon industries – chiefly steel, chemicals and other heavy industrial goods – if the exporting countries cannot show that they have taken measures to reduce their carbon emissions. This is because, the EU says, it requires its heavy industries to pay for the carbon they produce. So imports of such goods from abroad where carbon emissions were unconstrained are, they argue, undercutting EU prices.
+The CBAM was mainly aimed at, and mainly affects, China, which is now taking additional measures to reduce its carbon, including through an emissions trading scheme. India is also worried about the CBAM, regarding it as a means of protectionism from the EU.
+But some smaller developing countries object to it too. The EU says that small countries will not be affected by the CBAM, as help is available to them. Many are unconvinced – although some might also be objecting in order to cement their relationships with China and India, rather than out of real fear that their exports will be hit.
+65. Encourages engagement in the related high-level event referred to by decision 1/CMA.7, paragraph 56; 66. Recognizes the particular vulnerabilities of small island developing States, including to climate change-related sea level rise, and the leadership of Pacific island countries and other small island developing States in requesting an advisory opinion from the International Court of Justice on the obligations of States in respect of climate change; 67. Recognizes also the importance of advancing intergenerational equity and meaningful participation of children and youth in climate action and decision-making processes, and invites relevant work programmes and constituted bodies to integrate responses to impacts on children and youth in undertaking work within their existing mandates and in their activities and outputs; 68. Acknowledges the role and contributions of Indigenous Peoples and of local communities in nature stewardship and climate leadership, as well as the disproportionate effects of climate change on Indigenous Peoples and on local communities;
+Indigenous people have received less attention at this Cop than was hoped, particularly after their protests at Cop30 in Brazil last year, storming the conference centre to have their voices heard.
+69. Encourages Parties, in accordance with their national circumstances and priorities, to strengthen multilevel arrangements with local and regional governments for the implementation of their climate actions; 70. Recognizes the central role of equity and the best available science and of the Intergovernmental Panel on Climate Change (IPCC), whose assessment reports are the most robust and comprehensive assessment of climate science, in the effective implementation of the Convention and the Paris Agreement, highlights the importance of the IPCC reports for the global stocktake, and expresses appreciation and gratitude to those involved in preparing the reports of the Seventh Assessment Report for their contributions, and invites the IPCC to continue to provide policy-relevant information to UNFCCC processes, including all three working group contributions of the Seventh Assessment cycle to the next Global Stocktake;
+Rows over the IPCC have spilled over into this Cop. Some countries – mainly Saudi Arabia, but also Russia, India and Kenya, have objected to the proposed timetable by which the IPCC would present the findings of its latest assessment report in 2028. They say this is to allow for more developing country science to be included in the IPCC. Some believe that in reality it is because they wish to weaken the global stocktake. The row is unlikely to be resolved at this Cop.
+71. Welcomes the launch of the second global stocktake as a comprehensive, facilitative, inclusive and Party-driven process, recognising it is an integral part of the ambition cycle of the Paris Agreement to assess collective progress towards the Paris Agreement goals, and encourages the meaningful participation of non-Party stakeholders in the process; 72. Recognizes the value of a diverse range of knowledge systems and encourages further efforts to enhance contributions from all regions, underscoring such contributions strengthen the robustness and comprehensiveness of scientific assessments;
+The global stocktake will take place at Cop33, which first India, then China, was expected to offer to host. India decided against offering in April and at this Cop China decided it would not offer to host either.
+Indonesia, Uzbekistan and South Korea are said to be considering a hosting bid.
+73. Recognizes the important role and active engagement of non-Party stakeholders, particularly civil society, workers, business, financial institutions, farmers, cities and subnational authorities, Indigenous Peoples, local communities, people of African descent, women, youth and children, and research institutions, in supporting Parties and contributing to the significant collective progress towards the long-term goals of the Paris Agreement, in addressing and responding to climate change and enhancing ambition and implementation with a view to keeping 1.5 ℃ within reach; 74. Recognizes the increasing complexity and breadth of the UNFCCC process and the need to maintain an inclusive, transparent, predictable, consensus based, Party-driven UNFCCC process that can effectively fulfill the objectives of the Convention and the Paris Agreement and resolves to continue to strengthen the UNFCCC process to fulfil the objectives and goals of the Convention and the Paris Agreement; 75. Requests the Chairs of the Subsidiary Bodies to convene a dialogue on this matter at SB67and SB69, and requests the Secretariat to prepare a summary report containing options for strengthening the consensus based, Party-driven process as an input to the dialogues, and further requests the Chairs of the Subsidiary Bodies to prepare a summary report of the dialogues for consideration at COP34 and CMA11;
+This might have been a good place, while acknowledging the role of workers, to slip in a reference to the just transition – by which workers in high carbon industries are helped to move to low-carbon jobs. But the just transition is missing from this text, although it has a separate negotiating stream at this Cop.
+76. Recognizes the important role of voluntary cooperation under Article 6 of the Paris Agreement, as a vehicle to promote international cooperation, in enabling higher ambition in mitigation and adaptation actions, promoting sustainable development and ensuring environmental integrity, and the potential of high-integrity international carbon markets to mobilize investment, accelerate emission reductions and contribute to achieving the goals of the Paris Agreement, and encourages the secretariat and its regional collaboration centres to continue providing technical assistance and capacity-building support to developing country Parties to participate in cooperative approaches, the mechanism established by Article 6, paragraph 4, and non-market approaches;
+Article 6 of Paris is about carbon markets, which have not had much attention at this Cop.
+77. Welcomes the full operationalization of the voluntary Global Implementation Accelerator initiative at its eighth session and welcomes the related report of the Presidencies of the seventh and eighth sessions of the Conference of the Parties serving as the meeting of the Parties to the Paris Agreement; 78. Emphasizes the voluntary nature of the Global Climate Action Agenda in scaling up and strengthening voluntary efforts, initiatives and coalitions and mobilizing non-Party stakeholders to accelerate implementation and recognizes its role in supporting implementation and enhancing international cooperation, including through the recent organisation of its work around six axes: (a) Welcomes the voluntary BRIDGE initiative of the Presidency of the thirty-first session of the Conference of the Parties, to support country owned implementation of Nationally Determined Contributions and National Adaptation Plans, consistent with national priorities and circumstances; (b) Invites Parties to appoint voluntary implementation focal points by informing the secretariat to receive regular relevant information on engagement with the climate high level champions, Marrakech Partnership and the Global Climate Action Agenda; (c) Welcomes the launch of the COP31 Antalya Compact for Energy Efficient Buildings, developed by the COP31 Presidency with the support of the United Nations Environment Programme-hosted secretariat of the Global Alliance for Buildings and Construction, and its voluntary collective global ambition to reduce the operational energy intensity of the global building stock by at least 25 per cent by 2035, relative to 2020 levels; (d) Welcomes the Zero-Waste Initiative as a voluntary contribution to advancing resource efficiency, circular economy approaches and sustainable consumption and production, including through its potential to contribute to methane emission reductions from waste, and notes its aspiration to halve the projected increase in annual global waste generation by 2035, recognizing different national circumstances, priorities and approaches, and the importance of international cooperation and support; 79. Requests the SBSTA to initiate, at SBSTA 66 (June 2027), the first review and update, as appropriate, of the modalities, procedures and guidelines referred to in decision 18/CMA.1, paragraph 2; 80. Invites Parties, non-Party stakeholders, transparency practitioners and experts to submit via the submission portal by 31 March 2027 their views on experience with reporting, technical expert review and facilitative, multilateral consideration of progress, as input to the review and update of the modalities, procedures and guidelines, and requests the secretariat to prepare for consideration by SBSTA 66 a synthesis report on the submissions to be made available no later than three weeks prior to that session.
+The reference to waste is another nod to a pet project of the host nation, Turkey, which is keen on zero waste initiatives – despite being home to a large number of uncapped landfill sites which, as the Guardian recently revealed, are leaking vast quantities of methane.</p>
+  
+</div>
+
+<a class="read-full" href="https://www.theguardian.com/environment/ng-interactive/2026/nov/20/cop31-draft-climate-text-explained" target="_blank" rel="noopener">
+  Read full article at The Guardian →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/2026-11-23/story/cluster-2/">COP31 climate talks end without agreement after fossil fuel dispute</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
