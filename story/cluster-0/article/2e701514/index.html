@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>‘Serious cyber incident’ forced DWP to take down online systems – McFadden — The Independent — Newshash</title>
+  
+<meta name="description" content="GCHQ’s National Cyber Security Centre and Government experts are investigating the suspected hack.">
+<link rel="canonical" href="https://newshash.com/story/cluster-0/article/2e701514/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Newshash">
+<meta property="og:title" content="‘Serious cyber incident’ forced DWP to take down online systems – McFadden">
+<meta property="og:description" content="GCHQ’s National Cyber Security Centre and Government experts are investigating the suspected hack.">
+<meta property="og:url" content="https://newshash.com/story/cluster-0/article/2e701514/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="‘Serious cyber incident’ forced DWP to take down online systems – McFadden">
+<meta name="twitter:description" content="GCHQ’s National Cyber Security Centre and Government experts are investigating the suspected hack.">
+
+  
+  <!-- Apply stored theme before first paint to avoid flash -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Light mode (default) ── */
+    :root {
+      --bg:        #f3f4f6;
+      --surface:   #ffffff;
+      --border:    #e5e7eb;
+      --text:      #111827;
+      --muted:     #6b7280;
+
+      --summary-bg:     #eff6ff;
+      --summary-border: #bfdbfe;
+      --summary-text:   #1e3a5f;
+      --summary-label:  #1d4ed8;
+
+      --banner-bg:     #fef3c7;
+      --banner-border: #fde68a;
+      --banner-text:   #92400e;
+
+      --left:        #1d4ed8;
+      --centre-left: #4d44e3;
+      --centre:      #7c3aed;
+      --centre-right:#9b2b85;
+      --right:       #b91c1c;
+    }
+
+    /* ── Dark mode: system preference ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg:        #111827;
+        --surface:   #1f2937;
+        --border:    #374151;
+        --text:      #f9fafb;
+        --muted:     #9ca3af;
+
+        --summary-bg:     #1e3a5f;
+        --summary-border: #1d4ed8;
+        --summary-text:   #bfdbfe;
+        --summary-label:  #60a5fa;
+
+        --banner-bg:     #451a03;
+        --banner-border: #78350f;
+        --banner-text:   #fcd34d;
+
+        --centre: #a855f7;
+      }
+    }
+
+    /* ── Dark mode: user override ── */
+    :root[data-theme="dark"] {
+      --bg:        #111827;
+      --surface:   #1f2937;
+      --border:    #374151;
+      --text:      #f9fafb;
+      --muted:     #9ca3af;
+
+      --summary-bg:     #1e3a5f;
+      --summary-border: #1d4ed8;
+      --summary-text:   #bfdbfe;
+      --summary-label:  #60a5fa;
+
+      --banner-bg:     #451a03;
+      --banner-border: #78350f;
+      --banner-text:   #fcd34d;
+
+      --centre: #a855f7;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header stays dark in both modes */
+    header {
+      background: #111827;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    header .brand {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    header .brand a { color: #fff; }
+    header .tagline {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    header .archive-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: nowrap;
+      min-width: 0;
+      overflow: hidden;
+    }
+    header .archive-nav span {
+      font-size: 0.75rem;
+      color: #6b7280;
+      white-space: nowrap;
+    }
+    header .archive-nav a {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      padding: 0.2em 0.5em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    header .archive-nav a:hover { background: #374151; text-decoration: none; color: #fff; }
+    header .archive-nav a.active { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow {
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 1rem;
+      line-height: 1;
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+      flex-shrink: 0;
+    }
+    header .archive-nav .archive-arrow:hover:not(:disabled) { background: #374151; color: #fff; }
+    header .archive-nav .archive-arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 640px) {
+      header { padding: 0.75rem 1rem; gap: 0.75rem; }
+      header .archive-nav span { display: none; }
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      margin-left: auto;
+      background: none;
+      border: 1px solid #374151;
+      color: #9ca3af;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.25em 0.65em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .theme-toggle:hover { background: #374151; color: #fff; }
+
+    .archive-banner {
+      background: var(--banner-bg);
+      border: 1px solid var(--banner-border);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--banner-text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .archive-banner a { color: var(--banner-text); font-weight: 600; text-decoration: underline; }
+
+    main { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* lean colours */
+    .lean-left        { --lean-color: var(--left); }
+    .lean-centre-left { --lean-color: var(--centre-left); }
+    .lean-centre      { --lean-color: var(--centre); }
+    .lean-centre-right{ --lean-color: var(--centre-right); }
+    .lean-right       { --lean-color: var(--right); }
+
+    .lean-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.15em 0.5em;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--lean-color) 12%, transparent);
+      color: var(--lean-color);
+      border: 1px solid color-mix(in srgb, var(--lean-color) 30%, transparent);
+    }
+
+    .lean-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--lean-color);
+    }
+  </style>
+  
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  .back-link:hover { color: var(--text); text-decoration: none; }
+
+  .article-outlet {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  .outlet-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  .article-headline {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    margin-bottom: 1.5rem;
+  }
+
+  .summary-card {
+    background: var(--summary-bg);
+    border: 1px solid var(--summary-border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .summary-card .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--summary-label);
+    margin-bottom: 0.5rem;
+  }
+  .summary-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--summary-text);
+  }
+  .no-summary {
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .read-full {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--text);
+    color: var(--bg);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.65em 1.2em;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.1s;
+  }
+  .read-full:hover { opacity: 0.8; text-decoration: none; }
+
+  .story-context {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .story-context a { color: var(--muted); text-decoration: underline; }
+  .story-context a:hover { color: var(--text); }
+</style>
+
+</head>
+<body>
+  <header>
+    <div class="brand"><a href="/">Newshash</a></div>
+    
+    <div class="tagline">2026-11-28</div>
+    
+    
+    <nav class="archive-nav">
+      <span>Archive:</span>
+      <button class="archive-arrow" id="archivePrev">&#8249;</button>
+      
+      <a href="/"
+         class="active">
+        2026-11-28
+      </a>
+      
+      <a href="/2026-11-27/"
+         class="">
+        2026-11-27
+      </a>
+      
+      <a href="/2026-11-26/"
+         class="">
+        2026-11-26
+      </a>
+      
+      <a href="/2026-11-25/"
+         class="">
+        2026-11-25
+      </a>
+      
+      <a href="/2026-11-24/"
+         class="">
+        2026-11-24
+      </a>
+      
+      <a href="/2026-11-23/"
+         class="">
+        2026-11-23
+      </a>
+      
+      <a href="/2026-11-22/"
+         class="">
+        2026-11-22
+      </a>
+      
+      <a href="/2026-11-21/"
+         class="">
+        2026-11-21
+      </a>
+      
+      <a href="/2026-11-20/"
+         class="">
+        2026-11-20
+      </a>
+      
+      <a href="/2026-11-19/"
+         class="">
+        2026-11-19
+      </a>
+      
+      <a href="/2026-11-18/"
+         class="">
+        2026-11-18
+      </a>
+      
+      <a href="/2026-11-17/"
+         class="">
+        2026-11-17
+      </a>
+      
+      <a href="/2026-11-16/"
+         class="">
+        2026-11-16
+      </a>
+      
+      <a href="/2026-11-15/"
+         class="">
+        2026-11-15
+      </a>
+      
+      <a href="/2026-11-14/"
+         class="">
+        2026-11-14
+      </a>
+      
+      <a href="/2026-11-13/"
+         class="">
+        2026-11-13
+      </a>
+      
+      <a href="/2026-11-12/"
+         class="">
+        2026-11-12
+      </a>
+      
+      <a href="/2026-11-11/"
+         class="">
+        2026-11-11
+      </a>
+      
+      <a href="/2026-11-10/"
+         class="">
+        2026-11-10
+      </a>
+      
+      <a href="/2026-11-09/"
+         class="">
+        2026-11-09
+      </a>
+      
+      <a href="/2026-11-08/"
+         class="">
+        2026-11-08
+      </a>
+      
+      <a href="/2026-11-07/"
+         class="">
+        2026-11-07
+      </a>
+      
+      <a href="/2026-11-06/"
+         class="">
+        2026-11-06
+      </a>
+      
+      <a href="/2026-11-05/"
+         class="">
+        2026-11-05
+      </a>
+      
+      <a href="/2026-11-04/"
+         class="">
+        2026-11-04
+      </a>
+      
+      <a href="/2026-11-03/"
+         class="">
+        2026-11-03
+      </a>
+      
+      <a href="/2026-11-02/"
+         class="">
+        2026-11-02
+      </a>
+      
+      <a href="/2026-11-01/"
+         class="">
+        2026-11-01
+      </a>
+      
+      <a href="/2026-10-31/"
+         class="">
+        2026-10-31
+      </a>
+      
+      <a href="/2026-10-30/"
+         class="">
+        2026-10-30
+      </a>
+      
+      <a href="/2026-10-29/"
+         class="">
+        2026-10-29
+      </a>
+      
+      <button class="archive-arrow" id="archiveNext">&#8250;</button>
+    </nav>
+    
+    <button class="theme-toggle" id="theme-toggle" onclick="cycleTheme()">Auto</button>
+  </header>
+  <main>
+    
+
+
+
+<a class="back-link" href="/story/cluster-0/">← DWP takes digital services offline after &#39;cyber incident&#39;, affecting millions of claimants</a>
+
+<div class="article-outlet lean-centre-left">
+  <span class="outlet-name">The Independent</span>
+  <span class="lean-badge lean-centre-left">centre-left</span>
+</div>
+
+<h1 class="article-headline">‘Serious cyber incident’ forced DWP to take down online systems – McFadden</h1>
+
+<div class="summary-card">
+  
+  <div class="label">Article text</div>
+  <p>‘Serious cyber incident’ forced DWP to take down online systems – McFadden
+GCHQ’s National Cyber Security Centre and Government experts are investigating the suspected hack.
+- Bookmark
+Become an Independent member to bookmark this article
+Want to bookmark your favourite articles and stories to read or reference later? Start your Independent Membership today.
+Join todayAlready a member? Log in
+A serious cyber incident forced the Government to take down online benefits and pension services, fuelling concerns about the safety of computer systems.
+The Department for Work and Pensions took systems offline but Downing Street said there was no evidence a “malicious actor” had targeted other Government departments.
+No 10 said work is being carried out “as quickly as possible” to restore services after millions of claimants were left unable to access accounts or apply for benefits online, although regular pension and benefits payments continued.
+GCHQ’s National Cyber Security Centre and Government experts are investigating the suspected hack after unusual activity was first identified on Thursday, prompting the DWP to take down some systems as a “precaution”.
+Work and Pensions Secretary Pat McFadden said: “It’s a serious cyber incident. I can’t say more at this stage about what caused it.
+“But we did the right thing by taking our systems down in order to protect the public, in order to protect their personal information, and we made sure that regular payments could continue unaffected.”
+Almost all public-facing DWP services were taken down, including the universal credit online portals, pension credit and Tell Us Once sites.
+Mr McFadden said there is a “constant effort” to ensure systems are secure.
+He said: “When an incident like this happens, the most important thing is to take the system offline as early as possible to protect it, then to investigate the causes, and at the same time to make sure that payments to the public can continue as normal.”
+A No 10 spokeswoman said: “The investigation is ongoing. I’m not going to get ahead of it.
+“There’s no other evidence that a malicious actor (has) targeted any other Government departments.”
+But she declined to rule out that the incident knocking DWP services offline had been a hack.
+“It’s a live and ongoing incident, and we’re working as quickly as possible to restore the services,” she said.
+The suspected breach is the latest in a long line of recent cybersecurity incidents to hit the UK.
+Earlier this month, a number of UK meat suppliers said their fridges heated up overnight as they were affected by hacks targeting software used by supermarkets across Europe.
+In recent weeks, fashion retailers Next and Asos have both separately flagged incidents that saw unauthorised access gained to some data.
+Last year, Marks &amp; Spencer suffered from a major cyber attack that forced it to stop all online sales for about six weeks and led to some empty shelves in shops.
+A data breach affecting a third-party payment system used for Gatwick Airport drop-off charges also may have resulted in some customers’ information being accessed, it emerged earlier this month.
+And a severe cyber attack on Jaguar Land Rover last August forced the luxury carmaker to halt production across its UK factories for five weeks, at an estimated cost to the UK economy of almost £2 billion.
+Commons Science and Technology Committee chairwoman Dame Chi Onwurah said: “Today’s disruption at DWP should be a wake-up call.
+“People rely on these systems for some of the most essential services the state provides, and they should be able to trust that the tech and data underpinning them are secure and resilient.
+“My committee has repeatedly warned that the Government cannot achieve its digital transformation of public services without addressing weaknesses in its digital infrastructure and improving standards of data hygiene.
+“Public bodies hold citizens’ data on trust, and that demands the highest standards.”
+Suzy Pallett, president of the Black Hat cybersecurity conference, said: “What we’re seeing with the DWP incident today is a clear reminder that the question is no longer if an organisation will face a cyber incident, but when.”
+The UK’s data protection watchdog said it is in contact with the DWP about the incident.
+An Information Commission’s Office spokesperson said: “We are aware of the incident and are engaging with DWP to establish the circumstances and understand what has happened.”</p>
+  
+</div>
+
+<a class="read-full" href="https://www.independent.co.uk/news/uk/politics/dwp-government-pat-mcfadden-national-cyber-security-centre-b3092841.html" target="_blank" rel="noopener">
+  Read full article at The Independent →
+</a>
+
+<div class="story-context">
+  Part of: <a href="/story/cluster-0/">DWP takes digital services offline after &#39;cyber incident&#39;, affecting millions of claimants</a>
+</div>
+
+  </main>
+  <script>
+    var labels = { auto: 'Auto', light: 'Light', dark: 'Dark' };
+    var btn = document.getElementById('theme-toggle');
+
+    function currentTheme() {
+      return localStorage.getItem('theme') || 'auto';
+    }
+
+    function applyTheme(t) {
+      if (t === 'auto') {
+        localStorage.removeItem('theme');
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        localStorage.setItem('theme', t);
+        document.documentElement.setAttribute('data-theme', t);
+      }
+      btn.textContent = labels[t];
+    }
+
+    function cycleTheme() {
+      var order = ['auto', 'light', 'dark'];
+      var next = order[(order.indexOf(currentTheme()) + 1) % order.length];
+      applyTheme(next);
+    }
+
+    // Set button label on load
+    btn.textContent = labels[currentTheme()];
+
+    // Archive nav sliding window
+    (function () {
+      var links = Array.from(document.querySelectorAll('.archive-nav a'));
+      var prev = document.getElementById('archivePrev');
+      var next = document.getElementById('archiveNext');
+      if (!prev) return;
+
+      var activeIdx = links.findIndex(function (a) { return a.classList.contains('active'); });
+      if (activeIdx < 0) activeIdx = 0;
+      var start = 0;
+
+      function page() { return window.innerWidth < 640 ? 3 : 7; }
+
+      function clampStart(s, p) {
+        return Math.min(Math.max(0, s), Math.max(0, links.length - p));
+      }
+
+      function render() {
+        var p = page();
+        start = clampStart(start, p);
+        links.forEach(function (a, i) { a.hidden = i < start || i >= start + p; });
+        prev.hidden = links.length <= p;
+        next.hidden = links.length <= p;
+        prev.disabled = start === 0;
+        next.disabled = start + p >= links.length;
+      }
+
+      // Centre window on active date initially
+      start = clampStart(activeIdx - Math.floor(page() / 2), page());
+
+      prev.addEventListener('click', function () { start = Math.max(0, start - 1); render(); });
+      next.addEventListener('click', function () { start = Math.min(links.length - page(), start + 1); render(); });
+
+      var resizeTimer;
+      window.addEventListener('resize', function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(render, 100);
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
